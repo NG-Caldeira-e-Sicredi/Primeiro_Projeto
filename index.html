@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -184,32 +184,33 @@
         </div>
 
         <h2 class="text-formulario">Formulário</h2>
-            <form action="" class="formulario">
+            <form class="formulario">
                 <fieldset>
                     <!--nome-->
                     <label for="name">
                         <span>Nome</span>
-                        <input type="text" placeholder="nome" required>
+                        <input type="text" id="name" name="name" placeholder="Nome" required>
                     </label>
                     <!--Email-->
                     <label for="email">
                         <span>Email</span>
-                        <input type="email" placeholder="email" required>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
                     </label>
-                    <!---->
-                    <select id="select" name="select-contatos">
-                        <option value="sujestão">sujestão</option>
-                        <option value="critica">critica</option>
-                        <option value="elogio">elogio</option>
-                        <option value="duvidas">duvidas</option>
+                    <!--Motivo-->
+                    <span>Motivo</span>
+                    <select id="select" name="motivo" required>
+                        <option value="sugestão">Sugestões</option>
+                        <option value="critica">Críticas</option>
+                        <option value="elogio">Elogios</option>
+                        <option value="dúvidas">Dúvidas</option>
                     </select>
 
-                    <label for="text" >
-                        <span>Insira suas palavras</span>
-                        <input value="" type="text" placeholder="" required>
+                    <label for="message" >
+                        <span>Mensagem</span>
+                        <textarea id="message" name="message" placeholder="Insira sua mensagem" required></textarea>
                     </label>
 
-                    <button id="enviar">enviar</button>
+                    <button type="submit" id="enviar">Enviar</button>
                 </fieldset>
             </form>
     </div>
