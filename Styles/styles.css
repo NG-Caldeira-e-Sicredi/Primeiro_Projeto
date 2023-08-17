@@ -1,6 +1,6 @@
 body {
     background-color: #0a3219;
-    font-family: "arial";
+    font-family: "Arial", sans-serif;
     text-transform: uppercase;
     text-align: center;
     font-weight: bold;
@@ -25,7 +25,7 @@ nav ul li a, .dpn-carrosel ul li a {
     position: relative;
 }
 
-nav ul li a:after, .dpn-carrosel ul li a:after {
+nav ul li a:after, .dpn-carrosel:after {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -38,11 +38,11 @@ nav ul li a:after, .dpn-carrosel ul li a:after {
     transition: all 0.5s;
 }
 
-nav ul li a:hover:after, .dpn-carrosel ul li a:hover:after {
+nav ul li a:hover:after, .dpn-carrosel:hover:after {
     width: 100%;
 }
 
-nav ul li a:hover, .dpn-carrosel ul li a:hover {
+nav ul li a:hover, .dpn-carrosel:hover {
     color: #71230d;
     z-index: 1;
     transition: color 1s;
