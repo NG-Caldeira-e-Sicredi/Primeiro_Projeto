@@ -1,31 +1,31 @@
 body {
-    background-color: #0a3219;
+    background-color: #0B151E;
     font-family: "Arial", sans-serif;
     text-transform: uppercase;
     text-align: center;
     font-weight: bold;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
-nav ul, .dpn-carrosel ul {
+nav ul li, .dpn-carrosel, .title-equipe, .title-parceiros, .Sicredi, .Caldeira, .Alura, .ArquitetandoInclusao, .Egalite, .text-formulario {
     list-style: none;
     margin: 0;
-    padding: 0;
+    
 }
 
-nav ul li, .dpn-carrosel ul li {
+nav ul li, .dpn-carrosel, .title-equipes, .title-parceiros, .text-formulario {
     display: inline-block;
     margin: 20px;
 }
 
-nav ul li a, .dpn-carrosel ul li a {
+nav ul li a, .dpn-carrosel, .title-equipes, .title-parceiros, .Sicredi, .Caldeira, .Alura, .ArquitetandoInclusao, .Egalite, .text-formulario {
     padding-bottom: 10px;
     text-decoration: none;
-    color: #fff;
+    color: rgb(255, 255, 255);
     position: relative;
 }
 
-nav ul li a:after, .dpn-carrosel:after {
+nav ul li a:after, .dpn-carrosel:after, .title-equipes:after, .title-parceiros:after, .Sicredi:after, .Caldeira:after, .Alura:after, .ArquitetandoInclusao:after, .Egalite:after, .text-formulario:after {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -38,11 +38,11 @@ nav ul li a:after, .dpn-carrosel:after {
     transition: all 0.5s;
 }
 
-nav ul li a:hover:after, .dpn-carrosel:hover:after {
+nav ul li a:hover:after, .dpn-carrosel:hover:after, .title-equipes:hover:after, .title-parceiros:hover:after, .Sicredi:hover:after, .Caldeira:hover:after, .Alura:hover:after, .ArquitetandoInclusao:hover:after, .Egalite:hover:after, .text-formulario:hover:after {
     width: 100%;
 }
 
-nav ul li a:hover, .dpn-carrosel:hover {
+nav ul li a:hover, .dpn-carrosel:hover, .title-equipes:hover, .title-parceiros:hover, .Sicredi:hover, .Caldeira:hover, .Alura:hover, .ArquitetandoInclusao:hover, .Egalite:hover, .text-formulario:hover {
     color: #71230d;
     z-index: 1;
     transition: color 1s;
