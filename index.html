@@ -14,14 +14,16 @@
 
     <nav class="nav" id="mainNav">
         <ul>
-            <li><a href="nav">Sobre</a></li>
-            <li><a href="nav">Depoimentos</a></li>
-            <li><a href="nav">Equipe</a></li>
-            <li><a href="nav">Parceiros</a></li>
+            <li><a href="#Sobre">Sobre</a></li>
+            <li><a href="#Depoimentos">Depoimentos</a></li>
+            <li><a href="#Equipe">Equipe</a></li>
+            <li><a href="#Parceiros">Parceiros</a></li>
         </ul>
     </nav>
 
-    <div class="galeriaDeFotos">
+    <!-- Section 1 -->
+    <section galeria-fotos>
+         <div class="galeriaDeFotos">
         <div style="background-image: url(Assets/1.jpg);"></div>
         <div style="background-image: url(Assets/2.jpg);"></div>
         <div style="background-image: url(Assets/3.jpg);"></div>
@@ -48,12 +50,7 @@
             flex: 5;
         }
     </style>
-    <!-- Section 1 -->
-    <!--Section video-->
-    <section class="video">
-        <video id="video-apresentacao">
-            <source src="" type="video/mp4">
-        </video>
+       
     </section>
 
     <!--Main texto-->
@@ -79,7 +76,7 @@
         <h2 class="dpn-carrosel">Depoimentos</h2>
         <br>
         <br>
-        <button class="pre-btn"><i class="bi bi-arrow-left-circle-fill"></i>></button>
+        <button class="pre-btn"><i class="bi bi-arrow-left-circle-fill"></i></button>
         <button class="next-btn"><i class="bi bi-arrow-right-circle-fill"></i></button>
 
         <div class="depoimentos-container">
@@ -260,15 +257,14 @@
 
         <!--Formulario-->
         <div class="formulario-container">
-            <div class="contatos-form">
+            <h2 class="text-formulario">Formulário</h2>
+            <form class="formulario">
+                <div class="contatos-form">
                 <div id="img" class="logo-form">
                     <img src="">
                 </div>
                 <p></p>
             </div>
-
-            <h2 class="text-formulario">Formulário</h2>
-            <form class="formulario">
                 <fieldset>
                     <!--nome-->
                     <label for="name">
