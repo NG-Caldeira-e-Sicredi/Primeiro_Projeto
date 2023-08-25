@@ -1,278 +1,309 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-    <head>
-        <link rel="stylesheet" href="Styles/styles.css">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-        <link rel="stylesheet" href="Styles/styles.css">
-        <title>Afinal, qual é a nossa limitação?</title>
-    </head>
+<head>
+    <link rel="stylesheet" href="Styles/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="Styles/styles.css">
+    <title>Afinal, qual é a nossa limitação?</title>
+</head>
 
-    <body>
-        <nav class="nav" id="mainNav">
-    <ul>
-                <li><a href="#Sobre">Sobre</a></li>
-                <li><a href="#Depoimentos">Depoimentos</a></li>
-                <li><a href="#Equipe">Equipe</a></li>
-                <li><a href="#Parceiros">Parceiros</a></li>
-            </ul>
+<body>
+
+    <nav class="nav" id="mainNav">
+        <ul>
+            <li><a href="nav">Sobre</a></li>
+            <li><a href="nav">Depoimentos</a></li>
+            <li><a href="nav">Equipe</a></li>
+            <li><a href="nav">Parceiros</a></li>
+        </ul>
     </nav>
-        <!-- Section 1 -->
-        <!--Section imagens laterais-->
-        <section class="montagem-img">
-            <img src=""> 
-        </section>
 
-        <!--Main texto-->
+    <div class="galeriaDeFotos">
+        <div style="background-image: url(Assets/1.jpg);"></div>
+        <div style="background-image: url(Assets/2.jpg);"></div>
+        <div style="background-image: url(Assets/3.jpg);"></div>
+        <div style="background-image: url(Assets/4.jpg);"></div>
+        <div style="background-image: url(Assets/5.jpg);"></div>
+    </div>
+    <style>
+        .galeriaDeFotos {
+            display: flex;
+            height: 20rem;
+            gap: 1rem;
+        }
 
-        <main class="texto-main" id="Sobre">
-            <p id="text-1"></p>
-            <p id="text-2"></p>
-            <p id="text-3"></p>
-            <p id="text-4"></p>
+        .galeriaDeFotos>div {
+            flex: 1;
+            border-radius: 1rem;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+            transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+        }
 
-            <!--video 1-->
-            <video id="video-main1">
-                <source src="" type="video/mp4">
-            </video>
-            <!--video 2-->
-            <video id="video-main2">
-                <source src="" type="video/mp4">
-            </video>
-        </main>
+        .galeriaDeFotos>div:hover {
+            flex: 5;
+        }
+    </style>
+    <!-- Section 1 -->
+    <!--Section video-->
+    <section class="video">
+        <video id="video-apresentacao">
+            <source src="" type="video/mp4">
+        </video>
+    </section>
 
-        <!-- Section 2 -->
-        <section class="depoimentos" id="Depoimentos">
-            <h2 class="dpn-carrosel">Depoimentos</h2>
-            <br>
-            <br>
-            <button class="pre-btn"><i class="bi bi-arrow-left-circle-fill"></i></button>
-            <button class="next-btn"><i class="bi bi-arrow-right-circle-fill"></i></button>
-           
-            <div class="depoimentos-container">
-                <div class="image-container">
-                    <!--card1-->
-                    <div class="text-card">
-                        <div id="img">
-                            <img src="">
-                        </div>
-                        <h4 class="name"></h4>
-                        <p></p>
-                    </div>
-                    <!--card2-->
-                    <div class="text-card">
-                        <div id="img">
-                            <img src="">
-                        </div>
-                        <h4 class="name"></h4>
-                        <p></p>
-                    </div>
-                    <!--card3-->
-                    <div class="text-card">
-                        <div id="img">
-                            <img src="">
-                        </div>
-                        <h4 class="name"></h4>
-                        <p></p>
-                    </div>
-                    <!--card4-->
-                    <div class="text-card">
-                        <div id="img">
-                            <img src="">
-                        </div>
-                        <h4 class="name"></h4>
-                        <p></p>
-                    </div>
-                    <!--card5-->
-                    <div class="text-card">
-                        <div id="img">
-                            <img src="">
-                        </div>
-                        <h4 class="name"></h4>
-                        <p></p>
-                    </div>
-                    <!--card6-->
-                    <div class="text-card">
-                        <div id="img">
-                            <img src="">
-                        </div>
-                        <h4 class="name"></h4>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
+    <!--Main texto-->
 
-        </section>
+    <main class="texto-main" id="Sobre">
+        <p id="text-1"></p>
+        <p id="text-2"></p>
+        <p id="text-3"></p>
+        <p id="text-4"></p>
 
-        <!-- Section 3 -->
-        <section class="equipes" id="Equipes">
-            <h2 class="title-equipes">Equipes</h2>
+        <!--video 1-->
+        <video id="video-main1">
+            <source src="" type="video/mp4">
+        </video>
+        <!--video 2-->
+        <video id="video-main2">
+            <source src="" type="video/mp4">
+        </video>
+    </main>
 
-            <div class="equipes-card-container">
-                <div class="image-container">
-                    <!--card1-->
-                    <div class="text-card">
-                        <div id="img">
-                            <img src="">
-                        </div>
-                        <h4 class="name"></h4>
-                    </div>
-                    <!--card2-->
-                    <div class="text-card">
-                        <div id="img">
-                            <img src="">
-                        </div>
-                        <h4 class="name"></h4>
-                    </div>
-                    <!--card3-->
-                    <div class="text-card">
-                        <div id="img">
-                            <img src="">
-                        </div>
-                        <h4 class="name"></h4>
-                    </div>
-                    <!--card4-->
-                    <div class="text-card">
-                        <div id="img">
-                            <img src="">
-                        </div>
-                        <h4 class="name"></h4>
-                    </div>
-                    <!--card5-->
-                    <div class="text-card">
-                        <div id="img">
-                            <img src="">
-                        </div>
-                        <h4 class="name"></h4>
-                    </div>
-                    <!--card6-->
-                    <div class="text-card">
-                        <div id="img">
-                            <img src="">
-                        </div>
-                        <h4 class="name"></h4>
-                    </div>
-                    <!--card7-->
-                    <div class="text-card">
-                        <div id="img">
-                            <img src="">
-                        </div>
-                        <h4 class="name"></h4>
-                    </div>
-                    <!--card8-->
-                    <div class="text-card">
-                        <div id="img">
-                            <img src="">
-                        </div>
-                        <h4 class="name"></h4>
-                    </div>
-                    <!--card9-->
-                    <div class="text-card">
-                        <div id="img">
-                            <img src="">
-                        </div>
-                        <h4 class="name"></h4>
-                    </div>
-                    <!--card10-->
-                    <div class="text-card">
-                        <div id="img">
-                            <img src="">
-                        </div>
-                        <h4 class="name"></h4>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- Section 2 -->
+    <section class="depoimentos" id="Depoimentos">
+        <h2 class="dpn-carrosel">Depoimentos</h2>
+        <br>
+        <br>
+        <button class="pre-btn"><i class="bi bi-arrow-left-circle-fill"></i>></button>
+        <button class="next-btn"><i class="bi bi-arrow-right-circle-fill"></i></button>
 
-               <!-- Section 4 -->
-        <section class="parceiros" id="Parceiros">
-            <h2 class="title-parceiros">Parceiros</h2>
+        <div class="depoimentos-container">
             <div class="image-container">
                 <!--card1-->
-                <div class="card-img">
+                <div class="text-card">
                     <div id="img">
-                        <a href="https://www.sicredi.com.br/home/"><img src="./imagens/logoSicredi-svg2.svg" alt="Sicredi"></a>
-                    </div>
-                    <span>Sicredi</span>
-                </div>
-                <!--card2-->
-                <div class="card-img">
-                    <div id="img">
-                        <a href="https://institutocaldeira.org.br/"><img src="./imagens/logoCaldeira.png" alt="Instituto Caldeira"></a>
-                    </div>
-                    <span>Caldeira</span>
-                </div>
-                <!--card3-->
-                <div class="card-img">
-                    <div id="img">
-                        <a href="https://www.alura.com.br/"><img src="./imagens/logoAlura-svg.svg" alt="Alura"></a>
-                    </div>
-                    <span>Alura</span>
-                </div>
-                <!--card4-->
-                <div class="card-img">
-                    <div id="img">
-                        <a href="https://www.arquitetandoinclusao.com.br/"><img src="./imagens/logoArquitetando.jpg" alt="Arquitetando Inclusão"></a>
-                    </div>
-                    <span>Arquitetando Inclusão</span>
-                </div>
-                <!--card4-->
-                <div class="card-img">
-                    <div id="img">
-                        <a href="https://www.egalite.com.br/"><img src="./imagens/logoEgalite-svg.svg" alt="Egalitê"></a>
-                    </div>
-                    <span>Egalitê</span>
-                </div>
-            </div>
-
-            <!--Formulario-->
-            <div class="formulario-container">
-                <div class="contatos-form">
-                    <div id="img" class="logo-form">
                         <img src="">
                     </div>
+                    <h4 class="name"></h4>
                     <p></p>
                 </div>
-
-                <h2 class="text-formulario">Formulário</h2>
-                <form class="formulario">
-                    <fieldset>
-                        <!--nome-->
-                        <label for="name">
-                            <span>Nome</span>
-                            <input type="text" id="name" name="name" placeholder="Nome" required>
-                        </label>
-                        <!--Email-->
-                        <label for="email">
-                            <span>Email</span>
-                            <input type="email" id="email" name="email" placeholder="Email" required>
-                        </label>
-                        <!--Motivo-->
-                        <span>Motivo</span>
-                        <select id="select" name="motivo" required>
-                            <option value="sugestão">Sugestões</option>
-                            <option value="critica">Críticas</option>
-                            <option value="elogio">Elogios</option>
-                            <option value="dúvidas">Dúvidas</option>
-                        </select>
-
-                        <label for="message">
-                            <span>Mensagem</span>
-                            <textarea id="message" name="message" placeholder="Insira sua mensagem" required></textarea>
-                        </label>
-
-                        <button type="submit" id="enviar">Enviar</button>
-                    </fieldset>
-                </form>
+                <!--card2-->
+                <div class="text-card">
+                    <div id="img">
+                        <img src="">
+                    </div>
+                    <h4 class="name"></h4>
+                    <p></p>
+                </div>
+                <!--card3-->
+                <div class="text-card">
+                    <div id="img">
+                        <img src="">
+                    </div>
+                    <h4 class="name"></h4>
+                    <p></p>
+                </div>
+                <!--card4-->
+                <div class="text-card">
+                    <div id="img">
+                        <img src="">
+                    </div>
+                    <h4 class="name"></h4>
+                    <p></p>
+                </div>
+                <!--card5-->
+                <div class="text-card">
+                    <div id="img">
+                        <img src="">
+                    </div>
+                    <h4 class="name"></h4>
+                    <p></p>
+                </div>
+                <!--card6-->
+                <div class="text-card">
+                    <div id="img">
+                        <img src="">
+                    </div>
+                    <h4 class="name"></h4>
+                    <p></p>
+                </div>
             </div>
-        </section>
+        </div>
 
-        <!-- Section 5 -->
-        <section class="footer">
-            <div class="footer-box">
-                <!-- <h3>Parceiros</h3>
+    </section>
+
+    <!-- Section 3 -->
+    <section class="equipes" id="Equipes">
+        <h2 class="title-equipes">Equipes</h2>
+
+        <div class="equipes-card-container">
+            <div class="image-container">
+                <!--card1-->
+                <div class="text-card">
+                    <div id="img">
+                        <img src="">
+                    </div>
+                    <h4 class="name"></h4>
+                </div>
+                <!--card2-->
+                <div class="text-card">
+                    <div id="img">
+                        <img src="">
+                    </div>
+                    <h4 class="name"></h4>
+                </div>
+                <!--card3-->
+                <div class="text-card">
+                    <div id="img">
+                        <img src="">
+                    </div>
+                    <h4 class="name"></h4>
+                </div>
+                <!--card4-->
+                <div class="text-card">
+                    <div id="img">
+                        <img src="">
+                    </div>
+                    <h4 class="name"></h4>
+                </div>
+                <!--card5-->
+                <div class="text-card">
+                    <div id="img">
+                        <img src="">
+                    </div>
+                    <h4 class="name"></h4>
+                </div>
+                <!--card6-->
+                <div class="text-card">
+                    <div id="img">
+                        <img src="">
+                    </div>
+                    <h4 class="name"></h4>
+                </div>
+                <!--card7-->
+                <div class="text-card">
+                    <div id="img">
+                        <img src="">
+                    </div>
+                    <h4 class="name"></h4>
+                </div>
+                <!--card8-->
+                <div class="text-card">
+                    <div id="img">
+                        <img src="">
+                    </div>
+                    <h4 class="name"></h4>
+                </div>
+                <!--card9-->
+                <div class="text-card">
+                    <div id="img">
+                        <img src="">
+                    </div>
+                    <h4 class="name"></h4>
+                </div>
+                <!--card10-->
+                <div class="text-card">
+                    <div id="img">
+                        <img src="">
+                    </div>
+                    <h4 class="name"></h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4 -->
+    <section class="parceiros" id="Parceiros">
+        <h2 class="title-parceiros">Parceiros</h2>
+        <div class="image-container">
+            <!--card1-->
+            <div class="card-img">
+                <div id="img">
+                    <img src="">
+                </div>
+                <span class="Sicredi">Sicredi</span>
+            </div>
+            <!--card2-->
+            <div class="card-img">
+                <div id="img">
+                    <img src="">
+                </div>
+                <span class="Caldeira">Caldeira</span>
+            </div>
+            <!--card3-->
+            <div class="card-img">
+                <div id="img">
+                    <img src="">
+                </div>
+                <span class="Alura">Alura</span>
+            </div>
+            <!--card4-->
+            <div class="card-img">
+                <div id="img">
+                    <img src="">
+                </div>
+                <span class="ArquitetandoInclusao">Arquitetando Inclusão</span>
+            </div>
+            <!--card4-->
+            <div class="card-img">
+                <div id="img">
+                    <img src="">
+                </div>
+                <span class="Egalite">Egalitê</span>
+            </div>
+        </div>
+
+        <!--Formulario-->
+        <div class="formulario-container">
+            <div class="contatos-form">
+                <div id="img" class="logo-form">
+                    <img src="">
+                </div>
+                <p></p>
+            </div>
+
+            <h2 class="text-formulario">Formulário</h2>
+            <form class="formulario">
+                <fieldset>
+                    <!--nome-->
+                    <label for="name">
+                        <span>Nome</span>
+                        <input type="text" id="name" name="name" placeholder="Nome" required>
+                    </label>
+                    <!--Email-->
+                    <label for="email">
+                        <span>Email</span>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </label>
+                    <!--Motivo-->
+                    <span>Motivo</span>
+                    <select id="select" name="motivo" required>
+                        <option value="sugestão">Sugestões</option>
+                        <option value="critica">Críticas</option>
+                         <option value="elogio">Elogios</option>
+                        <option value="dúvidas">Dúvidas</option>
+                    </select>
+
+                    <label for="message">
+                        <span>Mensagem</span>
+                        <textarea id="message" name="message" placeholder="Insira sua mensagem" required></textarea>
+                    </label>
+
+                    <button type="submit" id="enviar">Enviar</button>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+
+    <!-- Section 5 -->
+    <section class="footer">
+        <div class="footer-box">
+            <!-- <h3>Parceiros</h3>
                 <div class="social">
                     <a href="">
                         <div id="img">
@@ -301,13 +332,13 @@
                     </a>
                 </div>
             </div> -->
-        </section>
+    </section>
 
-        <div class="desevolvido-por">
-            <p>Desenvolvido em 2023 pela equipe | Projeto Acelerador de Carreiras Sicredi</p>
-        </div>
+    <div class="desevolvido-por">
+        <p>Desenvolvido em 2023 pela equipe | Projeto Acelerador de Carreiras Sicredi</p>
+    </div>
 
 
-    </body>
+</body>
 
 </html>
