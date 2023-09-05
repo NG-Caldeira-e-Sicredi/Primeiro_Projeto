@@ -1,386 +1,112 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+body {
+    background-color: #0B151E;
+    font-family: "Arial", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
 
-<head>
-    <link rel="stylesheet" href="Styles/styles.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Styles/styles.css">
-    <script src="/projeto.js"></script>
-    <title>Afinal, qual é a nossa limitação?</title>
-</head>
-
-<body>
-
-    <nav class="nav" id="mainNav">
-        <ul>
-            <li><a href="#Sobre">Sobre</a></li>
-            <li><a href="#Depoimentos">Depoimentos</a></li>
-            <li><a href="#Equipe">Equipe</a></li>
-            <li><a href="#Parceiros">Parceiros</a></li>
-        </ul>
-    </nav>
-
-    <!-- Section 1 -->
-    <section galeria-fotos>
-         <div class="galeriaDeFotos">
-            <div style="background-image: url(Assets/Robson.png);"></div>
-            <div style="background-image: url(Assets/Mathues.png);"></div>
-            <div style="background-image: url(Assets/Joao.png);"></div>
-            <div style="background-image: url(Assets/Karina.png);"></div>
-            <div style="background-image: url(Assets/Nicolas\ R.png);"></div>
-            <div style="background-image: url(Assets/Nicolas\ L.png);"></div>
-            <div style="background-image: url(Assets/Diego.png);"></div>
-            <div style="background-image: url(Assets/Maiara.png);"></div>
-            <div style="background-image: url(Assets/Felipe.png);"></div>
-            <div style="background-image: url(Assets/Wagner.png);"></div>
-        
-        </div>
-    <style>
-        .galeriaDeFotos {
-            display: flex;
-            height: 20rem;
-            gap: 1rem;
-        }
-
-        .galeriaDeFotos>div {
-            flex: 1;
-            border-radius: 1rem;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: auto 100%;
-            transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
-        }
-
-        .galeriaDeFotos>div:hover {
-            flex: 5;
-        }
-    </style>
-       
-    </section>
-
-    <!--Main texto-->
-
-    <main class="texto-main" id="Sobre">
-        <p id="text-1"></p>
-        <p id="text-2"></p>
-        <p id="text-3"></p>
-        <p id="text-4"></p>
-
-        <!--video 1-->
-        <video id="video-main1">
-            <source src="" type="video/mp4">
-        </video>
-        <!--video 2-->
-        <video id="video-main2">
-            <source src="" type="video/mp4">
-        </video>
-    </main>
-
-    <!-- Section 2 -->
-    <section depoimentos>
-        <h2 class="dpn-carrosel">Depoimentos</h2>
-        <div class="depoimentos-container">
-                 <!--card1-->
-                <div class="modalCard">
-                    <h4>Jean</h4>
-                    <img src="/Assets/1.jpg" width="100" height="100">
-                    <p>kjhgvbjikovdijhukaBJ</p>
-                    <br></br>
-                    <button onclick="openModal1()">Veja mais...</button>
-                </div>
-
-                 <!--card2-->
-                <div class="modalCard">
-                    <h4>Carol Caldeira</h4>
-                    <img src="/Assets/1.jpg" width="100" height="100">
-                    <p>kjhgvbjikovdijhukaBJ</p>
-                    <br></br>
-                    <button onclick="openModal2()">Veja mais...</button>
-                </div>
-
-                 <!--card3-->
-                <div class="modalCard">
-                    <h4>Fabio</h4>
-                    <img src="/Assets/1.jpg" width="100" height="100">
-                    <p>kjhgvbjikovdijhukaBJ</p>
-                    <br></br>
-                    <button onclick="openModal3()">Veja mais...</button>
-                </div>
-
-                 <!--card4-->
-                <div class="modalCard">
-                    <h4>Carol Sicredi</h4>
-                    <img src="/Assets/1.jpg" width="100" height="100">
-                    <p>kjhgvbjikovdijhukaBJ</p>
-                    <br></br>
-                    <button onclick="openModal4()">Veja mais...</button>
-                </div>
-
-                 <!--card5-->
-                <div class="modalCard">
-                    <h4>Egalitê</h4>
-                    <img src="/Assets/1.jpg" width="100" height="100">
-                    <p>kjhgvbjikovdijhukaBJ</p>
-                    <br></br>
-                    <button onclick="openModal5()">Veja mais...</button>
-                </div>
-
-                 <!--card6-->
-                <div class="modalCard">
-                    <h4>Arquitetando</h4>
-                    <img src="/Assets/1.jpg" width="100" height="100">
-                    <p>kjhgvbjikovdijhukaBJ</p>
-                    <br></br>
-                    <button onclick="openModal6()">Veja mais...</button>
-                </div>
-        </div>
-    </section>
-         
-    <div id="openModal1" class="modal">
-        <div class="modalConteudo">
-            <h4>Jean</h4>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            <button onclick="closeModal1()">Fechar conteúdo</button>
-        </div>
-    </div>
-    <div id="openModal2" class="modal">
-        <div class="modalConteudo">
-            <h4>Carol Caldeira</h4>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            <button onclick="closeModal2()">Fechar conteúdo</button>
-        </div>
-    </div>
-    <div id="openModal3" class="modal">
-        <div class="modalConteudo">
-            <h4>Fabio</h4>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            <button onclick="closeModal3()">Fechar conteúdo</button>
-        </div>
-    </div>
-    <div id="openModal4" class="modal">
-        <div class="modalConteudo">
-            <h4>Carol Sicredi</h4>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            <button onclick="closeModal4()">Fechar conteúdo</button>
-        </div>
-    </div>
-    <div id="openModal5" class="modal">
-        <div class="modalConteudo">
-            <h4>Egalitê</h4>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            <button onclick="closeModal5()">Fechar conteúdo</button>
-        </div>
-    </div>
-    <div id="openModal6" class="modal">
-        <div class="modalConteudo">
-            <h4>Arquitetando</h4>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            <button onclick="closeModal6()">Fechar conteúdo</button>
-        </div>
-    </div>
+nav ul li, .dpn-carrosel, .title-equipe, .title-parceiros, .Sicredi, .Caldeira, .Alura, .ArquitetandoInclusao, .Egalite, .text-formulario {
+    list-style: none;
+    margin: 0;
     
-    <!-- Section 3 -->
-    <section class="equipes" id="Equipe">
-        <h2 class="title-equipes">Equipes</h2>
+}
 
-        <div class="equipes-card-container">
-            <div class="image-container">
-                <!--card1-->
-                <div class="text-card">
-                    <div id="img">
-                        <img src="">
-                    </div>
-                    <h4 class="name"></h4>
-                </div>
-                <!--card2-->
-                <div class="text-card">
-                    <div id="img">
-                        <img src="">
-                    </div>
-                    <h4 class="name"></h4>
-                </div>
-                <!--card3-->
-                <div class="text-card">
-                    <div id="img">
-                        <img src="">
-                    </div>
-                    <h4 class="name"></h4>
-                </div>
-                <!--card4-->
-                <div class="text-card">
-                    <div id="img">
-                        <img src="">
-                    </div>
-                    <h4 class="name"></h4>
-                </div>
-                <!--card5-->
-                <div class="text-card">
-                    <div id="img">
-                        <img src="">
-                    </div>
-                    <h4 class="name"></h4>
-                </div>
-                <!--card6-->
-                <div class="text-card">
-                    <div id="img">
-                        <img src="">
-                    </div>
-                    <h4 class="name"></h4>
-                </div>
-                <!--card7-->
-                <div class="text-card">
-                    <div id="img">
-                        <img src="">
-                    </div>
-                    <h4 class="name"></h4>
-                </div>
-                <!--card8-->
-                <div class="text-card">
-                    <div id="img">
-                        <img src="">
-                    </div>
-                    <h4 class="name"></h4>
-                </div>
-                <!--card9-->
-                <div class="text-card">
-                    <div id="img">
-                        <img src="">
-                    </div>
-                    <h4 class="name"></h4>
-                </div>
-                <!--card10-->
-                <div class="text-card">
-                    <div id="img">
-                        <img src="">
-                    </div>
-                    <h4 class="name"></h4>
-                </div>
-            </div>
-        </div>
-    </section>
+nav ul li, .dpn-carrosel, .title-equipes, .title-parceiros, .text-formulario {
+    display: inline-block;
+    margin: 20px;
+}
 
-    <!-- Section 4 -->
-    <section class="parceiros" id="Parceiros">
-        <h2 class="title-parceiros">Parceiros</h2>
-        <div class="image-container">
-            <!--card1-->
-            <div class="card-img">
-                <div id="img">
-                    <img src="">
-                </div>
-                <span class="Sicredi">Sicredi</span>
-            </div>
-            <!--card2-->
-            <div class="card-img">
-                <div id="img">
-                    <img src="">
-                </div>
-                <span class="Caldeira">Caldeira</span>
-            </div>
-            <!--card3-->
-            <div class="card-img">
-                <div id="img">
-                    <img src="">
-                </div>
-                <span class="Alura">Alura</span>
-            </div>
-            <!--card4-->
-            <div class="card-img">
-                <div id="img">
-                    <img src="">
-                </div>
-                <span class="ArquitetandoInclusao">Arquitetando Inclusão</span>
-            </div>
-            <!--card4-->
-            <div class="card-img">
-                <div id="img">
-                    <img src="">
-                </div>
-                <span class="Egalite">Egalitê</span>
-            </div>
-        </div>
+nav ul li a, .dpn-carrosel, .title-equipes, .title-parceiros, .Sicredi, .Caldeira, .Alura, .ArquitetandoInclusao, .Egalite, .text-formulario {
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    position: relative;
+}
 
-        <!--Formulario-->
-        <div class="formulario-container">
-            <h2 class="text-formulario">Formulário</h2>
-            <form class="formulario">
-                <div class="contatos-form">
-                <div id="img" class="logo-form">
-                    <img src="">
-                </div>
-                <p></p>
-            </div>
-                <fieldset>
-                    <!--nome-->
-                    <label for="name">
-                        <span>Nome</span>
-                        <input type="text" id="name" name="name" placeholder="Nome" required>
-                    </label>
-                    <!--Email-->
-                    <label for="email">
-                        <span>Email</span>
-                        <input type="email" id="email" name="email" placeholder="Email" required>
-                    </label>
-                    <!--Motivo-->
-                    <span>Motivo</span>
-                    <select id="select" name="motivo" required>
-                        <option value="sugestão">Sugestões</option>
-                        <option value="critica">Críticas</option>
-                         <option value="elogio">Elogios</option>
-                        <option value="dúvidas">Dúvidas</option>
-                    </select>
+nav ul li a:after, .dpn-carrosel:after, .title-equipes:after, .title-parceiros:after, .Sicredi:after, .Caldeira:after, .Alura:after, .ArquitetandoInclusao:after, .Egalite:after, .text-formulario:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: ' ';
+    color: transparent;
+    background: #E34F25;
+    height: 1px;
+    width: 0;
+    transition: all 0.5s;
+}
 
-                    <label for="message">
-                        <span>Mensagem</span>
-                        <textarea id="message" name="message" placeholder="Insira sua mensagem" required></textarea>
-                    </label>
+nav ul li a:hover:after, .dpn-carrosel:hover:after, .title-equipes:hover:after, .title-parceiros:hover:after, .Sicredi:hover:after, .Caldeira:hover:after, .Alura:hover:after, .ArquitetandoInclusao:hover:after, .Egalite:hover:after, .text-formulario:hover:after {
+    width: 100%;
+}
 
-                    <button type="submit" id="enviar">Enviar</button>
-                </fieldset>
-            </form>
-        </div>
-    </section>
-
-    <!-- Section 5 -->
-    <section class="footer">
-        <div class="footer-box">
-            <!-- <h3>Parceiros</h3>
-                <div class="social">
-                    <a href="">
-                        <div id="img">
-                            <img src="" alt="Sicredi">
-                        </div>
-                    </a>
-                    <a href="">
-                        <div id="img">
-                            <img src="" alt="Caldeira">
-                        </div>
-                    </a>
-                    <a href="">
-                        <div id="img">
-                            <img src="" alt="Alura">
-                        </div>
-                    </a>
-                    <a href="">
-                        <div id="img">
-                            <img src="" alt="Arquitetando">
-                        </div>
-                    </a>
-                    <a href="">
-                        <div id="img">
-                            <img src="" alt="Egalitê">
-                        </div>
-                    </a>
-                </div>
-            </div> -->
-    </section>
-
-    <div class="desevolvido-por">
-        <p>Desenvolvido em 2023 pela equipe | Projeto Acelerador de Carreiras Sicredi</p>
-    </div>
+nav ul li a:hover, .dpn-carrosel:hover, .title-equipes:hover, .title-parceiros:hover, .Sicredi:hover, .Caldeira:hover, .Alura:hover, .ArquitetandoInclusao:hover, .Egalite:hover, .text-formulario:hover {
+    color: #71230d;
+    z-index: 1;
+    transition: color 1s;
+}
 
 
-</body>
-
-</html>
+/* Estilos para a section depoimento */
+.dpn-carrosel {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  
+  /* Estilos para o container de depoimentos */
+  .depoimentos-container {
+    display: flex; /* estilo carrocel pai*/
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* Estilos para o card de depoimentos */
+  .modalCard {
+    flex: 1 1 auto; /* estilo carrocel filho*/
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  .modalCard img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Estilos para o modal */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modalConteudo {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    height: 500px;
+  }
+  
+  /* Estilos para o botão de fechar modal */
+  .modalConteudo button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
