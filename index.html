@@ -5,8 +5,8 @@
     <link rel="stylesheet" href="Styles/styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="Styles/styles.css">
+    <script src="/projeto.js"></script>
     <title>Afinal, qual é a nossa limitação?</title>
 </head>
 
@@ -24,12 +24,12 @@
     <!-- Section 1 -->
     <section galeria-fotos>
          <div class="galeriaDeFotos">
-        <div style="background-image: url(Assets/1.jpg);"></div>
-        <div style="background-image: url(Assets/2.jpg);"></div>
-        <div style="background-image: url(Assets/3.jpg);"></div>
-        <div style="background-image: url(Assets/4.jpg);"></div>
-        <div style="background-image: url(Assets/5.jpg);"></div>
-    </div>
+            <div style="background-image: url(Assets/1.jpg);"></div>
+            <div style="background-image: url(Assets/2.jpg);"></div>
+            <div style="background-image: url(Assets/3.jpg);"></div>
+            <div style="background-image: url(Assets/4.jpg);"></div>
+            <div style="background-image: url(Assets/5.jpg);"></div>
+        </div>
     <style>
         .galeriaDeFotos {
             display: flex;
@@ -72,68 +72,108 @@
     </main>
 
     <!-- Section 2 -->
-    <section class="depoimentos" id="Depoimentos">
+    <section depoimentos>
         <h2 class="dpn-carrosel">Depoimentos</h2>
-        <br>
-        <br>
-        <button class="pre-btn"><i class="bi bi-arrow-left-circle-fill"></i></button>
-        <button class="next-btn"><i class="bi bi-arrow-right-circle-fill"></i></button>
-
         <div class="depoimentos-container">
-            <div class="image-container">
-                <!--card1-->
-                <div class="text-card">
-                    <div id="img">
-                        <img src="">
-                    </div>
-                    <h4 class="name"></h4>
-                    <p></p>
+                 <!--card1-->
+                <div class="modalCard">
+                    <h4>Jean</h4>
+                    <img src="/Assets/1.jpg" width="100" height="100">
+                    <p>kjhgvbjikovdijhukaBJ</p>
+                    <br></br>
+                    <button onclick="openModal1()">Veja mais...</button>
                 </div>
-                <!--card2-->
-                <div class="text-card">
-                    <div id="img">
-                        <img src="">
-                    </div>
-                    <h4 class="name"></h4>
-                    <p></p>
+
+                 <!--card2-->
+                <div class="modalCard">
+                    <h4>Carol Caldeira</h4>
+                    <img src="/Assets/1.jpg" width="100" height="100">
+                    <p>kjhgvbjikovdijhukaBJ</p>
+                    <br></br>
+                    <button onclick="openModal2()">Veja mais...</button>
                 </div>
-                <!--card3-->
-                <div class="text-card">
-                    <div id="img">
-                        <img src="">
-                    </div>
-                    <h4 class="name"></h4>
-                    <p></p>
+
+                 <!--card3-->
+                <div class="modalCard">
+                    <h4>Fabio</h4>
+                    <img src="/Assets/1.jpg" width="100" height="100">
+                    <p>kjhgvbjikovdijhukaBJ</p>
+                    <br></br>
+                    <button onclick="openModal3()">Veja mais...</button>
                 </div>
-                <!--card4-->
-                <div class="text-card">
-                    <div id="img">
-                        <img src="">
-                    </div>
-                    <h4 class="name"></h4>
-                    <p></p>
+
+                 <!--card4-->
+                <div class="modalCard">
+                    <h4>Carol Sicredi</h4>
+                    <img src="/Assets/1.jpg" width="100" height="100">
+                    <p>kjhgvbjikovdijhukaBJ</p>
+                    <br></br>
+                    <button onclick="openModal4()">Veja mais...</button>
                 </div>
-                <!--card5-->
-                <div class="text-card">
-                    <div id="img">
-                        <img src="">
-                    </div>
-                    <h4 class="name"></h4>
-                    <p></p>
+
+                 <!--card5-->
+                <div class="modalCard">
+                    <h4>Egalitê</h4>
+                    <img src="/Assets/1.jpg" width="100" height="100">
+                    <p>kjhgvbjikovdijhukaBJ</p>
+                    <br></br>
+                    <button onclick="openModal5()">Veja mais...</button>
                 </div>
-                <!--card6-->
-                <div class="text-card">
-                    <div id="img">
-                        <img src="">
-                    </div>
-                    <h4 class="name"></h4>
-                    <p></p>
+
+                 <!--card6-->
+                <div class="modalCard">
+                    <h4>Arquitetando</h4>
+                    <img src="/Assets/1.jpg" width="100" height="100">
+                    <p>kjhgvbjikovdijhukaBJ</p>
+                    <br></br>
+                    <button onclick="openModal6()">Veja mais...</button>
                 </div>
-            </div>
         </div>
-
     </section>
-
+         
+    <div id="openModal1" class="modal">
+        <div class="modalConteudo">
+            <h4>Jean</h4>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <button onclick="closeModal1()">Fechar conteúdo</button>
+        </div>
+    </div>
+    <div id="openModal2" class="modal">
+        <div class="modalConteudo">
+            <h4>Carol Caldeira</h4>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <button onclick="closeModal2()">Fechar conteúdo</button>
+        </div>
+    </div>
+    <div id="openModal3" class="modal">
+        <div class="modalConteudo">
+            <h4>Fabio</h4>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <button onclick="closeModal3()">Fechar conteúdo</button>
+        </div>
+    </div>
+    <div id="openModal4" class="modal">
+        <div class="modalConteudo">
+            <h4>Carol Sicredi</h4>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <button onclick="closeModal4()">Fechar conteúdo</button>
+        </div>
+    </div>
+    <div id="openModal5" class="modal">
+        <div class="modalConteudo">
+            <h4>Egalitê</h4>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <button onclick="closeModal5()">Fechar conteúdo</button>
+        </div>
+    </div>
+    <div id="openModal6" class="modal">
+        <div class="modalConteudo">
+            <h4>Arquitetando</h4>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <button onclick="closeModal6()">Fechar conteúdo</button>
+        </div>
+    </div>
+    
     <!-- Section 3 -->
     <section class="equipes" id="Equipe">
         <h2 class="title-equipes">Equipes</h2>
