@@ -62,15 +62,18 @@ nav ul li a:hover, .dpn-carrosel:hover, .title-equipes:hover, .title-parceiros:h
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
+    margin: 10px;
   }
   
   /* Estilos para o card de depoimentos */
   .modalCard {
     flex: 1 1 auto; /* estilo carrocel filho*/
+    justify-content: flex-end;
     text-align: center;
     border: 1px solid #ccc;
-    padding: 20px;
+    padding: 10px;
+    width: 30px;
   }
   
   .modalCard img {
@@ -92,7 +95,7 @@ nav ul li a:hover, .dpn-carrosel:hover, .title-equipes:hover, .title-parceiros:h
   }
   
   .modalConteudo {
-    background-color: #fff;
+    background-color: #53c711;
     padding: 20px;
     border-radius: 5px;
     text-align: center;
