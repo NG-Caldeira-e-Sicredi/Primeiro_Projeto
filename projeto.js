@@ -77,3 +77,12 @@ function closeModal(modal) {
     modal.style.display = "none";
 }
 
+// Botão de Dark ou Light
+
+function darkOrLight() {
+
+  var body = document.body;
+
+  body.classList.toggle("dark");
+
+}
