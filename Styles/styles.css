@@ -5,27 +5,43 @@ body {
     text-align: center;
     font-weight: bold;
     color: rgb(255, 255, 255);
+    transition: background-color 0.5s ease;
 }
 
-nav ul li, .dpn-carrosel, .title-equipe, .title-parceiros, .Sicredi, .Caldeira, .Alura, .ArquitetandoInclusao, .Egalite, .text-formulario {
+.dark {
+  background-color: rgb(244, 13, 13);
+  color: white;
+}
+.light {
+  background-color: white;
+  color: black;
+}
+.botao {
+  padding: 10px;
+  background-color: #10d82b;
+  border: 1px solid #92aa6f;
+  cursor: pointer;
+}
+
+nav ul li {
     list-style: none;
     margin: 0;
     
 }
 
-nav ul li, .dpn-carrosel, .title-equipes, .title-parceiros, .text-formulario {
+nav ul li {
     display: inline-block;
     margin: 20px;
 }
 
-nav ul li a, .dpn-carrosel, .title-equipes, .title-parceiros, .Sicredi, .Caldeira, .Alura, .ArquitetandoInclusao, .Egalite, .text-formulario {
+nav ul li a {
     padding-bottom: 10px;
     text-decoration: none;
     color: rgb(255, 255, 255);
     position: relative;
 }
 
-nav ul li a:after, .dpn-carrosel:after, .title-equipes:after, .title-parceiros:after, .Sicredi:after, .Caldeira:after, .Alura:after, .ArquitetandoInclusao:after, .Egalite:after, .text-formulario:after {
+nav ul li a:after {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -38,11 +54,11 @@ nav ul li a:after, .dpn-carrosel:after, .title-equipes:after, .title-parceiros:a
     transition: all 0.5s;
 }
 
-nav ul li a:hover:after, .dpn-carrosel:hover:after, .title-equipes:hover:after, .title-parceiros:hover:after, .Sicredi:hover:after, .Caldeira:hover:after, .Alura:hover:after, .ArquitetandoInclusao:hover:after, .Egalite:hover:after, .text-formulario:hover:after {
+nav ul li a:hover:after {
     width: 100%;
 }
 
-nav ul li a:hover, .dpn-carrosel:hover, .title-equipes:hover, .title-parceiros:hover, .Sicredi:hover, .Caldeira:hover, .Alura:hover, .ArquitetandoInclusao:hover, .Egalite:hover, .text-formulario:hover {
+nav ul li a:hover {
     color: #71230d;
     z-index: 1;
     transition: color 1s;
