@@ -89,14 +89,105 @@ function darkOrLight() {
 
 // Botão de slider de depoimentos NAO FUNCIONOUUUUUUUU
 
-var swiper = new Swiper(".swiper-container", {
-  slidesPerView: 3, // Exibe apenas um slide por vez
-  spaceBetween: 20, // Espaço entre os slides
+const Swiper = section.querySelector(".swiper-container");
+new Swiper(".swiper-container", {
+  slidesPerView: slidesPerView[3], // Exibe apenas um slide por vez
+  spaceBetween: 10, // Espaço entre os slides
   loop: true, // Loop do carrossel
   navigation: {
-    nextEl: "#nextBtn", // Botão de próximo
-    prevEl: "#prevBtn", // Botão de anterior
+    nextEl: section.querySelector(".swiper-button-next"), // Botão de próximo
+    prevEl: section.querySelector(".swiper-button-prev"), // Botão de anterior
   },
 });
 
 
+//Modais da section equipe
+
+// Abrir modal Wagner
+function openModalWagner() {
+  document.getElementById('openModalWagner').style.display = 'block';
+}
+
+// Fechar  modal Wagner
+function closeModalWagner() {
+  document.getElementById('openModalWagner').style.display = 'none';
+}
+
+// Abrir modal Robson
+function openModalRobson() {
+  document.getElementById('openModalRobson').style.display = 'block';
+}
+
+// Fechar  modal Robson
+function closeModalRobson() {
+  document.getElementById('openModalRobson').style.display = 'none';
+}
+
+// Abrir modal Nicolas
+function openModalNicolas() {
+  document.getElementById('openModalNicolas').style.display = 'block';
+}
+
+// Fechar  modal Nicolas
+function closeModalNicolas() {
+  document.getElementById('openModalNicolas').style.display = 'none';
+}
+
+// Abrir modal Matheus
+function openModalMatheus() {
+  document.getElementById('openModalMatheus').style.display = 'block';
+}
+
+// Fechar  modal Matheus
+function closeModalMatheus() {
+  document.getElementById('openModalMatheus').style.display = 'none';
+}
+
+// Abrir modal Maiara
+function openModalMaiara() {
+  document.getElementById('openModalMaiara').style.display = 'block';
+}
+
+// Fechar  modal Maiara
+function closeModalMaiara() {
+  document.getElementById('openModalMaiara').style.display = 'none';
+}
+
+// Abrir modal Karina
+function openModalKarina() {
+  document.getElementById('openModalKarina').style.display = 'block';
+}
+
+// Fechar  modal Karina
+function closeModalKarina() {
+  document.getElementById('openModalKarina').style.display = 'none';
+}
+// Abrir modal Joao
+function openModalJoao() {
+  document.getElementById('openModalJoao').style.display = 'block';
+}
+
+// Fechar  modal Joao
+function closeModalJoao() {
+  document.getElementById('openModalJoao').style.display = 'none';
+}
+
+// Abrir modal Filipe
+function openModalFilipe() {
+  document.getElementById('openModalFilipe').style.display = 'block';
+}
+
+// Fechar  modal Filipe
+function closeModalFilipe() {
+  document.getElementById('openModalFilipe').style.display = 'none';
+}
+
+// Abrir modal Diego
+function openModalDiego() {
+  document.getElementById('openModalDiego').style.display = 'block';
+}
+
+// Fechar  modal Diego
+function closeModalDiego() {
+  document.getElementById('openModalDiego').style.display = 'none';
+}
