@@ -86,3 +86,17 @@ function darkOrLight() {
   body.classList.toggle("dark");
 
 }
+
+// Botão de slider de depoimentos NAO FUNCIONOUUUUUUUU
+
+var swiper = new Swiper(".swiper-container", {
+  slidesPerView: 3, // Exibe apenas um slide por vez
+  spaceBetween: 20, // Espaço entre os slides
+  loop: true, // Loop do carrossel
+  navigation: {
+    nextEl: "#nextBtn", // Botão de próximo
+    prevEl: "#prevBtn", // Botão de anterior
+  },
+});
+
+

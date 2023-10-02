@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles/styles.css">
     <script src="/projeto.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <title>Afinal, qual é a nossa limitação?</title>
 </head>
 
@@ -26,38 +28,15 @@
     <section galeria-fotos>
          <div class="galeriaDeFotos">
             <div style="background-image: url(Assets/Robson.png);"></div>
-            <div style="background-image: url(Assets/Mathues.png);"></div>
+            <div style="background-image: url(Assets/Matheus.png);"></div>
             <div style="background-image: url(Assets/Joao.png);"></div>
             <div style="background-image: url(Assets/Karina.png);"></div>
             <div style="background-image: url(Assets/Nicolas\ R.png);"></div>
-            <div style="background-image: url(Assets/Nicolas\ L.png);"></div>
             <div style="background-image: url(Assets/Diego.png);"></div>
             <div style="background-image: url(Assets/Maiara.png);"></div>
-            <div style="background-image: url(Assets/Felipe.png);"></div>
+            <div style="background-image: url(Assets/Filipe.png);"></div>
             <div style="background-image: url(Assets/Wagner.png);"></div>
-        
         </div>
-    <style>
-        .galeriaDeFotos {
-            display: flex;
-            height: 20rem;
-            gap: 1rem;
-        }
-
-        .galeriaDeFotos>div {
-            flex: 1;
-            border-radius: 1rem;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: auto 100%;
-            transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
-        }
-
-        .galeriaDeFotos>div:hover {
-            flex: 5;
-        }
-    </style>
-       
     </section>
 
     <!--Main texto-->
@@ -79,11 +58,13 @@
     </main>
 
     <!-- Section 2 -->
-    <section depoimentos>
+    <section class="depoimentos-carousel">
         <h2 class="dpn-carrosel">Depoimentos</h2>
-        <div class="depoimentos-container">
+        <div class="carousel-container">
+            <div class="swiper-container">
+            <div class="swiper-wrapper">
                  <!--card1-->
-                <div class="modalCard">
+                <div class="swiper-slide modalCard slide1">
                     <h4>Jean</h4>
                     <img src="/Assets/1.jpg" width="100" height="100">
                     <p>kjhgvbjikovdijhukaBJ</p>
@@ -92,7 +73,7 @@
                 </div>
 
                  <!--card2-->
-                <div class="modalCard">
+                <div class="swiper-slide modalCard slide2">
                     <h4>Carol Caldeira</h4>
                     <img src="/Assets/1.jpg" width="100" height="100">
                     <p>kjhgvbjikovdijhukaBJ</p>
@@ -101,7 +82,7 @@
                 </div>
 
                  <!--card3-->
-                <div class="modalCard">
+                <div class="swiper-slide modalCard slide3">
                     <h4>Fabio</h4>
                     <img src="/Assets/1.jpg" width="100" height="100">
                     <p>kjhgvbjikovdijhukaBJ</p>
@@ -110,7 +91,7 @@
                 </div>
 
                  <!--card4-->
-                <div class="modalCard">
+                <div class="swiper-slide modalCard slide4">
                     <h4>Carol Sicredi</h4>
                     <img src="/Assets/1.jpg" width="100" height="100">
                     <p>kjhgvbjikovdijhukaBJ</p>
@@ -119,7 +100,7 @@
                 </div>
 
                  <!--card5-->
-                <div class="modalCard">
+                <div class="swiper-slide modalCard slide5">
                     <h4>Egalitê</h4>
                     <img src="/Assets/1.jpg" width="100" height="100">
                     <p>kjhgvbjikovdijhukaBJ</p>
@@ -128,16 +109,18 @@
                 </div>
 
                  <!--card6-->
-                <div class="modalCard">
+                <div class="swiper-slide modalCard slide6">
                     <h4>Arquitetando</h4>
                     <img src="/Assets/1.jpg" width="100" height="100">
                     <p>kjhgvbjikovdijhukaBJ</p>
                     <br></br>
                     <button onclick="openModal6()">Veja mais...</button>
-                </div>
+                </div>  
+            </div>
         </div>
-    </section>
-         
+        <div class="swiper-button-prev" id="prevBtn"></div>
+        <div class="swiper-button-next" id="nextBtn"></div> 
+    </section>  
     <div id="openModal1" class="modal">
         <div class="modalConteudo">
             <h4>Jean</h4>
@@ -184,78 +167,70 @@
     <!-- Section 3 -->
     <section class="equipes" id="Equipe">
         <h2 class="title-equipes">Equipes</h2>
-
         <div class="equipes-card-container">
             <div class="image-container">
                 <!--card1-->
                 <div class="text-card">
                     <div id="img">
-                        <img src="">
+                        <img src="/Assets/Wagner.png">
                     </div>
-                    <h4 class="name"></h4>
+                    <h4 class="name">Wagner</h4>
                 </div>
                 <!--card2-->
                 <div class="text-card">
                     <div id="img">
-                        <img src="">
+                        <img src="/Assets/Robson.png">
                     </div>
-                    <h4 class="name"></h4>
+                    <h4 class="name">Robson</h4>
                 </div>
                 <!--card3-->
                 <div class="text-card">
                     <div id="img">
-                        <img src="">
+                        <img src="/Assets/Nicolas R.png">
                     </div>
-                    <h4 class="name"></h4>
+                    <h4 class="name">Nicolas</h4>
                 </div>
                 <!--card4-->
                 <div class="text-card">
                     <div id="img">
-                        <img src="">
+                        <img src="/Assets/Matheus.png">
                     </div>
-                    <h4 class="name"></h4>
+                    <h4 class="name">Matheus</h4>
                 </div>
                 <!--card5-->
                 <div class="text-card">
                     <div id="img">
-                        <img src="">
+                        <img src="/Assets/Maiara.png">
                     </div>
-                    <h4 class="name"></h4>
+                    <h4 class="name">Maiara</h4>
                 </div>
                 <!--card6-->
                 <div class="text-card">
                     <div id="img">
-                        <img src="">
+                        <img src="/Assets/Karina.png">
                     </div>
-                    <h4 class="name"></h4>
+                    <h4 class="name">Karina</h4>
                 </div>
                 <!--card7-->
                 <div class="text-card">
                     <div id="img">
-                        <img src="">
+                        <img src="/Assets/Joao.png">
                     </div>
-                    <h4 class="name"></h4>
+                    <h4 class="name">João</h4>
                 </div>
                 <!--card8-->
                 <div class="text-card">
                     <div id="img">
-                        <img src="">
+                        <img src="/Assets/Filipe.png">
                     </div>
-                    <h4 class="name"></h4>
+                    <h4 class="name">Filipe</h4>
                 </div>
                 <!--card9-->
                 <div class="text-card">
                     <div id="img">
-                        <img src="">
+                        <img src="/Assets/Diego.png">
                     </div>
-                    <h4 class="name"></h4>
-                </div>
-                <!--card10-->
-                <div class="text-card">
-                    <div id="img">
-                        <img src="">
-                    </div>
-                    <h4 class="name"></h4>
+                    <h4 class="name">Diego</h4>
                 </div>
             </div>
         </div>
