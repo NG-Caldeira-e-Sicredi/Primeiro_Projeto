@@ -121,7 +121,7 @@ nav ul li a:hover {
 
 /* Estilos para o botão de fechar modal */
 .modalConteudo button {
-  background-color: #333;
+  background-color: #08e464;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -141,9 +141,10 @@ nav ul li a:hover {
 }
 
 .carousel-container {
-  width: 37%;
-  margin: 0; 
+  width: 30%;
+  margin: 0 auto; 
   position: relative;
+  overflow: hidden;
   
   
 }
@@ -173,9 +174,7 @@ nav ul li a:hover {
   color: #0B151E;
   display: flex;
   justify-content: center;
-  width: 20px;
-  height: 500px;
-  /*visibility: hidden;*/
+ 
 
 }
 #prevBtn, #nextBtn {
@@ -194,12 +193,20 @@ nav ul li a:hover {
 /*Estilos da section equipe */
 .equipes-card-container {
   display: flex; 
-  flex-wrap: nowrap;
   margin: auto;
+  display: flex;
+  background-color: #007bff;
+  margin: 20px;
+  width: 100vw;
 }
 
 .text-card {
-  margin-right: 20px;
+  margin: 20px;
+  align-items:center;
+  display:inline-flex;
+  padding: 20px;
+  background-color: #E34F25;
+  border-radius: 20px;
 }
 
 .text-card:last-child {
@@ -209,4 +216,13 @@ nav ul li a:hover {
   width: 150px; 
   height: 150px; 
   border-radius: 100px;
+}
+
+.modalEquipe {
+  background-color: #71230d;
+  width: 1100px;
+  height: 300px;
+  margin: 30px;
+  padding: 50px;
+
 }
