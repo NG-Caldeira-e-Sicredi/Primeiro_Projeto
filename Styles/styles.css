@@ -248,5 +248,73 @@ nav ul li a:hover {
   height: 300px;
   margin: 30px;
   padding: 50px;
-
 }
+
+/*Estilização do formulário*/
+.formulario-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap; /* Permite que os itens flexíveis quebrem para a próxima linha */
+}
+
+.logo-form {
+  flex: 1;
+  padding: 10px;
+}
+
+.formulario {
+  flex: 2;
+  padding: 10px;
+  background-color: #16ca8e;
+}
+
+.formulario label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario select,
+.formulario textarea {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #350a99;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.formulario textarea {
+  height: 250px;
+}
+
+.formulario button {
+  background-color: #008CBA;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Estilo para o botão de envio quando o mouse passa por cima */
+.formulario button:hover {
+  background-color: #005f7a;
+}
+/* Media query para ajustar o layout do forms em telas menores */
+@media (max-width: 768px) {
+  .formulario-container {
+    flex-direction: column; 
+  }
+
+  .logo-form, .formulario {
+    flex: 1; 
+  }
+}
+
