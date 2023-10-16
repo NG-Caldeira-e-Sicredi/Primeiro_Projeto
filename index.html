@@ -2,7 +2,6 @@
 <html lang="pt-br">
 
 <head>
-    <link rel="stylesheet" href="Styles/styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles/styles.css">
@@ -81,7 +80,7 @@ Até o momento, já transformamos as vidas de nove famílias, e este é apenas o
                     <img src="/Assets/1.jpg" width="100" height="100">
                     <p>kjhgvbjikovdijhukaBJ</p>
                     <br></br>
-                    <button onclick="openModal1()">Veja mais...</button>
+                    <button class="open-modal" data-modal="modal1">Veja mais...</button>
                 </div>
 
                  <!--card2-->
@@ -90,7 +89,7 @@ Até o momento, já transformamos as vidas de nove famílias, e este é apenas o
                     <img src="/Assets/1.jpg" width="100" height="100">
                     <p>kjhgvbjikovdijhukaBJ</p>
                     <br></br>
-                    <button onclick="openModal2()">Veja mais...</button>
+                    <button class="open-modal" data-modal="modal2">Veja mais...</button>
                 </div>
 
                  <!--card3-->
@@ -99,7 +98,7 @@ Até o momento, já transformamos as vidas de nove famílias, e este é apenas o
                     <img src="/Assets/1.jpg" width="100" height="100">
                     <p>kjhgvbjikovdijhukaBJ</p>
                     <br></br>
-                    <button onclick="openModal3()">Veja mais...</button>
+                    <button class="open-modal" data-modal="modal3">Veja mais...</button>
                 </div>
 
                  <!--card4-->
@@ -108,7 +107,7 @@ Até o momento, já transformamos as vidas de nove famílias, e este é apenas o
                     <img src="/Assets/1.jpg" width="100" height="100">
                     <p>kjhgvbjikovdijhukaBJ</p>
                     <br></br>
-                    <button onclick="openModal4()">Veja mais...</button>
+                    <button class="open-modal" data-modal="modal4">Veja mais...</button>
                 </div>
 
                  <!--card5-->
@@ -117,7 +116,7 @@ Até o momento, já transformamos as vidas de nove famílias, e este é apenas o
                     <img src="/Assets/1.jpg" width="100" height="100">
                     <p>kjhgvbjikovdijhukaBJ</p>
                     <br></br>
-                    <button onclick="openModal5()">Veja mais...</button>
+                    <button class="open-modal" data-modal="modal5">Veja mais...</button>
                 </div>
 
                  <!--card6-->
@@ -126,53 +125,53 @@ Até o momento, já transformamos as vidas de nove famílias, e este é apenas o
                     <img src="/Assets/1.jpg" width="100" height="100">
                     <p>kjhgvbjikovdijhukaBJ</p>
                     <br></br>
-                    <button onclick="openModal6()">Veja mais...</button>
+                    <button class="open-modal" data-modal="modal6">Veja mais...</button>
                 </div>  
             </div>
         </div>
         <div class="swiper-button-prev" id="prevBtn"></div>
         <div class="swiper-button-next" id="nextBtn"></div> 
     </section>  
-    <div id="openModal1" class="modal">
+    <div id="modal1" class="modal">
         <div class="modalConteudo">
             <h4>Jean</h4>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            <button onclick="closeModal1()">Fechar conteúdo</button>
+            <button class="close-modal">Fechar conteúdo</button>
         </div>
     </div>
-    <div id="openModal2" class="modal">
+    <div id="modal2" class="modal">
         <div class="modalConteudo">
             <h4>Carol Caldeira</h4>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            <button onclick="closeModal2()">Fechar conteúdo</button>
+            <button class="close-modal">Fechar conteúdo</button>
         </div>
     </div>
-    <div id="openModal3" class="modal">
+    <div id="modal3" class="modal">
         <div class="modalConteudo">
             <h4>Fabio</h4>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            <button onclick="closeModal3()">Fechar conteúdo</button>
+            <button class="close-modal">Fechar conteúdo</button>
         </div>
     </div>
-    <div id="openModal4" class="modal">
+    <div id="modal4" class="modal">
         <div class="modalConteudo">
             <h4>Carol Sicredi</h4>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            <button onclick="closeModal4()">Fechar conteúdo</button>
+            <button class="close-modal">Fechar conteúdo</button>
         </div>
     </div>
-    <div id="openModal5" class="modal">
+    <div id="modal5" class="modal">
         <div class="modalConteudo">
             <h4>Egalitê</h4>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            <button onclick="closeModal5()">Fechar conteúdo</button>
+            <button class="close-modal">Fechar conteúdo</button>
         </div>
     </div>
-    <div id="openModal6" class="modal">
+    <div id="modal6" class="modal">
         <div class="modalConteudo">
             <h4>Arquitetando</h4>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            <button onclick="closeModal6()">Fechar conteúdo</button>
+            <button class="close-modal">Fechar conteúdo</button>
         </div>
     </div>
     
@@ -186,7 +185,7 @@ Até o momento, já transformamos as vidas de nove famílias, e este é apenas o
                     <div id="img">
                         <img src="/Assets/Wagner.png">
                         <br><br>
-                        <button onclick="openModalWagner()">Wagner</button>
+                        <button class="open-modal" data-modal="modal7">Wagner</button>
                     </div>
                 </div>
                 <!--card2-->
@@ -194,7 +193,7 @@ Até o momento, já transformamos as vidas de nove famílias, e este é apenas o
                     <div id="img">
                         <img src="/Assets/Robson.png">
                         <br><br>
-                        <button onclick="openModalRobson()">Robson</button>
+                        <button class="open-modal" data-modal="modal8">Robson</button>
                     </div>
                 </div>
                 <!--card3-->
@@ -202,7 +201,7 @@ Até o momento, já transformamos as vidas de nove famílias, e este é apenas o
                     <div id="img">
                         <img src="/Assets/Nicolas R.png">
                         <br><br>
-                        <button onclick="openModalNicolas()">Nicolas</button>
+                        <button class="open-modal" data-modal="modal9">Nicolas</button>
                     </div>
                 </div>
                 <!--card4-->
@@ -210,7 +209,7 @@ Até o momento, já transformamos as vidas de nove famílias, e este é apenas o
                     <div id="img">
                         <img src="/Assets/Matheus.png">
                         <br><br>
-                        <button onclick="openModalMatheus()">Matheus</button>
+                        <button class="open-modal" data-modal="modal10">Matheus</button>
                     </div>
                 </div>
                 <!--card5-->
@@ -218,7 +217,7 @@ Até o momento, já transformamos as vidas de nove famílias, e este é apenas o
                     <div id="img">
                         <img src="/Assets/Maiara.png">
                         <br><br>
-                        <button onclick="openModalMaiara()">Maiara</button>
+                        <button class="open-modal" data-modal="modal11">Maiara</button>
                     </div>
                 </div>
                 <!--card6-->
@@ -226,7 +225,7 @@ Até o momento, já transformamos as vidas de nove famílias, e este é apenas o
                     <div id="img">
                         <img src="/Assets/Karina.png">
                         <br><br>
-                        <button onclick="openModalKarina()">Karina</button>
+                        <button class="open-modal" data-modal="modal12">Karina</button>
                     </div>
                 </div>
                 <!--card7-->
@@ -234,7 +233,7 @@ Até o momento, já transformamos as vidas de nove famílias, e este é apenas o
                     <div id="img">
                         <img src="/Assets/Joao.png">
                         <br><br>
-                        <button onclick="openModalJoao()">João</button>
+                        <button class="open-modal" data-modal="modal13">João</button>
                     </div>
                 </div>
                 <!--card8-->
@@ -242,7 +241,7 @@ Até o momento, já transformamos as vidas de nove famílias, e este é apenas o
                     <div id="img">
                         <img src="/Assets/Filipe.png">
                         <br><br>
-                        <button onclick="openModalFilipe()">Filipe</button>
+                        <button class="open-modal" data-modal="modal14">Filipe</button>
                     </div>
                 </div>
                 <!--card9-->
@@ -250,73 +249,73 @@ Até o momento, já transformamos as vidas de nove famílias, e este é apenas o
                     <div id="img">
                         <img src="/Assets/Diego.png">
                         <br><br>
-                        <button onclick="openModalDiego()">Diego</button>
+                        <button class="open-modal" data-modal="modal15">Diego</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <div id="openModalWagner" class="modal">
+    <div id="modal7" class="modal">
         <div class="modalEquipe">
             <h4>Wagner</h4>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            <button onclick="closeModalWagner()">Fechar conteúdo</button>
+            <button class="close-modal">Fechar conteúdo</button>
         </div>
     </div>
-    <div id="openModalRobson" class="modal">
+    <div id="modal8" class="modal">
         <div class="modalEquipe">
             <h4>Robson</h4>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            <button onclick="closeModalRobson()">Fechar conteúdo</button>
+            <button class="close-modal">Fechar conteúdo</button>
         </div>
     </div>
-    <div id="openModalNicolas" class="modal">
+    <div id="modal9" class="modal">
         <div class="modalEquipe">
             <h4>Nicolas</h4>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            <button onclick="closeModalNicolas()">Fechar conteúdo</button>
+            <button class="close-modal">Fechar conteúdo</button>
         </div>
     </div>
-    <div id="openModalMatheus" class="modal">
+    <div id="modal10" class="modal">
         <div class="modalEquipe">
             <h4>Matheus</h4>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            <button onclick="closeModalMatheus()">Fechar conteúdo</button>
+            <button class="close-modal">Fechar conteúdo</button>
         </div>
     </div>
-    <div id="openModalMaiara" class="modal">
+    <div id="modal11" class="modal">
         <div class="modalEquipe">
             <h4>Maiara</h4>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            <button onclick="closeModalMaiara()">Fechar conteúdo</button>
+            <button class="close-modal">Fechar conteúdo</button>
         </div>
     </div>
-    <div id="openModalKarina" class="modal">
+    <div id="modal12" class="modal">
         <div class="modalEquipe">
             <h4>Karina</h4>
             <p>Fui diagnosticada com Charcot Marie Tooth tipo 1 aos 11 anos de idade. Após este diagnóstico entendi que qualquer pessoa sempre irá precisar de ajuda na vida, seja em matemática ou outras situações. Foi neste momento que aceitei a nova realidade, busquei sempre estar próxima de pessoas que obtinham conhecimento e logo, fui traçando os meus objetivos. Com diversos cursos na área de comunicação visual, atendimento ao cliente, CIPA, a transição de carreira para a TI me fez descobrir uma nova paixão. Grata pela oportunidade. Esta me faz almejar cargos maiores na área. Hoje tenho 31 anos, casada com Jaime há 9 anos e mãe da Gabriela de 5 anos, feliz pelo crescimento pessoal e profissional. Feliz pelas conquistas. Feliz por participar deste projeto. Feliz pela equipe e amigos que conquistei aqui no Sicredi.</p>
-            <button onclick="closeModalKarina()">Fechar conteúdo</button>
+            <button class="close-modal">Fechar conteúdo</button>
         </div>
     </div>
-    <div id="openModalJoao" class="modal">
+    <div id="modal13" class="modal">
         <div class="modalEquipe">
             <h4>João</h4>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            <button onclick="closeModalJoao()">Fechar conteúdo</button>
+            <button class="close-modal">Fechar conteúdo</button>
         </div>
     </div>
-    <div id="openModalFilipe" class="modal">
+    <div id="modal14" class="modal">
         <div class="modalEquipe">
             <h4>Filipe</h4>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            <button onclick="closeModalFilipe()">Fechar conteúdo</button>
+            <button class="close-modal">Fechar conteúdo</button>
         </div>
     </div>
-    <div id="openModalDiego" class="modal">
+    <div id="modal15" class="modal">
         <div class="modalEquipe">
             <h4>Diego</h4>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            <button onclick="closeModalDiego()">Fechar conteúdo</button>
+            <button class="close-modal">Fechar conteúdo</button>
         </div>
     </div>
 
