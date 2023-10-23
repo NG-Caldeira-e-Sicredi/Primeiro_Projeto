@@ -161,16 +161,17 @@ nav ul li a:hover {
   background-color: #e47878;
   margin: 30px;
   padding: 20px;
+  display: flex;
   
 }
 
 .carousel-container {
-  width: 30%;
+  width: 70%;
   margin: 0 auto; 
   position: relative;
   overflow: hidden;
-  
-  
+  display: flex;
+  flex-grow: 1 ;
 }
 
 .swiper-button-prev,
@@ -196,11 +197,23 @@ nav ul li a:hover {
   padding: 10px;
   text-align: center;
   color: #0B151E;
+  /*display: flex;*/
+  
+}
+
+.swiper-container {
+  width: 100%;
+  height: 300px;
+}
+
+.swiper-wrapper{
+  width: 100%;
   display: flex;
   justify-content: center;
- 
+  /* flex-wrap: wrap; */
 
 }
+
 #prevBtn, #nextBtn {
   background-color: #007bff;
   color: #fff;
