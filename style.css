@@ -1,0 +1,37 @@
+div {
+    font-family: Verdana;
+}
+
+h1 {
+    font-size: 18px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 16px;
+    color: #BB2525;
+    font-weight: normal;
+    text-align: center;
+}
+
+h3 {
+    font-size: 14px;
+    color: #BB2525;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+h4 {
+    font-size: 14px;
+    color: #BB2525;
+}
+
+p {
+    font-size: 13px;
+    line-height: 22px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
