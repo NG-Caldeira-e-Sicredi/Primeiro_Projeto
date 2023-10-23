@@ -1,0 +1,333 @@
+/* :root {
+  --cor-primaria: #94A684; (cor exemplo)
+  --cor-secundaria: #AEC3AE; (cor exemplo)
+  --cor-terciaria: #E4E4D0; (cor exemplo)
+  --cor-quartenaria: #83764F; (cor exemplo)
+  --cor-quintenaria: 
+  --fonte-primaria: 
+  --fonte-secundaria: 
+  --fonte-terciaria: 
+}
+*/
+
+
+body {
+  background-color: #0B151E; 
+  /* digite, sem as strings, 
+  "var(--cor-primaria) (exemplo)" 
+  onde há cores; o mesmo aplica-se a fontes.*/
+  font-family: "Arial", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  transition: background-color 0.5s ease;
+}
+
+.dark {
+  background-color: rgb(244, 13, 13);
+  color: white;
+}
+
+.light {
+  background-color: white;
+  color: black;
+}
+
+.botao {
+  padding: 10px;
+  background-color: #10d82b;
+  border: 1px solid #92aa6f;
+  cursor: pointer;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0;
+  display: inline-block;
+  margin: 20px;
+}
+
+nav ul li a {
+  padding-bottom: 10px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  position: relative;
+}
+
+nav ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: ' ';
+  color: transparent;
+  background: #E34F25;
+  height: 1px;
+  width: 0;
+  transition: all 0.5s;
+}
+
+nav ul li a:hover:after {
+  width: 100%;
+}
+
+nav ul li a:hover {
+  color: #71230d;
+  z-index: 1;
+  transition: color 1s;
+}
+
+/*Estilos para a section galeria apresentação*/
+
+.galeriaDeFotos {
+  display: flex;
+  height: 20rem;
+  gap: 1rem;
+}
+
+.galeriaDeFotos>div {
+  flex: 1;
+  border-radius: 1rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+}
+
+.galeriaDeFotos>div:hover {
+  flex: 5;
+}
+
+/* Estilos para a section depoimento */
+.dpn-carrosel {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+
+/* Estilos para o card de depoimentos */
+.modalCard img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilos para o modal */
+.modalCard {
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal {
+  display: none;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  max-height: 100%; 
+}
+
+.modalConteudo {
+  background-color: #53c711;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  height: 500px;
+  margin: 70px;
+}
+
+/* Estilos para o botão de fechar modal */
+.modalConteudo button {
+  background-color: #08e464;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+
+/* Estilos para o slider depoimentos */
+.depoimentos-carousel {
+  text-align: center;
+  background-color: #e47878;
+  margin: 30px;
+  padding: 20px;
+  display: flex;
+  
+}
+
+.carousel-container {
+  width: 70%;
+  margin: 0 auto; 
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-grow: 1 ;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: #0056b3;
+}
+
+.swiper-slide {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+  color: #0B151E;
+  /*display: flex;*/
+  
+}
+
+.swiper-container {
+  width: 100%;
+  height: 300px;
+}
+
+.swiper-wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+
+}
+
+#prevBtn, #nextBtn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#prevBtn:hover,
+#nextBtn:hover {
+  background-color: #16ca8e;
+}
+
+/*Estilos da section equipe */
+.equipes-card-container {
+  display: flex; 
+  margin: auto;
+  display: flex;
+  background-color: #007bff;
+  margin: 20px;
+  width: 100vw;
+}
+
+.text-card {
+  margin: 20px;
+  align-items:center;
+  display:inline-flex;
+  padding: 20px;
+  background-color: #E34F25;
+  border-radius: 20px;
+}
+
+.text-card:last-child {
+  margin-right: 0;
+}
+.text-card img {
+  width: 150px; 
+  height: 150px; 
+  border-radius: 100px;
+}
+
+.modalEquipe {
+  background-color: #71230d;
+  width: 1100px;
+  height: 300px;
+  margin: 30px;
+  padding: 50px;
+}
+
+/*Estilização do formulário*/
+.formulario-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap; /* Permite que os itens flexíveis quebrem para a próxima linha */
+}
+
+.logo-form {
+  flex: 1;
+  padding: 10px;
+}
+
+.formulario {
+  flex: 2;
+  padding: 10px;
+  background-color: #16ca8e;
+}
+
+.formulario label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario select,
+.formulario textarea {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #350a99;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.formulario textarea {
+  height: 250px;
+}
+
+.formulario button {
+  background-color: #008CBA;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Estilo para o botão de envio quando o mouse passa por cima */
+.formulario button:hover {
+  background-color: #005f7a;
+}
+/* Media query para ajustar o layout do forms em telas menores */
+@media (max-width: 768px) {
+  .formulario-container {
+    flex-direction: column; 
+  }
+
+  .logo-form, .formulario {
+    flex: 1; 
+  }
+}
+
