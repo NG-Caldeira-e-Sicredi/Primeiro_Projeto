@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="Styles/styles.css">
     <script src="/Script/projeto.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src=	"https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <title>Afinal, qual é a nossa limitação?</title>
 </head>
 
@@ -24,7 +24,7 @@
     </nav>
 
     <!-- Section 1 -->
-    <section galeria-fotos>
+    <!--<section galeria-fotos>
          <div class="galeriaDeFotos">
             <div style="background-image: url(Assets/Robson.png);"></div>
             <div style="background-image: url(Assets/Matheus.png);"></div>
@@ -36,9 +36,127 @@
             <div style="background-image: url(Assets/Filipe.png);"></div>
             <div style="background-image: url(Assets/Wagner.png);"></div>
         </div>
-    </section>
+    </section> -->
 
-   <!--=== MAIN - TEXTO ===-->
+    <!-- Section 1-->
+
+    <!--Slideshow-->
+<style>
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 62.5rem;
+  position: relative;
+  margin: auto;        
+}
+
+/* Legenda */
+.text {
+  color: #f2f2f2;
+  font-size: 0.9375rem;
+  padding: 0.5rem 0.75rem;
+  /* position: absolute; */
+  bottom: 0.5rem;
+  width: 100%;
+  text-align: auto      ;
+}
+
+/* Três pontinhos delimitando a foto selecionada */
+.dot {
+  height: 0.9375rem;
+  width: 0.9375rem; 
+  margin: 0 0.125rem;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  text-align: center;
+}
+
+.active {
+  background-color: #f46518;
+}
+
+/* Animação de fading */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* Responsividade em celulares */
+@media only screen and (max-width: 18.75rem) {
+  .text {font-size: 0.6875rem}
+}
+</style>
+</head>
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="/Assets/Diego.png" style="width:50%">
+      <div class="text">Diego</div>
+      <img src="Assets/Filipe.png" style="width:50%">
+      <div class="text">Filipe</div>
+      <img src="Assets/Joao.png" style="width:50%">
+      <div class="text">João</div>
+    </div>
+    
+    <div class="mySlides fade">
+        <img src="Assets/Karina.png" style="width:50%">
+        <div class="text">Karina</div>
+        <img src="Assets/Maiara.png" style="width:50%">
+        <div class="text">Maiara</div>
+        <img src="Assets/Matheus.png" style="width:50%">
+        <div class="text">Matheus</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <img src="Assets/Nicolas R.png" style="width:50%">
+        <div class="text">Nicolas R</div>
+        <img src="Assets/Robson.png" style="width:50%">
+        <div class="text">Robson</div>
+        <img src="Assets/Wagner.png" style="width:50%">
+        <div class="text">Wagner</div>
+      </div>
+    
+    </div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Troca a imagem a cada 2seg
+}
+</script>
+
+    <!--=== MAIN - TEXTO ===-->
     <main class="texto-main" id="Sobre">
         <h1>Projeto Acelerador de Carreiras</h1>
         <div class="texto-main1">
