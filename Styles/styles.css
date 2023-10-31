@@ -1,18 +1,29 @@
-/* :root {
-  --cor-primaria: #94A684; (cor exemplo)
-  --cor-secundaria: #AEC3AE; (cor exemplo)
-  --cor-terciaria: #E4E4D0; (cor exemplo)
-  --cor-quartenaria: #83764F; (cor exemplo)
-  --cor-quintenaria: 
+:root {
+  --cor-primaria: rgb(074, 167, 60);
+  --cor-secundaria: rgb(094, 235, 174);
+  --cor-terciaria: rgb(55, 157, 78);
+  --cor-quartenaria: rgb(063, 92, 028);
+  --cor-quintenaria: rgb(094, 235, 222);
   --fonte-primaria: 
   --fonte-secundaria: 
   --fonte-terciaria: 
 }
-*/
 
-
+html, body {
+  height: 100%;
+}
 body {
-  background-color: #0B151E; 
+  width:100%;
+  background-image: url("/Assets/rm222batch4-mind-19.jpg");
+  background-position: 20% 40%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: center; */  
+  min-height: 100%;
+  background-color: var(--cor-quartenaria);
   /* digite, sem as strings, 
   "var(--cor-primaria) (exemplo)" 
   onde há cores; o mesmo aplica-se a fontes.*/
@@ -20,25 +31,40 @@ body {
   text-transform: uppercase;
   text-align: center;
   font-weight: bold;
-  color: rgb(255, 255, 255);
   transition: background-color 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
 }
 
 .dark {
-  background-color: rgb(244, 13, 13);
-  color: white;
+  background-color: var(--cor-secundaria);
 }
 
 .light {
-  background-color: white;
-  color: black;
+  background-color: cor var(--cor-terciaria)
 }
 
 .botao {
-  padding: 10px;
+  
   background-color: #10d82b;
+  border: 2px solid #182407;
+  border-radius: 50px;
+
+  padding: 10px;
+  background-color: #ffffff;
   border: 1px solid #92aa6f;
+
   cursor: pointer;
+  width: 100px;
+  height: 40px;
+
+}
+
+#modoBotao {
+  width: 50px;
+  height: 30px;
+
 }
 
 .nav {
@@ -51,15 +77,25 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
+
   display: flex;
 }
 .nav li {
   margin-right: 20px; 
+
+  display: inline-block;
+  margin: 20px; 
+
 }
 nav ul li a {
   padding-bottom: 10px;
   text-decoration: none;
+
   color: rgb(255, 255, 255);
+
+  color: var(--cor-terciaria);
+  position: relative;
+
 }
 nav ul li a:after {
   position: absolute;
@@ -68,16 +104,16 @@ nav ul li a:after {
   right: 0;
   content: ' ';
   color: transparent;
-  background: #E34F25;
+  background: var(--cor-quintenaria);
   height: 1px;
   width: 0;
   transition: all 0.5s;
 }
 nav ul li a:hover:after {
-  width: 100%;
+  display: flex;
 }
 nav ul li a:hover {
-  color: #71230d;
+  color: rgb(55, 59, 34);
   z-index: 1;
   transition: color 1s;
 }
@@ -119,10 +155,10 @@ nav ul li a:hover {
 
 /* Estilos para o modal */
 .modalCard {
-  display: none;
+  display: flex;
   top: 0;
   left: 0;
-  width: 100%;
+  /* width: 100%; */
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
@@ -149,7 +185,7 @@ nav ul li a:hover {
 
 /* Estilos para o botão de fechar modal */
 .modalConteudo button {
-  background-color: #08e464;
+  background-color: var(--cor-quintenaria);
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -165,16 +201,17 @@ nav ul li a:hover {
   background-color: #e47878;
   margin: 30px;
   padding: 20px;
+  display: flex;
   
 }
 
 .carousel-container {
-  width: 30%;
+  width: 70%;
   margin: 0 auto; 
   position: relative;
   overflow: hidden;
-  
-  
+  display: flex;
+  flex-grow: 1 ;
 }
 
 .swiper-button-prev,
@@ -200,11 +237,23 @@ nav ul li a:hover {
   padding: 10px;
   text-align: center;
   color: #0B151E;
+  /*display: flex;*/
+  
+}
+
+.swiper-container {
+  width: 100%;
+  height: 300px;
+}
+
+.swiper-wrapper{
+  width: 100%;
   display: flex;
   justify-content: center;
- 
+  /* flex-wrap: wrap; */
 
 }
+
 #prevBtn, #nextBtn {
   background-color: #007bff;
   color: #fff;
@@ -225,7 +274,7 @@ nav ul li a:hover {
   display: flex;
   background-color: #007bff;
   margin: 20px;
-  width: 100vw;
+  width: 95vw;
 }
 
 .text-card {
@@ -321,4 +370,3 @@ nav ul li a:hover {
     flex: 1; 
   }
 }
-
