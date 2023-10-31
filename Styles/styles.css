@@ -10,7 +10,9 @@
 }
 */
 
-
+html, body {
+  height: 100%;
+}
 body {
   background-color: #0B151E; 
   /* digite, sem as strings, 
@@ -22,6 +24,9 @@ body {
   font-weight: bold;
   color: rgb(255, 255, 255);
   transition: background-color 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
 }
 
 .dark {
