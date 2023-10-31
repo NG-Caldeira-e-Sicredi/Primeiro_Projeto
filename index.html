@@ -5,21 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles/styles.css">
-    <script src="/Script/projeto.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <title>Afinal, qual é a nossa limitação?</title>
 </head>
-
 <body>
 
+    <!--=== MENU DE NAVEGAÇÃO ===-->
     <nav class="nav" id="mainNav">
         <ul>
             <li><a href="#Sobre">Sobre</a></li>
             <li><a href="#Depoimentos">Depoimentos</a></li>
             <li><a href="#Equipe">Equipe</a></li>
             <li><a href="#Parceiros">Parceiros</a></li>
-            <li><button class="botao" onclick="darkOrLight()">Modo Dark</button></li>
+            <li><button class="botao" onclick="darkOrLight()"><img src="/Assets/dark_and_light.png" alt="Modo Dark"  id="modoBotao"></button></li>
         </ul>
     </nav>
 
@@ -434,6 +432,14 @@
             </div>
          </footer>   
     </section>
+    
+   <!--===== SCRIPT DO PROJETO ======-->
+    <script src="/Script/projeto.js"></script>
+
+    <!--===== SCRIPT DO SWIPER ======-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!--===== SCRIPT DA API ======-->
 
     <script src="Script/API.js"></script>
 </body>
