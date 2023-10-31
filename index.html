@@ -5,21 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles/styles.css">
-    <script src="/Script/projeto.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <script src=	"https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <title>Afinal, qual é a nossa limitação?</title>
 </head>
-
 <body>
 
+    <!--=== MENU DE NAVEGAÇÃO ===-->
     <nav class="nav" id="mainNav">
         <ul>
             <li><a href="#Sobre">Sobre</a></li>
             <li><a href="#Depoimentos">Depoimentos</a></li>
             <li><a href="#Equipe">Equipe</a></li>
             <li><a href="#Parceiros">Parceiros</a></li>
-            <li><button class="botao" onclick="darkOrLight()">Modo Dark</button></li>
+            <li><button class="botao" onclick="darkOrLight()"><img src="/Assets/dark_and_light.png" alt="Modo Dark"  id="modoBotao"></button></li>
         </ul>
     </nav>
 
@@ -186,7 +184,7 @@ function showSlides() {
         </video>
     </main>
 
-    <!-- Section 2 -->
+   <!--=== SECTION 2- DEPOIMENTOS ===-->
     <section>
         <h2 class="dpn-carrosel">Depoimentos</h2>
         <div class="depoimentos-carousel" id="Depoimentos">
@@ -297,7 +295,7 @@ function showSlides() {
         </div>
     </div>
     
-    <!-- Section 3 -->
+    <!--=== SECTION 3- EQUIPE ===-->
     <section class="equipes" id="Equipe">
         <h2 class="title-equipes">Equipe</h2>
         <div class="equipes-card-container">
@@ -442,7 +440,7 @@ function showSlides() {
         </div>
     </div>
 
-    <!-- Section 4 -->
+     <!--=== SECTION 4- PARCEIROS ===-->
     <section class="parceiros" id="Parceiros">
         <h2 class="title-parceiros">Parceiros</h2>
         <div class="image-container">
@@ -483,7 +481,7 @@ function showSlides() {
             </div>
         </div>
 
-        <!--Formulario-->
+        <!--=== FORMULÁRIO ===-->
         <div class="formulario-container">
             <h2 class="text-formulario">Formulário</h2>
             <form class="formulario">
@@ -524,8 +522,8 @@ function showSlides() {
         </div>
     </section>
 
-    <!-- Section 5 -->
-    <section class="footer">
+    <!--=== SECTION 5- RODAPÉ ===-->
+   <section class="footer">
         <footer class="main_footer">
         
             <a class="alinhamento1" href="https://www.sicredi.com.br/home/">
@@ -547,12 +545,20 @@ function showSlides() {
             <a class="alinhamento5" href="https://www.egalite.com.br/">
                 <img src="Assets/image-logo/Egalite.jpeg" width="33">
                 Egalite</a>
-
+            <div class="desevolvido-por">
+                <p id="txt">Desenvolvido em 2023 pela equipe | Projeto Acelerador de Carreiras Sicredi<p>
+            </div>
          </footer>   
-         <div class="desevolvido-por">
-            <p id="txt">Desenvolvido em 2023 pela equipe | Projeto Acelerador de Carreiras Sicredi<p>
-         </div>
     </section>
+    
+   <!--===== SCRIPT DO PROJETO ======-->
+    <script src="/Script/projeto.js"></script>
+
+    <!--===== SCRIPT DO SWIPER ======-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!--===== SCRIPT DA API ======-->
+
     <script src="Script/API.js"></script>
 </body>
 
