@@ -35,10 +35,19 @@ body {
 }
 
 .botao {
-  padding: 10px;
   background-color: #10d82b;
-  border: 1px solid #92aa6f;
+  border: 2px solid #182407;
+  border-radius: 50px;
   cursor: pointer;
+  width: 100px;
+  height: 40px;
+
+}
+
+#modoBotao {
+  width: 50px;
+  height: 30px;
+
 }
 
 nav ul li {
