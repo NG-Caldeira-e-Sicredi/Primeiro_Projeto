@@ -9,7 +9,9 @@
   --fonte-terciaria: 
 }
 
-
+html, body {
+  height: 100%;
+}
 body {
   width:100%;
   background-image: url("/Assets/rm222batch4-mind-19.jpg");
@@ -30,6 +32,9 @@ body {
   text-align: center;
   font-weight: bold;
   transition: background-color 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
 }
 
 .dark {
