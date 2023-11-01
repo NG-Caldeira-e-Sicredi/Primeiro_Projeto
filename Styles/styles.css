@@ -20,7 +20,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   /* background-position: center; */  
   min-height: 100%;
   background-color: var(--cor-quartenaria);
@@ -206,54 +206,34 @@ nav ul li a:hover {
 }
 
 .carousel-container {
-  width: 70%;
-  margin: 0 auto; 
+  width: 100%;
+  margin: 0; 
   position: relative;
   overflow: hidden;
   display: flex;
-  flex-grow: 1 ;
+  
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
+.swiper-container {
+  width: 91.3%;
+  height: 100%;
+  display: flex;
 }
 
-.swiper-button-prev:hover,
-.swiper-button-next:hover {
-  background-color: #0056b3;
+.swiper-wrapper{
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  
 }
 
 .swiper-slide {
   background-color: #f1f1f1;
   padding: 10px;
-  text-align: center;
   color: #0B151E;
-  /*display: flex;*/
-  
+ 
 }
-
-.swiper-container {
-  width: 100%;
-  height: 300px;
-}
-
-.swiper-wrapper{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  /* flex-wrap: wrap; */
-
-}
-
+ /* Botão do slide de depoimentos */
 #prevBtn, #nextBtn {
   background-color: #007bff;
   color: #fff;
@@ -266,6 +246,7 @@ nav ul li a:hover {
 #nextBtn:hover {
   background-color: #16ca8e;
 }
+
 
 /*Estilos da section equipe */
 .equipes-card-container {
