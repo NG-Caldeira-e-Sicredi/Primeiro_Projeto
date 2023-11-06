@@ -41,10 +41,13 @@ body {
 
   /* Estilos para o modo dark */
 .dark {
-    background-color: var(--cor-primaria);
+    background-color: var(--cor-secundaria);
+    background-image: url("/Assets/diego\ assets.jpg");
+
 }
 .light {
-    background-color: var(--cor-secundaria);
+    background-color: var(--cor-primaria);
+
 }
   
 .botao {
@@ -326,6 +329,10 @@ nav ul li a:hover:after {
   
 legend {
     font-weight: bold;
+}
+
+#enviar {
+    
 }
   
   /* Estilo para o botão de envio quando o mouse passa por cima */
