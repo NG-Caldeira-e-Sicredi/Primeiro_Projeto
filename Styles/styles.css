@@ -1,353 +1,361 @@
+/* Esse é o reset geral para não refletir diferenças entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+}
+
 :root {
-  --cor-primaria: rgb(074, 167, 60);
-  --cor-secundaria: rgb(094, 235, 174);
-  --cor-terciaria: rgb(55, 157, 78);
-  --cor-quartenaria: rgb(063, 92, 028);
-  --cor-quintenaria: rgb(094, 235, 222);
-  --fonte-primaria: 
-  --fonte-secundaria: 
-  --fonte-terciaria: 
+    --cor-primaria: rgb(93, 234, 127);
+    --cor-secundaria: rgb(94, 235, 174);
+    --cor-terciaria: rgb(74, 167, 60);
+    --cor-quaternaria: rgb(63, 92, 28);
+    --cor-quinaria: rgb(94, 235, 222);
+    --cor-sextupla: rgb(13, 14, 13);
+    --cor-setupla: rgb(248, 253, 253);
+    --fonte-primaria: 
+    --fonte-secundaria: 
+    --fonte-terciaria: 
 }
 
-html, body {
-  height: 100%;
-}
 body {
-  width:100%;
-  background-image: url("/Assets/rm222batch4-mind-19.jpg");
-  background-position: 20% 40%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  /* background-position: center; */  
-  min-height: 100%;
-  background-color: var(--cor-quartenaria);
-  /* digite, sem as strings, 
-  "var(--cor-primaria) (exemplo)" 
-  onde há cores; o mesmo aplica-se a fontes.*/
-  font-family: "Arial", sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: bold;
-  transition: background-color 0.5s ease;
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
+    height: 100%;
+    background-image: url("/Assets/rm222batch4-mind-19.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: var(--cor-quaternaria);
+    background-size: 100%; 
+    font-family: "Arial", sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
+  /* Detalhe para separar seções e destacar o nome */
+.divisor-secao {
+    padding: 30px;
+    margin: 50px;
+    background-color: var(--cor-secundaria);
+    opacity: 80%;
+    border-radius: 0px 50px 0px 50px;
+    text-align: center;
+}
+
+  /* Estilos para o modo dark */
 .dark {
-  background-color: var(--cor-secundaria);
+    background-color: var(--cor-primaria);
 }
-
 .light {
-  background-color: cor var(--cor-terciaria)
+    background-color: var(--cor-secundaria);
 }
-
-.botao {
   
-  background-color: #10d82b;
-  border: 2px solid #182407;
-  border-radius: 50px;
-
-  padding: 10px;
-  background-color: #ffffff;
-  border: 1px solid #92aa6f;
-
-  cursor: pointer;
-  width: 100px;
-  height: 40px;
-
+.botao {
+    border-radius: 50px;
+    padding: 5px;
+    background-color: var(--cor-primaria);
+    border: 2px solid var(--cor-terciaria);
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
 }
-
+  
 #modoBotao {
-  width: 50px;
-  height: 30px;
-
+    width: 50px;
+    height: 30px;
 }
 
 .nav {
-  display: flex;
-  justify-content: flex-end; 
-  margin-top: 20px;
-  
+    display: flex;
+    justify-content: flex-end; 
+    margin-top: 20px;
 }
+
 .nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-
-  display: flex;
+    list-style: none;
+    display: flex;
 }
+
 .nav li {
-  margin-right: 20px; 
-
-  display: inline-block;
-  margin: 20px; 
-
+    display: inline-block;
+    margin: 15px; 
 }
+
 nav ul li a {
-  padding-bottom: 10px;
-  text-decoration: none;
-
-  color: rgb(255, 255, 255);
-
-  color: var(--cor-terciaria);
-  position: relative;
-
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    position: relative;
+    font-weight: bold;
 }
 nav ul li a:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  content: ' ';
-  color: transparent;
-  background: var(--cor-quintenaria);
-  height: 1px;
-  width: 0;
-  transition: all 0.5s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: ' ';
+    color: transparent;
+    background: var(--cor-quinaria);
+    height: 1px;
+    width: 0;
+    transition: all 0.5s;
 }
 nav ul li a:hover:after {
-  display: flex;
+    display: flex;
 }
-nav ul li a:hover {
-  color: rgb(55, 59, 34);
-  z-index: 1;
-  transition: color 1s;
-}
+  nav ul li a:hover {
+    color: var(--cor-quaternaria);
+    z-index: 1;
+    transition: color 1s;
+  }
 
-/*Estilos para a section galeria apresentação*/
-
-.galeriaDeFotos {
-  display: flex;
-  height: 20rem;
-  gap: 1rem;
-}
-
-.galeriaDeFotos>div {
-  flex: 1;
-  border-radius: 1rem;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: auto 100%;
-  transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
-}
-
-.galeriaDeFotos>div:hover {
-  flex: 5;
-}
-
-/* Estilos para a section depoimento */
-.dpn-carrosel {
-  text-align: center;
-  font-size: 24px;
-  margin-top: 20px;
-}
-
-
-/* Estilos para o card de depoimentos */
-.modalCard img {
-  max-width: 100%;
-  height: auto;
-}
+  /*Estilos para a section galeria apresentação*/
+/* Essa parte é do slide teste apresentação */
+/* Slideshow container */
+.slideshow-container {
+    max-width: 62.5rem;
+    position: relative;
+    margin: auto;        
+  }
+  
+  /* Legenda */
+  .text {
+    color: var(--cor-setupla);
+    font-size: 0.9375rem;
+    padding: 0.5rem 0.75rem;
+    bottom: 0.5rem;
+    width: 100%;
+    text-align: auto      ;
+  }
+  
+  /* Três pontinhos delimitando a foto selecionada */
+  .dot {
+    height: 0.9375rem;
+    width: 0.9375rem; 
+    margin: 0 0.125rem;
+    background-color: var(--cor-setupla);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    text-align: center;
+  }
+  
+  .active {
+    background-color: var(--cor-quaternaria);
+  }
+  
+  /* Animação de fading */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* Responsividade em celulares
+  @media only screen and (max-width: 18.75rem) {
+    .text {font-size: 0.6875rem}
+  } */
+  /* fim do slide teste */
 
 /* Estilos para o modal */
-.modalCard {
-  display: flex;
-  top: 0;
-  left: 0;
-  /* width: 100%; */
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .modal {
-  display: none;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-  max-height: 100%; 
+    background-color: var(--cor-quinaria);
+    padding: 50px;
+    border-radius: 5px;
+    text-align: center;
+    height: 100vh;
+    margin: 70px;
 }
-
-.modalConteudo {
-  background-color: #53c711;
-  padding: 20px;
-  border-radius: 5px;
-  text-align: center;
-  height: 500px;
-  margin: 70px;
-}
-
+  
 /* Estilos para o botão de fechar modal */
 .modalConteudo button {
-  background-color: var(--cor-quintenaria);
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 10px;
+    background-color: var(--cor-quinaria);
+    color: var(--cor-sextupla);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
 }
-
 
 /* Estilos para o slider depoimentos */
 .depoimentos-carousel {
-  text-align: center;
-  background-color: #e47878;
-  margin: 30px;
-  padding: 20px;
-  display: flex;
-  
+    text-align: center;
+    background-color: var(--cor-quinaria);
+    margin: 30px;
+    padding: 20px;
+    display: flex;
+    border-radius: 0 20px 0 20px;
 }
-
+  
 .carousel-container {
-  width: 100%;
-  margin: 0; 
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  
+    width: 100%;
+    margin: 0; 
+    position: relative;
+    overflow: hidden;
+    display: flex;
 }
-
+  
 .swiper-container {
-  width: 91.3%;
-  height: 100%;
-  display: flex;
+    width: 91.6%;
+    height: 100%;
+    display: flex;
 }
-
-.swiper-wrapper{
-  display: flex;
-  justify-content: space-between;
-  margin: auto;
   
+.swiper-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
 }
 
+/* Card de depoimentos */
 .swiper-slide {
-  background-color: #f1f1f1;
-  padding: 10px;
-  color: #0B151E;
- 
-}
- /* Botão do slide de depoimentos */
-#prevBtn, #nextBtn {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
+    background-color: var(--cor-setupla);
+    padding: 30px 10px 30px 10px;
+    color: var(--cor-sextupla);
+    /* align-items: center; */
+    border-radius: 10px;
+    text-align: center;
 }
 
+/* Estilos para o card de depoimentos */
+.imagem-card-depoimento {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Botão do slide de depoimentos */
+#prevBtn, #nextBtn {
+    background-color: var(--cor-terciaria);
+    opacity: 80%;
+    color: var(--cor-setupla);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+  
 #prevBtn:hover,
 #nextBtn:hover {
-  background-color: #16ca8e;
+    background-color: var(--cor-quaternaria);
 }
-
 
 /*Estilos da section equipe */
 .equipes-card-container {
-  display: flex; 
-  margin: auto;
-  display: flex;
-  background-color: #007bff;
-  margin: 20px;
-  width: 95vw;
+    display: flex; 
+    margin: auto;
+    display: flex;
+    width: 95vw;
+    text-align: center;
 }
 
 .text-card {
-  margin: 20px;
-  align-items:center;
-  display:inline-flex;
-  padding: 20px;
-  background-color: #E34F25;
-  border-radius: 20px;
+    margin: 10px 50px;
+    align-items:center;
+    display:inline-flex;
+    padding: 20px;
+    background-color: var(--cor-quinaria);
+    border-radius: 20px;
+    border: solid 2px var(--cor-primaria);
 }
 
-.text-card:last-child {
-  margin-right: 0;
-}
 .text-card img {
-  width: 150px; 
-  height: 150px; 
-  border-radius: 100px;
-}
-
-.modalEquipe {
-  background-color: #71230d;
-  width: 1100px;
-  height: 300px;
-  margin: 30px;
-  padding: 50px;
+    width: 200px; 
+    height: 200px; 
+    border-radius: 100px;
+    border: solid 2px var(--cor-primaria);
 }
 
 /*Estilização do formulário*/
 .formulario-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  flex-wrap: wrap; /* Permite que os itens flexíveis quebrem para a próxima linha */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    margin: 20px;
 }
-
+  
 .logo-form {
-  flex: 1;
-  padding: 10px;
+    flex: 1;
+    padding: 30px;
+    text-align: center;
 }
-
+  
 .formulario {
-  flex: 2;
-  padding: 10px;
-  background-color: #16ca8e;
+    flex: 2;
+    padding: 10px;
+    background-color: var(--cor-quinaria);
 }
-
+  
 .formulario label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 5px;
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+    margin-left: 15px;
 }
-
+  
 .formulario input[type="text"],
 .formulario input[type="email"],
 .formulario select,
 .formulario textarea {
-  width: 70%;
-  padding: 10px;
-  border: 1px solid #350a99;
-  border-radius: 5px;
-  font-size: 16px;
-  margin-bottom: 15px;
-  text-align: left;
+    width: 95%;
+    padding: 10px;
+    border: 1px solid var(--cor-quinaria);
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-align: left;
 }
-
+  
 .formulario textarea {
-  height: 250px;
+    height: 250px;
 }
-
+  
+.formulario select {
+    width: 99%;
+}
+  
 .formulario button {
-  background-color: #008CBA;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-setupla);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
 }
-
-/* Estilo para o botão de envio quando o mouse passa por cima */
+  
+legend {
+    font-weight: bold;
+}
+  
+  /* Estilo para o botão de envio quando o mouse passa por cima */
 .formulario button:hover {
-  background-color: #005f7a;
+    background-color: var(--cor-quinaria);
 }
-/* Media query para ajustar o layout do forms em telas menores */
-@media (max-width: 768px) {
-  .formulario-container {
-    flex-direction: column; 
-  }
 
-  .logo-form, .formulario {
-    flex: 1; 
-  }
+  /* Media query para ajustar o layout do forms em telas menores */
+@media (max-width: 768px) {
+    .formulario-container {
+      flex-direction: column; 
+    }
+  
+   .logo-form, .formulario {
+      flex: 1; 
+    }
 }
+
+.desevolvido-por {
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.card-img {
+    display: inline-block;
+    width: 50%; 
+    text-align: center; 
+    margin: 10px; 
+}
+
+  
