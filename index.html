@@ -9,89 +9,18 @@
     <title>Afinal, qual é a nossa limitação?</title>
 </head>
 <body>
-
-    <!--=== MENU DE NAVEGAÇÃO ===-->
-    <nav class="nav" id="mainNav">
-        <ul>
-            <li><a href="#Sobre">Sobre</a></li>
-            <li><a href="#Depoimentos">Depoimentos</a></li>
-            <li><a href="#Equipe">Equipe</a></li>
-            <li><a href="#Parceiros">Parceiros</a></li>
-            <li><button class="botao" onclick="darkOrLight()"><img src="/Assets/dark_and_light.png" alt="Modo Dark"  id="modoBotao"></button></li>
-        </ul>
-    </nav>
-
-    <!-- Section 1 -->
-    <!--<section galeria-fotos>
-         <div class="galeriaDeFotos">
-            <div style="background-image: url(Assets/Robson.png);"></div>
-            <div style="background-image: url(Assets/Matheus.png);"></div>
-            <div style="background-image: url(Assets/Joao.png);"></div>
-            <div style="background-image: url(Assets/Karina.png);"></div>
-            <div style="background-image: url(Assets/Nicolas\ R.png);"></div>
-            <div style="background-image: url(Assets/Diego.png);"></div>
-            <div style="background-image: url(Assets/Maiara.png);"></div>
-            <div style="background-image: url(Assets/Filipe.png);"></div>
-            <div style="background-image: url(Assets/Wagner.png);"></div>
-        </div>
-    </section> -->
-
-    <!-- Section 1-->
-
-    <!--Slideshow-->
-<style>
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 62.5rem;
-  position: relative;
-  margin: auto;        
-}
-
-/* Legenda */
-.text {
-  color: #f2f2f2;
-  font-size: 0.9375rem;
-  padding: 0.5rem 0.75rem;
-  /* position: absolute; */
-  bottom: 0.5rem;
-  width: 100%;
-  text-align: auto      ;
-}
-
-/* Três pontinhos delimitando a foto selecionada */
-.dot {
-  height: 0.9375rem;
-  width: 0.9375rem; 
-  margin: 0 0.125rem;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-  text-align: center;
-}
-
-.active {
-  background-color: #f46518;
-}
-
-/* Animação de fading */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* Responsividade em celulares */
-@media only screen and (max-width: 18.75rem) {
-  .text {font-size: 0.6875rem}
-}
-</style>
-</head>
+                   <!--=== MENU DE NAVEGAÇÃO ===-->
+   <header>
+        <nav class="nav" id="mainNav">
+            <ul>
+                <li><a href="#Sobre">Sobre</a></li>
+                <li><a href="#Depoimentos">Depoimentos</a></li>
+                <li><a href="#Equipe">Equipe</a></li>
+                <li><a href="#Parceiros">Parceiros</a></li>
+                <li><button class="botao" onclick="darkOrLight()"><img src="/Assets/dark_and_light.png" alt="Modo Dark"  id="modoBotao"></button></li>
+            </ul>
+        </nav>
+   </header> 
 
 <div class="slideshow-container">
 
@@ -124,39 +53,17 @@
     
     </div>
 </div>
-<br>
-
 <div style="text-align:center">
   <span class="dot"></span> 
   <span class="dot"></span> 
   <span class="dot"></span> 
 </div>
 
-<script>
-let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Troca a imagem a cada 2seg
-}
-</script>
-
     <!--=== MAIN - TEXTO ===-->
     <main class="texto-main" id="Sobre">
-        <h1>Projeto Acelerador de Carreiras</h1>
+        <div class="divisor-secao">
+            <h1>Projeto Acelerador de Carreiras</h1>
+        </div>
         <div class="texto-main1">
             <h2 id="txt">Como surgiu o Projeto Acelerador de Carreiras?</h2> 
             <p id="txt"> O Projeto Acelerador de Carreiras teve seu início em 2022, quando os gestores, atuando como patrocinadores do Programa Nova Geração do Instituto Caldeira, começaram a concebê-lo. Durante várias reuniões estratégicas, foram delineados os objetivos, os critérios de seleção dos alunos, o escopo do projeto, o cronograma e o conteúdo do curso.</p>
@@ -186,7 +93,9 @@ function showSlides() {
 
    <!--=== SECTION 2- DEPOIMENTOS ===-->
     <section>
-        <h2 class="dpn-carrosel">Depoimentos</h2>
+        <div class="divisor-secao">
+            <h2 class="dpn-carrosel">Depoimentos</h2>
+        </div>
         <div class="depoimentos-carousel" id="Depoimentos">
         <div class="carousel-container">
             <div class="swiper-container">
@@ -197,7 +106,7 @@ function showSlides() {
                  <!--card1-->
                 <div class="swiper-slide">
                     <h4 id="txt">Jean</h4>
-                    <img src="/Assets/1.jpg" width="100" height="100">
+                    <img src="/Assets/1.jpg" class="imagem-card-depoimento" width="100" height="100">
                     <p id="txt">kjhgvbjikovdijhukaBJ</p>
                     <button class="open-modal" data-modal="modal1">Veja mais...</button>
                 </div>
@@ -205,43 +114,34 @@ function showSlides() {
                  <!--card2-->
                 <div class="swiper-slide">
                     <h4 id="txt">Carol Caldeira</h4>
-                    <img src="/Assets/1.jpg" width="100" height="100">
+                    <img src="/Assets/1.jpg" class="imagem-card-depoimento" width="100" height="100">
                     <p id="txt">kjhgvbjikovdijhukaBJ</p>
                     <button class="open-modal" data-modal="modal2">Veja mais...</button>
                 </div>
 
                  <!--card3-->
                 <div class="swiper-slide">
-                    <h4 id="txt">Fabio</h4>
-                    <img src="/Assets/1.jpg" width="100" height="100">
+                    <h4 id="txt">Fábio e Carol</h4>
+                    <img src="/Assets/1.jpg" class="imagem-card-depoimento" width="100" height="100">
                     <p id="txt">kjhgvbjikovdijhukaBJ</p>
                     <button class="open-modal" data-modal="modal3">Veja mais...</button>
                 </div>
 
                  <!--card4-->
                 <div class="swiper-slide">
-                    <h4 id="txt">Carol Sicredi</h4>
-                    <img src="/Assets/1.jpg" width="100" height="100">
+                    <h4 id="txt">Egalitê</h4>
+                    <img src="/Assets/1.jpg" class="imagem-card-depoimento" width="100" height="100">
                     <p id="txt">kjhgvbjikovdijhukaBJ</p>
                     <button class="open-modal" data-modal="modal4">Veja mais...</button>
                 </div>
 
-                 <!--card5-->
-                <div class="swiper-slide">
-                    <h4 id="txt">Egalitê</h4>
-                    <img src="/Assets/1.jpg" width="100" height="100">
-                    <p id="txt">kjhgvbjikovdijhukaBJ</p>
-                    <button class="open-modal" data-modal="modal5">Veja mais...</button>
-                </div>
-
-                 <!-- card6
+                 <!-- card5 -->
                 <div class="swiper-slide">
                     <h4 id="txt">Arquitetando</h4>
-                    <img src="/Assets/1.jpg" width="100" height="100">
+                    <img src="/Assets/1.jpg" class="imagem-card-depoimento" width="100" height="100">
                     <p id="txt">kjhgvbjikovdijhukaBJ</p>
-                    <br></br>
-                    <button class="open-modal" data-modal="modal6">Veja mais...</button>
-                </div>   -->
+                    <button class="open-modal" data-modal="modal5">Veja mais...</button>
+                </div>  
             </div>
         </div>
     </div>
@@ -263,26 +163,19 @@ function showSlides() {
     </div>
     <div id="modal3" class="modal">
         <div class="modalConteudo">
-            <h4 id="txt">Fabio</h4>
+            <h4 id="txt">Fabio e Carol</h4>
             <p id="txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             <button class="close-modal">Fechar conteúdo</button>
         </div>
     </div>
     <div id="modal4" class="modal">
         <div class="modalConteudo">
-            <h4 id="txt">Carol Sicredi</h4>
-            <p id="txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            <button class="close-modal">Fechar conteúdo</button>
-        </div>
-    </div>
-    <div id="modal5" class="modal">
-        <div class="modalConteudo">
             <h4 id="txt">Egalitê</h4>
             <p id="txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             <button class="close-modal">Fechar conteúdo</button>
         </div>
     </div>
-    <div id="modal6" class="modal">
+    <div id="modal5" class="modal">
         <div class="modalConteudo">
             <h4 id="txt">Arquitetando</h4>
             <p id="txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -292,7 +185,9 @@ function showSlides() {
     
     <!--=== SECTION 3- EQUIPE ===-->
     <section class="equipes" id="Equipe">
-        <h2 class="title-equipes">Equipe</h2>
+        <div class="divisor-secao">
+            <h2 class="title-equipes">Equipe</h2>
+        </div>
         <div class="equipes-card-container">
             <div class="image-container">
                 <!--card1-->
@@ -300,7 +195,7 @@ function showSlides() {
                     <div id="img">
                         <img src="/Assets/Wagner.png">
                         <br><br>
-                        <button class="open-modal" data-modal="modal7">Wagner</button>
+                        <button class="open-modal" data-modal="modal6">Wagner</button>
                     </div>
                 </div>
                 <!--card2-->
@@ -308,7 +203,7 @@ function showSlides() {
                     <div id="img">
                         <img src="/Assets/Robson.png">
                         <br><br>
-                        <button class="open-modal" data-modal="modal8">Robson</button>
+                        <button class="open-modal" data-modal="modal7">Robson</button>
                     </div>
                 </div>
                 <!--card3-->
@@ -316,7 +211,7 @@ function showSlides() {
                     <div id="img">
                         <img src="/Assets/Nicolas R.png" alt="Um deficiente físico, com um óculos preto, cabelos lisos e curtos de cor castanho escuro, uma blusa de lã preta, olhando para frente com o sol refletindo em seu rosto.">
                         <br><br>
-                        <button class="open-modal" data-modal="modal9">Nicolas</button>
+                        <button class="open-modal" data-modal="modal8">Nicolas</button>
                     </div>
                 </div>
                 <!--card4-->
@@ -324,7 +219,7 @@ function showSlides() {
                     <div id="img">
                         <img src="/Assets/Matheus.png">
                         <br><br>
-                        <button class="open-modal" data-modal="modal10">Matheus</button>
+                        <button class="open-modal" data-modal="modal9">Matheus</button>
                     </div>
                 </div>
                 <!--card5-->
@@ -332,7 +227,7 @@ function showSlides() {
                     <div id="img">
                         <img src="/Assets/Maiara.png">
                         <br><br>
-                        <button class="open-modal" data-modal="modal11">Maiara</button>
+                        <button class="open-modal" data-modal="modal10">Maiara</button>
                     </div>
                 </div>
                 <!--card6-->
@@ -340,7 +235,7 @@ function showSlides() {
                     <div id="img">
                         <img src="/Assets/Karina.png">
                         <br><br>
-                        <button class="open-modal" data-modal="modal12">Karina</button>
+                        <button class="open-modal" data-modal="modal11">Karina</button>
                     </div>
                 </div>
                 <!--card7-->
@@ -348,7 +243,7 @@ function showSlides() {
                     <div id="img">
                         <img src="/Assets/Joao.png">
                         <br><br>
-                        <button class="open-modal" data-modal="modal13">João</button>
+                        <button class="open-modal" data-modal="modal12">João</button>
                     </div>
                 </div>
                 <!--card8-->
@@ -356,7 +251,7 @@ function showSlides() {
                     <div id="img">
                         <img src="/Assets/Filipe.png">
                         <br><br>
-                        <button class="open-modal" data-modal="modal14">Filipe</button>
+                        <button class="open-modal" data-modal="modal13">Filipe</button>
                     </div>
                 </div>
                 <!--card9-->
@@ -364,55 +259,55 @@ function showSlides() {
                     <div id="img">
                         <img src="/Assets/Diego.png">
                         <br><br>
-                        <button class="open-modal" data-modal="modal15">Diego</button>
+                        <button class="open-modal" data-modal="modal14">Diego</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <div id="modal7" class="modal">
+    <div id="modal6" class="modal">
         <div class="modalEquipe">
             <h4 id="txt">Wagner</h4>
             <p id="txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             <button class="close-modal">Fechar conteúdo</button>
         </div>
     </div>
-    <div id="modal8" class="modal">
+    <div id="modal7" class="modal">
         <div class="modalEquipe">
             <h4 id="txt">Robson</h4>
             <p id="txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             <button class="close-modal">Fechar conteúdo</button>
         </div>
     </div>
-    <div id="modal9" class="modal">
+    <div id="modal8" class="modal">
         <div class="modalEquipe">
             <h4 id="txt">Nicolas</h4>
             <p id="txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             <button class="close-modal">Fechar conteúdo</button>
         </div>
     </div>
-    <div id="modal10" class="modal">
+    <div id="modal9" class="modal">
         <div class="modalEquipe">
             <h4 id="txt">Matheus</h4>
             <p id="txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             <button class="close-modal">Fechar conteúdo</button>
         </div>
     </div>
-    <div id="modal11" class="modal">
+    <div id="modal10" class="modal">
         <div class="modalEquipe">
             <h4 id="txt">Maiara</h4>
             <p id="txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             <button class="close-modal">Fechar conteúdo</button>
         </div>
     </div>
-    <div id="modal12" class="modal">
+    <div id="modal11" class="modal">
         <div class="modalEquipe">
             <h4 id="txt">Karina</h4>
             <p id="txt">Fui diagnosticada com Charcot Marie Tooth tipo 1 aos 11 anos de idade. Após este diagnóstico entendi que qualquer pessoa sempre irá precisar de ajuda na vida, seja em matemática ou outras situações. Foi neste momento que aceitei a nova realidade, busquei sempre estar próxima de pessoas que obtinham conhecimento e logo, fui traçando os meus objetivos. Com diversos cursos na área de comunicação visual, atendimento ao cliente, CIPA, a transição de carreira para a TI me fez descobrir uma nova paixão. Grata pela oportunidade. Esta me faz almejar cargos maiores na área. Hoje tenho 31 anos, casada com Jaime há 9 anos e mãe da Gabriela de 5 anos, feliz pelo crescimento pessoal e profissional. Feliz pelas conquistas. Feliz por participar deste projeto. Feliz pela equipe e amigos que conquistei aqui no Sicredi.</p>
             <button class="close-modal">Fechar conteúdo</button>
         </div>
     </div>
-    <div id="modal13" class="modal">
+    <div id="modal12" class="modal">
         <div class="modalEquipe">
             <h4 id="txt">João</h4>
             <p id="txt">Em 2018 fiz uma cirurgia bariátrica na qual tive complicações pôs cirurgia tive embolia pulmonar e fiquei 45 dias em coma e mais 2 meses no hospital fui o paciente mais grave do hospital nesse período de 45 dias devido ao coma acabei sofrendo de mononeuropatia que acabou afetando meus nervos dos membros superiores. Com isso tive que começar minha vida do zero de novo desde andar, falar e comer foram 2 anos de muita fisioterapia intensiva.
@@ -420,14 +315,14 @@ function showSlides() {
             <button class="close-modal">Fechar conteúdo</button>
         </div>
     </div>
-    <div id="modal14" class="modal">
+    <div id="modal13" class="modal">
         <div class="modalEquipe">
             <h4 id="txt">Filipe</h4>
             <p id="txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             <button class="close-modal">Fechar conteúdo</button>
         </div>
     </div>
-    <div id="modal15" class="modal">
+    <div id="modal14" class="modal">
         <div class="modalEquipe">
             <h4 id="txt">Diego</h4>
             <p id="txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -435,84 +330,91 @@ function showSlides() {
         </div>
     </div>
 
-     <!--=== SECTION 4- PARCEIROS ===-->
-    <section class="parceiros" id="Parceiros">
+    <!--=== SECTION 4- PARCEIROS ===-->
+<section class="parceiros" id="Parceiros">
+    <div class="divisor-secao">
         <h2 class="title-parceiros">Parceiros</h2>
-        <div class="image-container">
-            <!--card1-->
-            <div class="card-img">
-                <div id="img">
-                    <img src="">
-                </div>
+    </div>
+    <div class="image-container">
+        <!--card1-->
+        <div class="card-img">
+            <div id="img">
+                <img src="/Assets/1.jpg" width="200px" height="200px">
+            </div>
+            <div>
                 <span class="Sicredi">Sicredi</span>
-            </div>
-            <!--card2-->
-            <div class="card-img">
-                <div id="img">
-                    <img src="">
-                </div>
-                <span class="Caldeira">Caldeira</span>
-            </div>
-            <!--card3-->
-            <div class="card-img">
-                <div id="img">
-                    <img src="">
-                </div>
-                <span class="Alura">Alura</span>
-            </div>
-            <!--card4-->
-            <div class="card-img">
-                <div id="img">
-                    <img src="">
-                </div>
-                <span class="ArquitetandoInclusao">Arquitetando Inclusão</span>
-            </div>
-            <!--card4-->
-            <div class="card-img">
-                <div id="img">
-                    <img src="">
-                </div>
-                <span class="Egalite">Egalitê</span>
+                <p>kjhvfjknfmajkdncbha khjgbjdn kfhdvbnm ijhgcjkd</p>
             </div>
         </div>
+        <!--card2-->
+        <div class="card-img">
+            <div id="img">
+                <img src="/Assets/1.jpg" width="200px" height="200px">
+            </div>
+            <span class="Caldeira">Caldeira</span>
+        </div>
+        <!--card3-->
+        <div class="card-img">
+            <div id="img">
+                <img src="/Assets/1.jpg" width="200px" height="200px">
+            </div>
+            <span class="Alura">Alura</span>
+        </div>
+        <!--card4-->
+        <div class="card-img">
+            <div id="img">
+                <img src="/Assets/1.jpg" width="200px" height="200px">
+            </div>
+            <span class="ArquitetandoInclusao">Arquitetando Inclusão</span>
+        </div>
+        <!--card5-->
+        <div class="card-img">
+            <div id="img">
+                <img src="/Assets/1.jpg" width="200px" height="200px">
+            </div>
+            <span class="Egalite">Egalitê</span>
+        </div>
+    </div>
+</section>
+
 
         <!--=== FORMULÁRIO ===-->
-        <div class="formulario-container">
+        <div class="divisor-secao">
             <h2 class="text-formulario">Formulário</h2>
-            <form class="formulario">
-                <div class="contatos-form">
+        </div>
+        <div class="formulario-container">
+            <div class="contatos-form">
                 <div id="img" class="logo-form">
-                    <img src="">
+                    <img src="/Assets/1.jpg" width="300px" height="300px">
                 </div>
-                <p></p>
-            </div>
-                <fieldset>
-                    <!--nome-->
-                    <label for="name">
-                        <span>Nome</span>
-                        <input type="text" id="name" name="name" placeholder="Nome" required>
-                    </label>
-                    <!--Email-->
-                    <label for="email">
-                        <span>Email</span>
-                        <input type="email" id="email" name="email" placeholder="Email" required>
-                    </label>
-                    <!--Motivo-->
-                    <span>Motivo</span>
+                <p>Ljhfudjmnfghvjc iuhfbjksijuhcv isudhbjksjhvb usyhdbnksjhd iuhjbfkloxidjuhf iuhbkvsjdfh kjfdhks.</p>
+           </div>
+            <form method="post" action="AQUI VAI O LINK DO BACKEND" class="formulario">
+                    <legend>Formulário de contato.</legend>
+                    <label>Nome</label>
+                    <input type="text" id="name" name="name" placeholder="Digite o seu nome:" required>
+                    
+                    <label>Email</label>
+                    <input type="email" id="email" name="email" placeholder="Digite o seu email:" required>
+                    
+                   
+                    <label>Motivo</label>
                     <select id="select" name="motivo" required>
+                        <option value="">Selecione um motivo:</option>
                         <option value="sugestão">Sugestões</option>
                         <option value="critica">Críticas</option>
-                         <option value="elogio">Elogios</option>
+                        <option value="elogio">Elogios</option>
                         <option value="dúvidas">Dúvidas</option>
                     </select>
 
-                    <label for="message">
-                        <span>Mensagem</span>
-                        <textarea id="message" name="message" placeholder="Insira sua mensagem" required></textarea>
-                    </label>
-
+                    <label>Mensagem</label>
+                    <textarea id="message" name="message" placeholder="Insira a sua mensagem" required></textarea>
+                    
+                    
+                    <input type="checkbox" id="termos-de-uso" name="termos" value="aceito" checked>
+                    <label for="termos-de-uso">Li e aceito os termos de uso.</label>
+                    
                     <button type="submit" id="enviar">Enviar</button>
-                </fieldset>
             </form>
         </div>
     </section>
@@ -553,7 +455,6 @@ function showSlides() {
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <!--===== SCRIPT DA API ======-->
-
     <script src="Script/API.js"></script>
 </body>
 
