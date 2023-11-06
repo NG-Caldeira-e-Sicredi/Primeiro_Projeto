@@ -22,7 +22,7 @@ body {
     background-image: url("/Assets/rm222batch4-mind-19.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-color: var(--cor-quaternaria);
+    background-color: var(--cor-primaria);
     background-size: 100%; 
     font-family: "Arial", sans-serif;
     display: flex;
@@ -41,14 +41,11 @@ body {
 
   /* Estilos para o modo dark */
 .dark {
-    background-color: var(--cor-secundaria);
+    background-color: var(--cor-quaternaria);
     background-image: url("/Assets/diego\ assets.jpg");
 
 }
-.light {
-    background-color: var(--cor-primaria);
 
-}
   
 .botao {
     border-radius: 50px;
