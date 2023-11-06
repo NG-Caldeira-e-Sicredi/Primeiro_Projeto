@@ -30,8 +30,8 @@ document.addEventListener('DOMContentLoaded', function () {
 function darkOrLight() {
   const body = document.body;
   body.classList.toggle("dark");
-
 }
+
 
 // Botão de slider de depoimentos 
 document.addEventListener('DOMContentLoaded', function () {
@@ -50,19 +50,23 @@ let slideIndex = 0;
 showSlides();
 
 function showSlides() {
-  let i;
+  let image;
   let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+
+  for (image = 0; image < slides.length; image++) {
+    slides[image].style.display = "none";
   }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+
+  slideIndex += 3; //3 foto por vez
+  if (slideIndex > slides.length) {
+    slideIndex = 3;
   }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Troca a imagem a cada 2seg
+
+  for (image = slideIndex - 3; image < slideIndex; image++) {
+    if (image >= 0) {
+      slides[image].style.display = "block";
+    }
+  }
+
+  setTimeout(showSlides, 3000);
 }
-// aqui termina teste apresentação
