@@ -24,34 +24,44 @@
 
 <div class="slideshow-container">
 
-    <div class="mySlides fade">
-      <img src="/Assets/Diego.png" style="width:50%">
-      <div class="text">Diego</div>
-      <img src="Assets/Filipe.png" style="width:50%">
-      <div class="text">Filipe</div>
-      <img src="Assets/Joao.png" style="width:50%">
-      <div class="text">João</div>
+    <div class="mySlides">
+        <img src="/Assets/Diego.png" class="apresentacao">
+        <div class="text">Diego</div>
     </div>
-    
-    <div class="mySlides fade">
-        <img src="Assets/Karina.png" style="width:50%">
+    <div class="mySlides">
+        <img src="Assets/Filipe.png" class="apresentacao">
+        <div class="text">Filipe</div>
+    </div>
+    <div class="mySlides">
+        <img src="Assets/Joao.png" class="apresentacao">
+        <div class="text">João</div>
+    </div>
+    <div class="mySlides">
+        <img src="Assets/Karina.png" class="apresentacao">
         <div class="text">Karina</div>
-        <img src="Assets/Maiara.png" style="width:50%">
-        <div class="text">Maiara</div>
-        <img src="Assets/Matheus.png" style="width:50%">
-        <div class="text">Matheus</div>
-      </div>
-    
-      <div class="mySlides fade">
-        <img src="Assets/Nicolas R.png" style="width:50%">
-        <div class="text">Nicolas R</div>
-        <img src="Assets/Robson.png" style="width:50%">
-        <div class="text">Robson</div>
-        <img src="Assets/Wagner.png" style="width:50%">
-        <div class="text">Wagner</div>
-      </div>
-    
     </div>
+    <div class="mySlides">
+        <img src="Assets/Maiara.png" class="apresentacao">
+        <div class="text">Maiara</div>
+    </div>
+    <div class="mySlides">
+        <img src="Assets/Matheus.png" class="apresentacao">
+        <div class="text">Matheus</div>
+    </div>
+    <div class="mySlides">
+        <img src="Assets/Nicolas R.png" class="apresentacao">
+        <div class="text">Nicolas R</div>
+    </div>
+    <div class="mySlides">
+        <img src="Assets/Robson.png" class="apresentacao">
+        <div class="text">Robson</div>
+    </div>
+    <div class="mySlides">
+        <img src="Assets/Wagner.png" class="apresentacao">
+        <div class="text">Wagner</div>
+    </div>
+    
+</div>
 </div>
 <div style="text-align:center">
   <span class="dot"></span> 
@@ -385,11 +395,12 @@
         <div class="formulario-container">
             <div class="contatos-form">
                 <div id="img" class="logo-form">
-                    <img src="/Assets/1.jpg" width="300px" height="300px">
+                    <img src="/Assets/1.jpg" width="250px" height="250px">
                 </div>
                 <p>Ljhfudjmnfghvjc iuhfbjksijuhcv isudhbjksjhvb usyhdbnksjhd iuhjbfkloxidjuhf iuhbkvsjdfh kjfdhks.</p>
            </div>
             <form method="post" action="AQUI VAI O LINK DO BACKEND" class="formulario">
+                <fieldset>
                     <legend>Formulário de contato.</legend>
                     <label>Nome</label>
                     <input type="text" id="name" name="name" placeholder="Digite o seu nome:" required>
@@ -410,11 +421,14 @@
                     <label>Mensagem</label>
                     <textarea id="message" name="message" placeholder="Insira a sua mensagem" required></textarea>
                     
-                    
-                    <input type="checkbox" id="termos-de-uso" name="termos" value="aceito" checked>
-                    <label for="termos-de-uso">Li e aceito os termos de uso.</label>
-                    
-                    <button type="submit" id="enviar">Enviar</button>
+                    <div class="termos">
+                        <input type="checkbox" id="termos-de-uso" name="termos" value="aceito" checked>
+                        <label for="termos-de-uso">Li e aceito os termos de uso.</label>
+                    </div>
+                    <div class="button-form">
+                        <button type="submit" id="enviar">Enviar</button>
+                    </div>
+                </fieldset>
             </form>
         </div>
     </section>
