@@ -12,6 +12,7 @@
     --cor-quinaria: rgb(94, 235, 222);
     --cor-sextupla: rgb(13, 14, 13);
     --cor-setupla: rgb(248, 253, 253);
+    --cor-octupla: rgb(160, 191, 178);
     --fonte-primaria: 
     --fonte-secundaria: 
     --fonte-terciaria: 
@@ -284,18 +285,18 @@ nav ul li a:hover:after {
   
 .formulario label {
     display:inline;
-    margin-left: 15px;
+    margin-left: 25px;
 }
   
 .formulario input[type="text"],
 .formulario input[type="email"],
 .formulario select,
 .formulario textarea {
-    width: 95%;
+    width: 85%;
     padding: 10px;
     border: 1px solid var(--cor-quinaria);
     border-radius: 5px;
-    margin: 15px 0 15px 0;
+    margin: 5px 25px 5px 25px;
 }
   
 .formulario textarea {
@@ -303,7 +304,7 @@ nav ul li a:hover:after {
 }
   
 .formulario select {
-    width: 99%;
+    width: 89%;
 }
   
 .formulario button {
@@ -324,9 +325,6 @@ legend {
     text-align: center;
 }
 
-
-  
-  /* Estilo para o botão de envio quando o mouse passa por cima */
 .formulario button:hover {
     background-color: var(--cor-quinaria);
 }
@@ -356,4 +354,88 @@ legend {
     margin: 10px; 
 }
 
-  
+.footer-container {
+    text-align: right;
+    margin: 20px;
+    padding: 20px;
+    gap: 10px;
+}
+.main-footer {
+    display: inline-block;
+} 
+
+/* estilos parceiros */
+.imagem-container {
+    background-color: var(--cor-octupla);
+    margin: 50px;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.card-parceiros {
+    width: 50%;
+    display: flex;
+}
+
+.image-parceiros {
+     flex: 1; 
+     
+}
+
+.sicredi-image,
+.alura-image, 
+.egalite-image {
+    margin-left: 55%;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+}
+
+.sicredi-image {
+    margin-top: 55px;
+}
+.alura-image {
+    margin-top: 10px;
+}
+
+.arquitetando-image {
+    margin-top: 42px;
+}
+
+.egalite-image {
+    margin-bottom: 30px;
+}
+
+.resumo-parceiros-ega {
+    margin-top: 45px;
+}
+
+.caldeira-image,
+.arquitetando-image {
+    margin-left: 70%;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+}
+
+
+.resumo-parceiros-scr,
+.resumo-parceiros-alu,
+.resumo-parceiros-ega {
+    margin-left: 60%;
+    margin-bottom: 20%;
+}
+
+.resumo-parceiros-cald,
+.resumo-parceiros-arq {
+    margin-left: 20%;
+    padding: 10px;
+    margin-bottom: 20%;
+}
+
+
+.texto-parceiro {
+    width: 400px;
+    text-align: justify;
+ 
+}
