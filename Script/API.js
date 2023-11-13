@@ -28,9 +28,10 @@ function talk() {
     }
 
 }
-
-document.addEventListener('keyup', function(e) {
-    if (e.key == "Enter") {
-        talk();
-    }
+document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('keyup', function(e) {
+        if (e.key == "Enter") {
+            talk();
+        }
+    });
 });
