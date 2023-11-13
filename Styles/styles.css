@@ -162,6 +162,7 @@ nav ul li a:hover:after {
     text-align: center;
     height: 100vh;
     margin: 70px;
+    display: none;
 }
   
 /* Estilos para o botão de fechar modal */
