@@ -117,6 +117,7 @@ nav ul li a {
     position: relative;
     font-weight: bold;
 }
+
 nav ul li a:after {
     position: absolute;
     bottom: 0;
@@ -126,15 +127,24 @@ nav ul li a:after {
     background: var(--cor-quinaria);
     transition: all 0.5s;
 }
+
 nav ul li a:hover:after {
     display: flex;
 }
-  nav ul li a:hover {
-    color: var(--cor-quaternaria);
-    z-index: 1;
-    transition: color 1s;
-  }
 
+nav ul li a:hover {
+color: var(--cor-quaternaria);
+z-index: 1;
+transition: color 1s;
+}
+
+.buttonSpeaker {
+    width: 1.8%;
+    height: 20%;
+    position:fixed;
+    bottom: 0;
+    right: 0;
+}
   /*Estilos para a section galeria apresentação*/
 .slideshow-container {
     display: flex;

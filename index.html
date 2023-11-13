@@ -22,6 +22,10 @@
         </nav>
    </header> 
 
+   <div class="buttonSpeaker">
+    <button onclick="talk()">Tocar</button>
+   </div>
+
 <div class="slideshow-container">
 
     <div class="mySlides">
@@ -71,7 +75,7 @@
     
     <!--=== MAIN - TEXTO ===-->
         <div class="divisor-secao">
-            <h1>Projeto Acelerador de Carreiras</h1>
+            <h1 id="txt">Projeto Acelerador de Carreiras</h1>
         </div>
         <div class="texto-main1">
             <h2 id="txt">Como surgiu o Projeto Acelerador de Carreiras?</h2> 
@@ -103,7 +107,7 @@
    <!--=== SECTION 2- DEPOIMENTOS ===-->
     <section>
         <div class="divisor-secao">
-            <h2 class="dpn-carrosel">Depoimentos</h2>
+            <h2 id="txt" class="dpn-carrosel">Depoimentos</h2>
         </div>
         <div class="depoimentos-carousel" id="Depoimentos">
         <div class="carousel-container">
@@ -195,7 +199,7 @@
     <!--=== SECTION 3- EQUIPE ===-->
     <section class="equipes" id="Equipe">
         <div class="divisor-secao">
-            <h2 class="title-equipes">Equipe</h2>
+            <h2 id="txt" class="title-equipes">Equipe</h2>
         </div>
         <div class="equipes-card-container">
             <div class="image-container">
@@ -342,48 +346,48 @@
     <!--=== SECTION 4- PARCEIROS ===-->
 <section class="parceiros" id="Parceiros">
     <div class="divisor-secao">
-        <h2 class="title-parceiros">Parceiros</h2>
+        <h2 id="txt" class="title-parceiros">Parceiros</h2>
     </div>
     <div class="imagem-container">
         <!--card1-->
         <div class="card-parceiros">
-            <div class="image-parceiros">
-                <img src="/Assets/parceiros/sicredi 1.jpg" class="sicredi-image">
+            <div id="img" class="image-parceiros">
+                <img src="/Assets/parceiros/sicredi 1.jpg" class="sicredi-image" alt="Um catavento com tons de verde variados entre verde forte e verde fraco, ao lado a palavra Sicrédi escrita em verde claro e o fundo branco">
             </div>
             <div class="resumo-parceiros-scr">
-                <h3 class="Sicredi">Sicredi</h3>
-                <p class="texto-parceiro">A primeira instituição financeira cooperativa do Brasil. Nosso modelo de negócio constrói uma cadeia de valor que beneficia o associado, a cooperativa e a comunidade local.
+                <h3 id="txt" class="Sicredi">Sicredi</h3>
+                <p id="txt" class="texto-parceiro">A primeira instituição financeira cooperativa do Brasil. Nosso modelo de negócio constrói uma cadeia de valor que beneficia o associado, a cooperativa e a comunidade local.
                     Somos o Sicredi, e escolhemos trilhar um caminho coletivo para oferecer soluções inteligentes para o seu desenvolvimento financeiro. A gente entende que as melhores escolhas são aquelas que trazem resultados para todos. Oferecemos mais de 300 produtos e serviços financeiros de um jeito simples e próximo para você, para a sua empresa e para o seu agronegócio. Mas o que nos faz diferentes é que ao se associar, você adquire uma pequena cota da sua cooperativa, passando a ser dono do Sicredi, tendo voz sobre as decisões do negócio e participando dos resultados. É por isso que o Sicredi é seu, meu e nosso. Aqui todos têm a oportunidade de decidir e participar, assim criamos laços de confiança que nos permitem crescer juntos.</p>
             </div>
         </div>
         <!--card2-->
         <div class="card-parceiros">
             <div class="resumo-parceiros-cald">
-                <h3 class="Caldeira">Caldeira</h3>
-                <p class="texto-parceiro">Somos um hub de inovação com mais de 22 mil m² que promove a conexão entre grandes empresas, startups, universidades e poder público, gerando um movimento transformador de fomento do ecossistema de tecnologia e inovação.
+                <h3 id="txt" class="Caldeira">Caldeira</h3>
+                <p id="txt" class="texto-parceiro">Somos um hub de inovação com mais de 22 mil m² que promove a conexão entre grandes empresas, startups, universidades e poder público, gerando um movimento transformador de fomento do ecossistema de tecnologia e inovação.
                     Conectamos a nossa comunidade através de um portfólio de eventos, programas de inovação aberta, capacitações, conteúdos e interação direta entre os membros.
                     Promovemos a inovação e buscamos conectar todos que são apaixonados por este propósito.</p>
             </div>
             <div class="image-parceiros">
-                <img src="/Assets/parceiros/caldeeira 1.png" class="caldeira-image">
+                <img src="/Assets/parceiros/caldeeira 1.png" class="caldeira-image" alt="A palavra caldeira escrita em verde, com o formato de uma escada invertida e um fundo preto">
             </div>
         </div>
         <!--card3-->
         <div class="card-parceiros">
             <div class="image-parceiros">
-                <img src="/Assets/parceiros/Alura.jpg" class="alura-image">
+                <img src="/Assets/parceiros/Alura.jpg" class="alura-image" alt="A palavra alura escrita com letras minúsculas, as letras são azuis, um tom de azul escuro e o fundo é branco">
             </div>
             <div class="resumo-parceiros-alu">
-                <h3 class="Alura">Alura</h3>
-                <p class="texto-parceiro">A Alura compõe o maior ecossistema de ensino em tecnologia do Brasil e tem como missão transformar vidas e carreiras.
+                <h3 id="txt" class="Alura">Alura</h3>
+                <p id="txt" class="texto-parceiro">A Alura compõe o maior ecossistema de ensino em tecnologia do Brasil e tem como missão transformar vidas e carreiras.
                     Sabemos que o trabalho em Tech mudou. As profissões se tornaram mais líquidas e as fronteiras entre elas já não estão bem definidas. Apenas se especializar em desenvolvimento de software não basta para ser um bom dev. Para realmente entregar resultados é necessário que, além de aprofundar e mergulhar de cabeça na sua área, você também navegue em outras vertentes de tecnologia, como UX, Marketing Digital ou Data Science, por exemplo. A Alura carrega a percepção de que o profissional de hoje precisa ser um profissional em <T>.</p>
             </div>
         </div>
         <!--card4-->
         <div class="card-parceiros">
             <div class="resumo-parceiros-arq">
-                <h3 class="ArquitetandoInclusao">Arquitetando Inclusão</h3>
-                <p class="texto-parceiro">nosso propósito
+                <h3 id="txt" class="ArquitetandoInclusao">Arquitetando Inclusão</h3>
+                <p id="txt" class="texto-parceiro">nosso propósito
                     Construir um ambiente que proporcione experiências reais de inclusão de Pessoas com Deficiência nas empresas.
                     Baseamos nossa metodologia na compreensão do cenário organizacional, entendendo o negócio, sua estratégia, principais iniciativas que envolvem a diversidade e conectamos com o propósito, inclusão de Pessoas com Deficiência.
                     Para obtermos sucesso é imprescindível o investimento em formação de pessoas, suprindo-as de conhecimento, segurança e autonomia para a construção de um ambiente organizacional inclusivo.
@@ -400,8 +404,8 @@
                 <img src="/Assets/parceiros/egalite 1.jpg" class="egalite-image">
             </div>
             <div class="resumo-parceiros-ega">
-                <h3 class="Egalitê">Egalitê</h3>
-                <p class="texto-parceiro">Trabalhamos pela inclusão de pessoas com deficiência em todo o Brasil
+                <h3 id="txt" class="Egalitê">Egalitê</h3>
+                <p id="txt" class="texto-parceiro">Trabalhamos pela inclusão de pessoas com deficiência em todo o Brasil
                     Conhecemos as pessoas e valorizamos competências
                     Ajudamos pessoas com deficiência a encontrar, de forma gratuita, a melhor vaga de emprego.
                     A Egalite é especializada em projetos para empregabilidade de pessoas com deficiência</p>
