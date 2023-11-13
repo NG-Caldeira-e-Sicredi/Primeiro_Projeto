@@ -1,5 +1,5 @@
-// Função para abrir e fechar TODOS os modais (1 ao 15)
-document.addEventListener('DOMContentLoaded', function () {
+// Função para abrir e fechar TODOS os modais (1 ao 14)
+document.addEventListener('DOMContentLoaded', () => {
   const openModalButtons = document.querySelectorAll('.open-modal');
   const closeButtons = document.querySelectorAll('.close-modal');
   const modals = document.querySelectorAll('.modal');
@@ -17,9 +17,9 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   window.addEventListener('click', (event) => {
-      modals.forEach((modal) => {
+      modals.forEach((modal, index) => {
           if (event.target === modal) {
-              modal.style.display = 'none';
+              modals[index].style.display = 'none';
           }
       });
   });
