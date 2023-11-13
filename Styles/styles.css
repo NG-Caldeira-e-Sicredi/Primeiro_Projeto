@@ -1,5 +1,15 @@
 /* Esse é o reset geral para não refletir diferenças entre navegadores */
-* {
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,600;1,700&family=League+Spartan:wght@100&family=Noto+Sans:ital,wght@0,700;0,900;1,100&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,600;1,700&family=Lato:ital@1&family=League+Spartan:wght@100&family=Noto+Sans:ital,wght@0,700;0,900;1,100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,600;1,700&family=Indie+Flower&family=Lato:ital@1&family=League+Spartan:wght@100&family=Noto+Sans:ital,wght@0,700;0,900;1,100&display=swap');
+
+
+
+* { 
     margin: 0;
     padding: 0;
 }
@@ -9,13 +19,14 @@
     --cor-secundaria: rgb(94, 235, 174);
     --cor-terciaria: rgb(74, 167, 60);
     --cor-quaternaria: rgb(63, 92, 28);
-    --cor-quinaria: rgb(94, 235, 222);
+    --cor-quinaria: #5eebde;
     --cor-sextupla: rgb(13, 14, 13);
     --cor-setupla: rgb(248, 253, 253);
     --cor-octupla: rgb(160, 191, 178);
-    --fonte-primaria: 
-    --fonte-secundaria: 
-    --fonte-terciaria: 
+    --cor-nove: rgb(10, 34, 24);
+    --fonte-primaria: 'League Spartan';
+    --fonte-secundaria: 'Indie Flower', cursive;
+    /* --fonte-terciaria: */
 }
 
 body {
@@ -25,16 +36,34 @@ body {
     background-attachment: fixed;
     background-color: var(--cor-primaria);
     background-size: 100%; 
-    font-family: "Arial", sans-serif;
+    font-family: var(--fonte-primaria);
+    font-size: 21px;
     display: flex;
     flex-direction: column;
+}
+.texto-main1 {
+    font-family: var(--fonte-secundaria);
+    text-align: center;
+}
+
+.divisor-secao {
+    font-family: var(--fonte-secundaria)
+    
+    }
+
+.texto-explicativo {
+    font-family: var(--fonte-primaria);
+    color: var(--cor-secundaria);
+    font-weight: bold; 
+    font-size: 50px;
+    text-align: center;
 }
 
   /* Detalhe para separar seções e destacar o nome */
 .divisor-secao {
     padding: 30px;
     margin: 50px;
-    background-color: var(--cor-secundaria);
+    background-image: linear-gradient(to right, var(--cor-octupla), var(--cor-secundaria));
     opacity: 80%;
     border-radius: 0px 50px 0px 50px;
     text-align: center;
@@ -51,11 +80,12 @@ body {
 .botao {
     border-radius: 50px;
     padding: 5px;
-    background-color: var(--cor-primaria);
+    background-image: linear-gradient(to right, var(--cor-octupla), var(--cor-secundaria));
     border: 2px solid var(--cor-terciaria);
     cursor: pointer;
     width: 100px;
     height: 40px;
+    
 }
   
 #modoBotao {
@@ -67,6 +97,7 @@ body {
     display: flex;
     justify-content: flex-end; 
     margin-top: 20px;
+    font-family: var(--fonte-secundaria);
 }
 
 .nav ul {
@@ -91,11 +122,8 @@ nav ul li a:after {
     bottom: 0;
     left: 0;
     right: 0;
-    content: ' ';
     color: transparent;
     background: var(--cor-quinaria);
-    height: 1px;
-    width: 0;
     transition: all 0.5s;
 }
 nav ul li a:hover:after {
@@ -116,13 +144,28 @@ nav ul li a:hover:after {
     margin: 0 auto;     
     text-align: center;   
   }
+
+  .dot {
+    border-radius: 8px;
+    height: 8px;
+    margin: 0 4px;
+    transform: scale(0.75);
+    transition: transform 0.4s;
+    width: 8px;
+    background: var(--cor-quaternaria);
+}
+
+.dot.active {
+    background: var(--cor-secundaria);
+    transform: scale(1);
+}
   
   /* Legenda */
   .text {
-    color: var(--cor-terciaria);
-    margin-bottom: 20px;
+    /* color:  */
+    /* margin-bottom: 20px; */
     width: 100%;
-    font-weight: bold;
+    /* font-weight: bold; */
   }
   
   /* Três pontinhos delimitando a foto selecionada */
@@ -140,7 +183,7 @@ nav ul li a:hover:after {
     background-color: var(--cor-quaternaria);
   }
   
-  .mySlide {
+  .mySlides  {
     display: none;
     flex: 0 0 30%;
     max-width: 30%;
@@ -243,6 +286,10 @@ nav ul li a:hover:after {
     display: flex;
     width: 95vw;
     text-align: center;
+}
+
+.texto-parceiro {
+    font-size: 21px;
 }
 
 .text-card {
@@ -367,7 +414,7 @@ legend {
 
 /* estilos parceiros */
 .imagem-container {
-    background-color: var(--cor-octupla);
+    background-image: linear-gradient(to right, var(--cor-octupla), var(--cor-secundaria));
     margin: 50px;
     padding: 40px;
     border-radius: 20px;
@@ -438,5 +485,4 @@ legend {
 .texto-parceiro {
     width: 400px;
     text-align: justify;
- 
 }
