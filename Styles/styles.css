@@ -7,7 +7,29 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,600;1,700&family=Indie+Flower&family=Lato:ital@1&family=League+Spartan:wght@100&family=Noto+Sans:ital,wght@0,700;0,900;1,100&display=swap');
 
+@import '@splidejs/react-splide/css';
 
+
+.thumbnails {
+    display: flex;
+    margin: 1rem auto 0;
+    padding: 0;
+    justify-content: center;
+  }
+  
+  .thumbnail {
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    list-style: none;
+    margin: 0 0.2rem;
+    cursor: pointer;
+  }
+  
+  .thumbnail img {
+    width: 100%;
+    height: auto;
+  }
 
 * { 
     margin: 0;
@@ -42,12 +64,12 @@ body {
     flex-direction: column;
 }
 .texto-main1 {
-    font-family: var(--fonte-secundaria);
+    font-family: var(--fonte-primaria);
     text-align: center;
 }
 
 .divisor-secao {
-    font-family: var(--fonte-secundaria)
+    font-family: var(--fonte-primaria)
     
     }
 
@@ -84,8 +106,8 @@ body {
     border: 2px solid var(--cor-terciaria);
     cursor: pointer;
     width: 100px;
-    height: 40px;
-    
+    height: 40px; 
+    margin: -15px;   
 }
   
 #modoBotao {
@@ -97,7 +119,7 @@ body {
     display: flex;
     justify-content: flex-end; 
     margin-top: 20px;
-    font-family: var(--fonte-secundaria);
+    font-family: var(--fonte-primariaa);
 }
 
 .nav ul {
