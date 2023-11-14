@@ -41,22 +41,55 @@ body {
     display: flex;
     flex-direction: column;
 }
-.texto-main1 {
+
+main {
+    color: var(--cor-sextupla);
+    line-height: 2em;
+}
+
+.principal {
+    background-image: linear-gradient(to right, var(--cor-octupla), var(--cor-secundaria));
+    margin: 50px;
+    padding: 40px;
+    border-radius: 20px;
+}
+h1 {
+    text-align: left;
+    padding: 30px 10px 20px 30px ;
     font-family: var(--fonte-secundaria);
+}
+h3 {
+    font-family: var(--fonte-primaria);
     text-align: center;
 }
 
 .divisor-secao {
-    font-family: var(--fonte-secundaria)
+    font-family: var(--fonte-primaria)
     
-    }
+}
 
+.texto-main1 {
+    margin-bottom: 2%;
+
+}
+
+.texto-main2 {
+    margin-left: 40%;
+    margin-bottom: 2%;
+}
+
+.texto-main3 {
+    margin-right: 40%;
+    margin-bottom: 2%;
+}
+
+.texto-main4 {
+    
+}
 .texto-explicativo {
     font-family: var(--fonte-primaria);
-    color: var(--cor-secundaria);
-    font-weight: bold; 
-    font-size: 50px;
-    text-align: center;
+    color: var(--cor-sextupla);
+    text-align: justify;
 }
 
   /* Detalhe para separar seções e destacar o nome */
@@ -97,7 +130,7 @@ body {
     display: flex;
     justify-content: flex-end; 
     margin-top: 20px;
-    font-family: var(--fonte-secundaria);
+    font-family: var(--fonte-primaria);
 }
 
 .nav ul {
