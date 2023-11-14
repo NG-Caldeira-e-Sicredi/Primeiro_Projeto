@@ -6,9 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles/styles.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.1/dist/css/themes/splide-skyblue.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="<script src=">Script/splide.js></script>"
+    ></script>    
+    <link rel="import" href="bootstrap.html">
     <title>Afinal, qual é a nossa limitação?</title>
-</head>
-<body>
+    </head>
                    <!--=== MENU DE NAVEGAÇÃO ===-->
    <header>
         <nav class="nav" id="mainNav">
@@ -98,14 +106,14 @@
         <video id="video-main1">
             <source src="" type="video/mp4">
         </video>
-        <!--video 2
+       -video 2
         <video id="video-main2">
             <source src="" type="video/mp4">
         </video>
     </main>-->
 
-   <!--=== SECTION 2- DEPOIMENTOS ===-->
-    <section>
+   <!--=== SECTION 2- DEPOIMENTOS 
+     <section>
         <div class="divisor-secao">
             <h2 id="txt" class="dpn-carrosel">Depoimentos</h2>
         </div>
@@ -116,7 +124,7 @@
                 <div class="swiper-button-next" id="nextBtn"></div>
             <div class="swiper-wrapper">
                  
-                 <!--card1-->
+                 card1
                 <div class="swiper-slide">
                     <h4 id="txt">Jean</h4>
                     <img src="/Assets/1.jpg" class="imagem-card-depoimento" width="100" height="100">
@@ -124,7 +132,7 @@
                     <button class="open-modal" data-modal="modal1">Veja mais...</button>
                 </div>
 
-                 <!--card2-->
+                card2
                 <div class="swiper-slide">
                     <h4 id="txt">Carol Caldeira</h4>
                     <img src="/Assets/1.jpg" class="imagem-card-depoimento" width="100" height="100">
@@ -132,7 +140,7 @@
                     <button class="open-modal" data-modal="modal2">Veja mais...</button>
                 </div>
 
-                 <!--card3-->
+                 card3
                 <div class="swiper-slide">
                     <h4 id="txt">Fábio e Carol</h4>
                     <img src="/Assets/1.jpg" class="imagem-card-depoimento" width="100" height="100">
@@ -140,7 +148,7 @@
                     <button class="open-modal" data-modal="modal3">Veja mais...</button>
                 </div>
 
-                 <!--card4-->
+                 card4
                 <div class="swiper-slide">
                     <h4 id="txt">Egalitê</h4>
                     <img src="/Assets/1.jpg" class="imagem-card-depoimento" width="100" height="100">
@@ -148,7 +156,7 @@
                     <button class="open-modal" data-modal="modal4">Veja mais...</button>
                 </div>
 
-                 <!-- card5 -->
+                 card5
                 <div class="swiper-slide">
                     <h4 id="txt">Arquitetando</h4>
                     <img src="/Assets/1.jpg" class="imagem-card-depoimento" width="100" height="100">
@@ -157,7 +165,50 @@
                 </div>  
             </div>
         </div>
+    </div> -->
+
+    <div class="divisor-secao">
+        <h2 id="txt" class="dpn-carrosel">Depoimentos</h2>
     </div>
+
+    <section id="main-carousel" class="splide" aria-label="My Awesome Gallery">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img src="Assets/1.jpg" alt="">
+            </li>
+            <li class="splide__slide">
+              <img src="Assets/1.jpg" alt="">
+            </li>
+            <li class="splide__slide">
+              <img src="Assets/1.jpg" alt="">
+            </li>
+            <li class="splide__slide">
+              <img src="Assets/1.jpg" alt="">
+              <li class="splide__slide">
+                <img src="Assets/1.jpg" alt="">
+            </li>
+          </ul>
+        </div>
+      </section>
+      
+      <ul id="thumbnails" class="thumbnails">
+        <li class="thumbnail">
+          <img src="Assets/1.jpg" alt="">
+        </li>
+        <li class="thumbnail">
+          <img src="Assets/1.jpg" alt="">
+        </li>
+        <li class="thumbnail">
+          <img src="Assets/1.jpg" alt="">
+        </li>   
+        <li class="thumbnail">
+          <img src="Assets/1.jpg" alt="">
+        </li>
+        <li class="thumbnail">
+            <img src="Assets/1.jpg" alt="">
+          </li>
+      </ul>
     
     </section>  
     <div id="modal1" class="modal">
@@ -302,12 +353,7 @@
     <div id="modal9" class="modal">
         <div class="modalEquipe">
             <h4 id="txt">Matheus</h4>
-            <img src="/Assets/modais-equipe/Matheus-modal.jpg" width="300px" height="300px">
-            <p id="txt">Sou o Matheus Ghilardi tenho deficiência física (amputação do braço direito), sou um rapaz sorridente e falador kkkkk, sou cheio de adrenalina e adoro trabalhar, gosto de me dedicar e me esforçar, não vejo minha deficiência como uma limitação mas sim como um empurrão para me superar e me dedicar.
-                Nunca trabalhei com informática antes, mas sempre gostei de computação e tecnologia, essa experiência que ganhei está abrindo demais meu conhecimento e estou gostando muito.
-                Gostaria de expressar minha mais profunda gratidão pela oportunidade de emprego que me foi concedida. É uma honra ter sido escolhido para fazer parte da equipe e contribuir para o sucesso desta empresa.
-                Estou com 26 anos e durante minha carreira, tive a oportunidade de trabalhar em diversas empresas, onde desenvolvi habilidades sólidas em [conversa, liderança e trabalho em equipe,]. Além disso, sou conhecido por minha dedicação, proatividade e comprometimento em alcançar metas.
-                Estou ansioso para colaborar com a equipe e contribuir para o crescimento desta organização. Mais uma vez, agradeço a confiança que vocês depositaram em mim e estou ansioso para começar este novo capítulo em minha carreira.</p>
+            <p id="txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             <button class="close-modal">Fechar conteúdo</button>
         </div>
     </div>
@@ -502,6 +548,10 @@
 
     <!--===== SCRIPT DA API ======-->
     <script src="Script/API.js"></script>
+
+    <!--===== SCRIPT DO CARROUSSEL DOS DEPOIMENTOS-->
+    <script src="Script/splide.js></script>
+
 </body>
 
 </html>
