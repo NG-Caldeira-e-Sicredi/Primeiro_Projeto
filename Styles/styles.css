@@ -171,13 +171,7 @@ z-index: 1;
 transition: color 1s;
 }
 
-.buttonSpeaker {
-    width: 1.8%;
-    height: 20%;
-    position:fixed;
-    bottom: 0;
-    right: 0;
-}
+
   /*Estilos para a section galeria apresentação*/
 .slideshow-container {
     display: flex;
@@ -528,4 +522,23 @@ legend {
 .texto-parceiro {
     width: 400px;
     text-align: justify;
+}
+
+.buttonSpeaker {
+    margin-right: 50px;
+    margin-bottom: 450px;
+    
+}
+
+.image-acess {
+    height: 50px;
+    width: 50px;
+}
+
+.buttonSpeaker {
+    width: 1.8%;
+    height: 20%;
+    position:fixed;
+    bottom: 0;
+    right: 0;
 }
