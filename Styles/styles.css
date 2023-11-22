@@ -358,6 +358,24 @@ transition: color 1s;
     font-size: 21px;
 }
 
+/* botões dos modais */
+.open-modal {
+    display: block;
+    text-align: center;
+    margin: 5%;
+    width: 90%;
+    padding: 1.5%;
+    background-color: var(--cor-setupla);
+    color: var(--cor-nove);
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.open-modal:hover {
+    background-color: var(--cor-nove);
+    color: var(--cor-setupla);
+}
+
 .text-card {
     margin: 10px 50px;
     align-items:center;
