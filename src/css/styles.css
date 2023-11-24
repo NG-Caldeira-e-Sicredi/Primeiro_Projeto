@@ -458,6 +458,9 @@ transition: color 1s;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    display: block;
+    margin: auto;
+
 }
   
 legend {
