@@ -9,6 +9,6 @@ const email = req.body.email;
 const motivo = req.body.motivo; 
 const message = req.body.message; // Aqui, você pode processar os dados como preferir, por exemplo, enviar um e-mail // Exemplo de resposta de confirmação 
 res.send('Mensagem enviada com sucesso!'); }); // Inicie o servidor 
-app.listen(port, () => { console.log(`Servidor está rodando em http://localhost:${port}`); });
+app.listen(port, () => { console.log(`Servidor está rodando em http://localhost:${3000}`); });
 
 
