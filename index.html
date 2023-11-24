@@ -4,78 +4,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Styles/styles.css">
+    <link rel="stylesheet" href="/src/css/styles.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <title>PSC - Turma 1</title>
 </head>
 <body>
-                   <!--=== MENU DE NAVEGAÇÃO ===-->
+<!--=== MENU DE NAVEGAÇÃO ===-->
    <header>
     <div class="logo-texto">
-        <img class="logo-principal" src="/Assets/Logos-page/logo.jpg">
+        <img class="logo-principal" src="/src/image/imagens_logo/logo.jpg" alt="Logotipo do site, nas cores verde e branco, remetendo à um catavento com muitas pessoas representadas ao redor.">
         <h1>Afinal, qual é a nossa limitação?</h1>
     </div>
-        <nav class="nav" id="mainNav">
-            <ul>
-                <li><a href="#Sobre">Sobre</a></li>
-                <li><a href="#Depoimentos">Depoimentos</a></li>
-                <li><a href="#Equipe">Equipe</a></li>
-                <li><a href="#Parceiros">Parceiros</a></li>
-                <li><button class="botao" onclick="darkOrLight()"><img src="/Assets/dark_and_light.png" alt="Modo Dark"  id="modoBotao"></button></li>
-            </ul>
-        </nav>
+    <nav class="nav" id="mainNav">
+        <ul>
+            <li><a href="#Sobre">Sobre</a></li>
+            <li><a href="#Depoimentos">Depoimentos</a></li>
+            <li><a href="#Equipe">Equipe</a></li>
+            <li><a href="#Parceiros">Parceiros</a></li>
+            <li><button class="botao" onclick="darkOrLight()"><img src="/src/image/botao_dark/dark_and_light.png" alt="Botão do modo escuro"  id="modoBotao"></button></li>
+        </ul>
+    </nav>
    </header> 
 
    <div class="buttonSpeaker">
-        <button onclick="talk()"><img src="Assets/botao-acessibilidade/mic_2.jpg" class="image-acess"></button>
+        <button onclick="talk()"><img src="/src/image/botao-acessibilidade/mic_2.jpg" class="image-acess"></button>
    </div>
 
-<div class="slideshow-container">
+        <div class="slideshow-container">
 
-    <div class="mySlides">
-        <img src="/Assets/Diego.png" class="apresentacao">
-        <div class="text">Diego Forlin</div>
-    </div>
-    <div class="mySlides">
-        <img src="Assets/Filipe.png" class="apresentacao">
-        <div class="text">Filipe Vicari</div>
-    </div>
-    <div class="mySlides">
-        <img src="Assets/Joao.png" class="apresentacao">
-        <div class="text">João Reges</div>
-    </div>
-    <div class="mySlides">
-        <img src="Assets/Karina.png" class="apresentacao">
-        <div class="text">Karina da Mota</div>
-    </div>
-    <div class="mySlides">
-        <img src="Assets/Maiara.png" class="apresentacao">
-        <div class="text">Maiara Viegas</div>
-    </div>
-    <div class="mySlides">
-        <img src="Assets/Matheus.png" class="apresentacao">
-        <div class="text">Matheus Ghilardi</div>
-    </div>
-    <div class="mySlides">
-        <img src="Assets/Nicolas R.png" class="apresentacao">
-        <div class="text">Nicolas Figueiredo</div>
-    </div>
-    <div class="mySlides">
-        <img src="Assets/Robson.png" class="apresentacao">
-        <div class="text">Robson Aguiar</div>
-    </div>
-    <div class="mySlides">
-        <img src="Assets/Wagner.png" class="apresentacao">
-        <div class="text">Wagner da Silveira</div>
-    </div>
+            <div class="mySlides">
+                <img src="/src/image/imagens_equipe/Diego.png" class="apresentacao">
+                <div class="text">Diego Forlin</div>
+            </div>
+            <div class="mySlides">
+                <img src="/src/image/imagens_equipe/Filipe.png" class="apresentacao">
+                <div class="text">Filipe Vicari</div>
+            </div>
+            <div class="mySlides">
+                <img src="/src/image/imagens_equipe/Joao.png" class="apresentacao">
+                <div class="text">João Reges</div>
+            </div>
+            <div class="mySlides">
+                <img src="/src/image/imagens_equipe/Karina.png" class="apresentacao">
+                <div class="text">Karina da Mota</div>
+            </div>
+            <div class="mySlides">
+                <img src="/src/image/imagens_equipe/Maiara.png" class="apresentacao">
+                <div class="text">Maiara Viegas</div>
+            </div>
+            <div class="mySlides">
+                <img src="/src/image/imagens_equipe/Matheus.png" class="apresentacao">
+                <div class="text">Matheus Ghilardi</div>
+            </div>
+            <div class="mySlides">
+                <img src="/src/image/imagens_equipe/Nicolas R.png" class="apresentacao">
+                <div class="text">Nicolas Figueiredo</div>
+            </div>
+            <div class="mySlides">
+                <img src="/src/image/imagens_equipe/Robson.png" class="apresentacao">
+                <div class="text">Robson Aguiar</div>
+            </div>
+            <div class="mySlides">
+                <img src="/src/image/imagens_equipe/Wagner.png" class="apresentacao">
+                <div class="text">Wagner da Silveira</div>
+            </div>
 
-</div>
-</div>
-<div style="text-align:center">
+        </div>
+<!-- <div style="text-align:center">
   <span class="dot"></span> 
   <span class="dot"></span> 
   <span class="dot"></span> 
-</div>
+</div> -->
     
     <!--=== MAIN - TEXTO ===-->
     <main>
@@ -214,7 +213,7 @@
                 <!--card1-->
                 <div class="text-card">
                     <div id="img">
-                        <img src="/Assets/Wagner.png">
+                        <img src="/src/image/imagens_equipe/Wagner.png">
                         <br><br>
                         <button class="open-modal" data-modal="modal6">Wagner da Silveira</button>
                     </div>
@@ -222,7 +221,7 @@
                 <!--card2-->
                 <div class="text-card">
                     <div id="img">
-                        <img src="/Assets/Robson.png">
+                        <img src="/src/image/imagens_equipe/Robson.png">
                         <br><br>
                         <button class="open-modal" data-modal="modal7">Robson Aguiar</button>
                     </div>
@@ -230,7 +229,7 @@
                 <!--card3-->
                 <div class="text-card">
                     <div id="img">
-                        <img src="/Assets/Nicolas R.png" alt="Um deficiente físico, com um óculos preto, cabelos lisos e curtos de cor castanho escuro, uma blusa de lã preta, olhando para frente com o sol refletindo em seu rosto.">
+                        <img src="/src/image/imagens_equipe/Nicolas R.png" alt="Um deficiente físico, com um óculos preto, cabelos lisos e curtos de cor castanho escuro, uma blusa de lã preta, olhando para frente com o sol refletindo em seu rosto.">
                         <br><br>
                         <button class="open-modal" data-modal="modal8">Nicolas Figueiredo</button>
                     </div>
@@ -238,7 +237,7 @@
                 <!--card4-->
                 <div class="text-card">
                     <div id="img">
-                        <img src="/Assets/Matheus.png">
+                        <img src="/src/image/imagens_equipe/Matheus.png">
                         <br><br>
                         <button class="open-modal" data-modal="modal9">Matheus Ghilardi</button>
                     </div>
@@ -246,7 +245,7 @@
                 <!--card5-->
                 <div class="text-card">
                     <div id="img">
-                        <img src="/Assets/Maiara.png">
+                        <img src="/src/image/imagens_equipe/Maiara.png">
                         <br><br>
                         <button class="open-modal" data-modal="modal10">Maiara Viegas</button>
                     </div>
@@ -254,7 +253,7 @@
                 <!--card6-->
                 <div class="text-card">
                     <div id="img">
-                        <img src="/Assets/Karina.png">
+                        <img src="/src/image/imagens_equipe/Karina.png">
                         <br><br>
                         <button class="open-modal" data-modal="modal11">Karina da Mota</button>
                     </div>
@@ -262,7 +261,7 @@
                 <!--card7-->
                 <div class="text-card">
                     <div id="img">
-                        <img src="/Assets/Joao.png">
+                        <img src="/src/image/imagens_equipe/Joao.png">
                         <br><br>
                         <button class="open-modal" data-modal="modal12">João Reges</button>
                     </div>
@@ -270,7 +269,7 @@
                 <!--card8-->
                 <div class="text-card">
                     <div id="img">
-                        <img src="/Assets/Filipe.png">
+                        <img src="/src/image/imagens_equipe/Filipe.png">
                         <br><br>
                         <button class="open-modal" data-modal="modal13">Filipe Vicari</button>
                     </div>
@@ -278,7 +277,7 @@
                 <!--card9-->
                 <div class="text-card">
                     <div id="img">
-                        <img src="/Assets/Diego.png">
+                        <img src="/src/image/imagens_equipe/Diego.png">
                         <br><br>
                         <button class="open-modal" data-modal="modal14">Diego Forlin</button>
                     </div>
@@ -310,7 +309,7 @@
     <div id="modal9" class="modal">
         <div class="modalEquipe">
             <h4 id="txt">Matheus Ghilardi</h4>
-            <img src="/Assets/modais-equipe/Matheus-modal.jpg" width="300px" height="300px">
+            <img src="/src/image/imagens_modais_perfil/Matheus-modal.jpg" width="300px" height="300px">
             <p id="txt">Sou o Matheus Ghilardi tenho deficiência física (amputação do braço direito), sou um rapaz sorridente e falador kkkkk, sou cheio de adrenalina e adoro trabalhar, gosto de me dedicar e me esforçar, não vejo minha deficiência como uma limitação mas sim como um empurrão para me superar e me dedicar.
                 Nunca trabalhei com informática antes, mas sempre gostei de computação e tecnologia, essa experiência que ganhei está abrindo demais meu conhecimento e estou gostando muito.
                 Gostaria de expressar minha mais profunda gratidão pela oportunidade de emprego que me foi concedida. É uma honra ter sido escolhido para fazer parte da equipe e contribuir para o sucesso desta empresa.
@@ -365,7 +364,7 @@
         <!--card1-->
         <div class="card-parceiros">
             <div id="img" class="image-parceiros">
-                <img src="/Assets/parceiros/sicredi 1.jpg" class="sicredi-image" alt="Um catavento com tons de verde variados entre verde forte e verde fraco, ao lado a palavra Sicrédi escrita em verde claro e o fundo branco">
+                <img src="/src/image/imagens_parceiros/sicredi 1.jpg" class="sicredi-image" alt="Um catavento com tons de verde variados entre verde forte e verde fraco, ao lado a palavra Sicrédi escrita em verde claro e o fundo branco">
             </div>
             <div class="resumo-parceiros-scr">
                 <h3 id="txt" class="Sicredi">Sicredi</h3>
@@ -382,13 +381,13 @@
                     Promovemos a inovação e buscamos conectar todos que são apaixonados por este propósito.</p>
             </div>
             <div class="image-parceiros">
-                <img src="/Assets/parceiros/caldeeira 1.png" class="caldeira-image" alt="A palavra caldeira escrita em verde, com o formato de uma escada invertida e um fundo preto">
+                <img src="/src/image/imagens_parceiros/caldeeira 1.png" class="caldeira-image" alt="A palavra caldeira escrita em verde, com o formato de uma escada invertida e um fundo preto">
             </div>
         </div>
         <!--card3-->
         <div class="card-parceiros">
             <div class="image-parceiros">
-                <img src="/Assets/parceiros/Alura.jpg" class="alura-image" alt="A palavra alura escrita com letras minúsculas, as letras são azuis, um tom de azul escuro e o fundo é branco">
+                <img src="/src/image/imagens_parceiros/Alura.jpg" class="alura-image" alt="A palavra alura escrita com letras minúsculas, as letras são azuis, um tom de azul escuro e o fundo é branco">
             </div>
             <div class="resumo-parceiros-alu">
                 <h3 id="txt" class="Alura">Alura</h3>
@@ -408,13 +407,13 @@
                     Nosso principal recurso é o humano e daremos sempre prioridade a ações que envolvem a reflexão, o engajamento e o desenvolvimento individual, com forte influência no coletivo - corresponsabilidade. Assim, construiremos uma Cultura Inclusiva.</p>
             </div>
             <div class="image-parceiros">
-                <img src="/Assets/parceiros/arquitetando 1.jpg" class="arquitetando-image">
+                <img src="/src/image/imagens_parceiros/arquitetando 1.jpg" class="arquitetando-image">
             </div>
         </div>
         <!--card5-->
         <div class="card-parceiros">
             <div class="image-parceiros">
-                <img src="/Assets/parceiros/egalite 1.jpg" class="egalite-image">
+                <img src="/src/image/imagens_parceiros/egalite 1.jpg" class="egalite-image">
             </div>
             <div class="resumo-parceiros-ega">
                 <h3 id="txt" class="Egalitê">Egalitê</h3>
@@ -435,9 +434,10 @@
         <div class="formulario-container">
             <div class="contatos-form">
                 <div id="img" class="logo-form">
-                    <img class="imagem-logo" src="/Assets/Logos-page/logo.jpg">
+                    <img class="imagem-logo" src="/src/image/imagens_logo/logo.jpg">
                 </div>
-                <p>Ljhfudjmnfghvjc iuhfbjksijuhcv isudhbjksjhvb usyhdbnksjhd iuhjbfkloxidjuhf iuhbkvsjdfh kjfdhks.</p>
+                <p class="contatar"><strong>Caro usuário!</strong></p>
+                <p class="contatar"> A sua opinião é fundamental para nós! Se você tiver sugestões, críticas ou simplesmente quiser compartilhar sua experiência, ficaríamos muito gratos por receber o seu feedback. Utilize o formulário para compartilhar a sua mensagem conosco.</p>
            </div>
             <form method="post" action="AQUI VAI O LINK DO BACKEND" class="formulario">
                 <fieldset>
@@ -477,39 +477,39 @@
    <section class="footer-container">
         <footer class="main_footer">
         
-            <a class="alinhamento1" href="https://www.sicredi.com.br/home/">
-                <img src="Assets/image-logo/Sicredi.jpg" width="32" height="31">
-                Sicredi</a>
+            <a href="https://www.sicredi.com.br/home/">
+                <img class="alinhamento" src="/src/image/imagens_footer/sicredi-logo.svg">
+            </a>
 
-            <a class="alinhamento2" href="https://institutocaldeira.org.br/">
-                <img src="Assets/image-logo/Caldeira.png" width="35" height="35">
-                Caldeira</a>
+            <a href="https://institutocaldeira.org.br/">
+                <img class="alinhamento" src="/src/image/imagens_footer/caldeira-logo.svg">
+            </a>
 
-            <a class="alinhamento3" href="https://www.alura.com.br/">
-                <img src="Assets/image-logo/Alura.png" width="30" height="36">
-                Alura</a>
+            <a href="https://www.alura.com.br/">
+                <img class="alinhamento" src="/src/image/imagens_footer/alura-logo.svg">
+            </a>
 
-            <a class="alinhamento4" href="https://www.arquitetandoinclusao.com.br/">
-                <img src="Assets/image-logo/Arquitetando.jpg" width="35" height="38">
-                Arquitetando Inclusao</a>
+            <a href="https://www.arquitetandoinclusao.com.br/">
+                <img class="alinhamento" src="/src/image/imagens_footer/arquitetando-logo.svg">
+            </a>
             
-            <a class="alinhamento5" href="https://www.egalite.com.br/">
-                <img src="Assets/image-logo/Egalite.jpeg" width="33">
-                Egalite</a>
-            <div class="desevolvido-por">
-                <p id="txt">Desenvolvido em 2023 pela equipe | Projeto Acelerador de Carreiras Sicredi<p>
-            </div>
-         </footer>   
+            <a href="https://www.egalite.com.br/">
+                <img class="alinhamento" src="/src/image/imagens_footer/egalite-logo.svg">
+            </a>
+         </footer>  
+         <div class="desevolvido-por">
+            <p id="txt">Desenvolvido em 2023 pela equipe | Projeto Acelerador de Carreiras Sicredi<p>
+        </div> 
     </section>
     
    <!--===== SCRIPT DO PROJETO ======-->
-    <script src="Script/projeto.js"></script>
+    <script src="/src/js/projeto.js"></script>
 
     <!--===== SCRIPT DO SWIPER ======-->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <!--===== SCRIPT DA API ======-->
-    <script src="Script/API.js"></script>
+    <script src="/src/js/API.js"></script>
 </body>
 
 </html>
