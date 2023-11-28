@@ -479,11 +479,20 @@ legend {
 
 .contatar {
     width: 600px;
+    padding: 10px;
+    border-radius: 20px;
     text-align: justify;
+    background-color: var(--cor-octupla);
 }
-strong {
+
+.contatar-usuario {
     font-weight: bold;
     text-decoration: underline;
+    width: 600px;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: var(--cor-octupla);
 
 }
  /* query de formulario */
