@@ -1,0 +1,633 @@
+/* Esse é o reset geral para não refletir diferenças entre navegadores */
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,600;1,700&family=League+Spartan:wght@100&family=Noto+Sans:ital,wght@0,700;0,900;1,100&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,600;1,700&family=Lato:ital@1&family=League+Spartan:wght@100&family=Noto+Sans:ital,wght@0,700;0,900;1,100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,600;1,700&family=Indie+Flower&family=Lato:ital@1&family=League+Spartan:wght@100&family=Noto+Sans:ital,wght@0,700;0,900;1,100&display=swap');
+
+
+
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-primaria: rgb(93, 234, 127);
+    --cor-secundaria: rgb(94, 235, 174);
+    --cor-terciaria: rgb(74, 167, 60);
+    --cor-quaternaria: rgb(63, 92, 28);
+    --cor-quinaria: rgb(50, 207, 160);
+    --cor-sextupla: rgb(0, 0, 0);
+    --cor-setupla: rgb(248, 253, 253);
+    --cor-octupla: rgba(231, 190, 189, 0.771);
+    --cor-noctupla: rgb(10, 34, 24);
+    --cor-dectupla: rgb(198, 201, 200);
+    --fonte-primaria: 'League Spartan';
+    --fonte-secundaria: 'Indie Flower', cursive;
+
+}
+
+body {
+    height: 100%;
+    background-image: url("/src/image/imagens_background/background_light.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: var(--cor-primaria);
+    background-size: 100%; 
+    font-family: var(--fonte-primaria);
+    font-size: 21px;
+    color: var(--cor-sextupla);
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5em;
+    font-weight: bold;
+}
+
+.logo-principal {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.logo-texto {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 40%;
+    margin-top: 3%;
+    
+}
+main {
+    color: var(--cor-sextupla);
+    line-height: 2em;
+}
+
+.principal {
+    background-color: var(--cor-octupla);
+    margin: 50px;
+    padding: 50px;
+    border-radius: 20px;
+    line-height: 1.5em;
+
+}
+.title-principal {
+    font-size: 1.5em;
+    line-height: 1.3em;
+}
+h1 {
+    text-align: left;
+    padding: 30px 10px 20px 30px ;
+    font-family: var(--fonte-secundaria);
+}
+
+h2 {
+    font-weight: bold;
+
+}
+
+h3 {
+    font-family: var(--fonte-primaria);
+    text-align: center;
+    font-size: 30.9px;
+    line-height: 2em;
+}
+
+
+.texto-main1 {
+    margin-bottom: 2%;
+
+}
+
+.texto-main2 {
+    margin-left: 40%;
+    margin-bottom: 2%;
+}
+
+.texto-main3 {
+    margin-right: 40%;
+    margin-bottom: 2%;
+}
+
+.texto-main4 {
+    
+}
+.texto-explicativo {
+    font-family: var(--fonte-primaria);
+    color: var(--cor-sextupla);
+    text-align: justify;
+}
+
+  /* Detalhe para separar seções e destacar o nome */
+.divisor-secao {
+    padding: 30px;
+    margin: 50px;
+    background-color: var(--cor-octupla);
+    border-radius: 0px 50px 0px 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+  /* Estilos para o modo dark */
+.dark {
+    background-color: var(--cor-quaternaria);
+    background-image: url("/src/image/imagens_background/background_dark.jpg");
+
+}
+
+  
+.botao {
+    border-radius: 50px;
+    padding: 5px;
+    background-image: linear-gradient(to right, var(--cor-octupla), var(--cor-secundaria));
+    border: 2px solid var(--cor-terciaria);
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    margin: -15px;
+    
+}
+  
+#modoBotao {
+    width: 50px;
+    height: 30px;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end; 
+    margin-top: 20px;
+    font-family: var(--fonte-primaria);
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav li {
+    display: inline-block;
+    margin: 15px; 
+}
+
+nav ul li a {
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    position: relative;
+    font-weight: bold;
+}
+
+nav ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: transparent;
+    background: var(--cor-quinaria);
+    transition: all 0.5s;
+}
+
+nav ul li a:hover:after {
+    display: flex;
+}
+
+nav ul li a:hover {
+color: var(--cor-quaternaria);
+z-index: 1;
+transition: color 1s;
+}
+
+
+  /*Estilos para a section galeria apresentação*/
+.slideshow-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 62.5rem;
+    margin: 0 auto;     
+    text-align: center;   
+  }
+
+  .dot {
+    border-radius: 8px;
+    height: 8px;
+    margin: 0 4px;
+    transform: scale(0.75);
+    transition: transform 0.4s;
+    width: 8px;
+    background: var(--cor-quaternaria);
+}
+
+.dot.active {
+    background: var(--cor-secundaria);
+    transform: scale(1);
+}
+  
+  /* Legenda */
+  .text {
+    /* color:  */
+    /* margin-bottom: 20px; */
+    width: 100%;
+    /* font-weight: bold; */
+  }
+  
+  /* Três pontinhos delimitando a foto selecionada */
+  .dot {
+    height: 0.9375rem;
+    width: 0.9375rem; 
+    margin: 0 0.125rem;
+    background-color: var(--cor-setupla);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s;
+  }
+  
+  .active {
+    background-color: var(--cor-quaternaria);
+  }
+  
+  .mySlides  {
+    display: none;
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+
+  /* tamanho e estilo imagem apresentação */
+  .apresentacao {
+    width: 300px; 
+    height: 300px;
+    border-radius: 50%;
+    border: 2.5px solid var(--cor-terciaria);
+  }
+  
+
+/* Estilos para o modal */
+.modal {
+    background-color: var(--cor-quinaria);
+    padding: 50px;
+    border-radius: 5px;
+    text-align: center;
+    height: 100vh;
+    margin: 70px;
+    display: none;
+}
+  
+/* botões dos modais */
+.open-modal {
+    display: block;
+    text-align: center;
+    margin: 5%;
+    width: 90%;
+    padding: 1.5%;
+    background-color: var(--cor-quinaria);
+    color: var(--cor-sextupla);
+    border-radius: 5px;
+    transition: 0.5s;
+    border: 3px solid var(--cor-primaria);
+}
+
+.open-modal:hover {
+    background-color: var(--cor-quaternaria);
+    color: var(--cor-dectupla);
+    border: 3px solid var(--cor-octupla);
+}
+
+/* Estilos para o botão de fechar modal */
+.modalConteudo button {
+    background-color: var(--cor-quinaria);
+    color: var(--cor-sextupla);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Estilos para o slider depoimentos */
+.depoimentos-carousel {
+    text-align: center;
+    background-color: var(--cor-quinaria);
+    margin: 30px;
+    padding: 20px;
+    display: flex;
+    border-radius: 0 20px 0 20px;
+}
+  
+.carousel-container {
+    width: 100%;
+    margin: 0; 
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+  
+.swiper-container {
+    width: 91.6%;
+    height: 100%;
+    display: flex;
+}
+  
+.swiper-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+/* Card de depoimentos */
+.swiper-slide {
+    background-color: var(--cor-setupla);
+    padding: 30px 10px 30px 10px;
+    color: var(--cor-sextupla);
+    /* align-items: center; */
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Estilos para o card de depoimentos */
+.imagem-card-depoimento {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Botão do slide de depoimentos */
+#prevBtn, #nextBtn {
+    background-color: var(--cor-terciaria);
+    opacity: 80%;
+    color: var(--cor-setupla);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+  
+#prevBtn:hover,
+#nextBtn:hover {
+    background-color: var(--cor-quaternaria);
+}
+
+/*Estilos da section equipe */
+.equipes-card-container {
+    display: flex; 
+    margin: auto;
+    display: flex;
+    width: 95vw;
+    text-align: center;
+}
+
+.texto-parceiro {
+    font-size: 21px;
+}
+
+.text-card {
+    margin: 10px 50px;
+    align-items:center;
+    display:inline-flex;
+    padding: 20px;
+    background-color: var(--cor-quinaria);
+    border-radius: 20px;
+    border: solid 3px var(--cor-octupla);
+}
+
+.text-card img {
+    width: 200px; 
+    height: 200px; 
+    border-radius: 100px;
+    border: solid 2px var(--cor-primaria);
+}
+
+/*Estilização do formulário*/
+.formulario-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+  
+.logo-form {
+    flex-shrink: 0;
+    padding: 10px;
+    text-align: center;
+   
+}
+
+.imagem-logo {
+    border-radius: 50%;
+    border: solid 3px var(--cor-octupla);
+    width: 250px;
+    height: 250px;
+    margin-bottom: 30px;
+}
+  
+.formulario {
+    flex: 1;
+    max-width: 600px;
+    /* padding: 10px; */
+    background-color: var(--cor-quinaria);
+}
+  
+.formulario label {
+    display:inline;
+    margin-left: 25px;
+}
+  
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario select,
+.formulario textarea {
+    width: 85%;
+    padding: 10px;
+    border: 1px solid var(--cor-quinaria);
+    border-radius: 5px;
+    margin: 5px 25px 5px 25px;
+}
+  
+.formulario textarea {
+    height: 250px;
+}
+  
+.formulario select {
+    width: 89%;
+}
+  
+.formulario button {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-setupla);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+
+}
+  
+legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.termos {
+    text-align: center;
+}
+
+.formulario button:hover {
+    background-color: var(--cor-quinaria);
+}
+
+.contatar {
+    width: 600px;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: justify;
+    background-color: var(--cor-octupla);
+}
+
+.contatar-usuario {
+    font-weight: bold;
+    text-decoration: underline;
+    width: 600px;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: var(--cor-octupla);
+
+}
+ /* query de formulario */
+@media (max-width: 768px) {
+    .contatar{
+        width: 350px;
+    }
+    .formulario-container {
+        flex-direction: column;
+    }
+}
+
+.desevolvido-por {
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.card-img {
+    display: inline-block;
+    width: 50%; 
+    text-align: center; 
+    margin: 10px; 
+}
+
+/* Estilos do footer */
+.main_footer {
+    display: flex;
+    justify-content:end;
+    padding-top: 50px;
+}
+
+.alinhamento {
+    width: 70%;
+    height: auto; 
+}
+
+/* estilos parceiros */
+.imagem-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 20px;
+    margin: 20px;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.card-parceiros {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    background-color: var(--cor-octupla);
+    padding: 50px;
+    border-radius: 8px;
+}
+
+.card-parceiros img {
+    max-width: 100%;
+    border-radius: 8px;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    padding: 30px;
+}
+
+.resumo-parceiros-scr,
+.resumo-parceiros-cald,
+.resumo-parceiros-alu,
+.resumo-parceiros-arq,
+.resumo-parceiros-ega {
+    flex: 1;
+    margin: 0 20px; 
+    padding: 50px;
+    text-align: justify;
+}
+
+.alura-image {
+    margin-top: 25%;
+
+}
+
+.caldeira-image {
+    margin-top: 15%;
+
+}
+
+.arquitetando-image {
+    margin-top: 30%;
+
+}
+
+.sicredi-image {
+    margin-top: 37%;
+
+}
+
+/* query de parceiros */
+@media (max-width: 768px) {
+    .card-parceiros {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .resumo-parceiros-scr,
+    .resumo-parceiros-cald,
+    .resumo-parceiros-alu,
+    .resumo-parceiros-arq,
+    .resumo-parceiros-ega {
+        margin: 20px 0;
+        padding: 10px;
+        align-items: center;
+    }
+}
+
+/* Botão acessibilidade */
+.buttonSpeaker {
+    margin-right: 50px;
+    margin-bottom: 450px;
+    
+}
+
+.image-acess {
+    height: 50px;
+    width: 50px;
+}
+
+.buttonSpeaker {
+    width: 1.8%;
+    height: 20%;
+    position:fixed;
+    bottom: 0;
+    right: 0;
+}
