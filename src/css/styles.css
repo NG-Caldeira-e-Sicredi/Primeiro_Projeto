@@ -71,8 +71,10 @@ main {
     padding: 50px;
     border-radius: 20px;
     line-height: 1.5em;
-
+    display: flex;
+    flex-wrap: wrap;
 }
+
 .title-principal {
     font-size: 1.5em;
     line-height: 1.3em;
@@ -95,25 +97,18 @@ h3 {
     line-height: 2em;
 }
 
-
-.texto-main1 {
-    margin-bottom: 2%;
-
+.texto-main2{
+    width: 65.5%;
+    margin: 65px 0px 0px 50px;
 }
 
-.texto-main2 {
-    margin-left: 40%;
-    margin-bottom: 2%;
-}
 
 .texto-main3 {
-    margin-right: 40%;
-    margin-bottom: 2%;
-}
-
-.texto-main4 {
+    width: 65.5%;
+    margin: 20px 50px 0px 0px;
     
 }
+
 .texto-explicativo {
     font-family: var(--fonte-primaria);
     color: var(--cor-sextupla);
@@ -263,6 +258,25 @@ transition: color 1s;
     border: 2.5px solid var(--cor-terciaria);
   }
   
+.image-main1, .image-main2 {
+    height: 300px;
+    width: 289.5px;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--cor-octupla);
+    border-radius: 8px;
+    border: solid 3.5px var(--cor-octupla);
+}
+
+.image-main1 {
+    float: left;
+    margin-top: 25px;
+}
+
+.image-main2 {
+    float: right;
+    margin-top: 40px;
+}
 
 /* Estilos para o modal */
 .modal {
