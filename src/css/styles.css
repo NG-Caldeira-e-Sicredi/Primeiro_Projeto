@@ -65,6 +65,10 @@ main {
     line-height: 2em;
 }
 
+p {
+    margin-top: 20px;
+}
+
 .principal {
     background-color: var(--cor-octupla);
     margin: 50px;
@@ -96,16 +100,24 @@ h3 {
     line-height: 2em;
 }
 
+.texto-main1,
+.texto-main4 {
+    padding: 20px;
 
-.texto-main2{
-    width: 65.5%;
-    margin: 65px 0px 0px 50px;
+}
+
+.texto-main2 {
+    width: 64%;
+    margin: 18px 14px 0px 20px;
+    padding: 10px;
+    
 }
 
 
 .texto-main3 {
-    width: 65.5%;
-    margin: 20px 50px 0px 0px;
+    width: 64%;
+    margin: 20px 20px 0px 13px;
+    padding: 10px;
     
 }
 .texto-explicativo {
@@ -230,12 +242,12 @@ transition: color 1s;
 
 .image-main1 {
     float: left;
-    margin-top: 25px;
+    margin: 5px 10px 5px 20px;
 }
 
 .image-main2 {
     float: right;
-    margin-top: 40px;
+    margin: 25px 20px 5px 10px;
 }
 
 /* Estilos para o modal */
