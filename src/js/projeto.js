@@ -36,8 +36,8 @@ function darkOrLight() {
 // Botão de slider de depoimentos 
 document.addEventListener('DOMContentLoaded', function () {
   const swiper = new Swiper('.swiper-container', {
-     slidesPerView: 3,
-     spaceBetween: 45,
+     slidesPerView: 4,
+     spaceBetween: 30,
      navigation: {
        nextEl: '.swiper-button-next',
        prevEl: '.swiper-button-prev',

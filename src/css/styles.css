@@ -65,7 +65,7 @@ main {
     line-height: 2em;
 }
 
-p {
+main p {
     margin-top: 20px;
 }
 
@@ -265,9 +265,9 @@ transition: color 1s;
 .open-modal {
     display: block;
     text-align: center;
-    margin: 5%;
-    width: 90%;
-    padding: 1.5%;
+    width: 80%;
+    padding: 2%;
+    margin: 50px 20px 0px 20px;
     background-color: var(--cor-quinaria);
     color: var(--cor-sextupla);
     border-radius: 5px;
@@ -295,7 +295,7 @@ transition: color 1s;
 .depoimentos-carousel {
     text-align: center;
     background-color: var(--cor-quinaria);
-    margin: 30px;
+    margin: 50px;
     padding: 20px;
     display: flex;
     border-radius: 0 20px 0 20px;
@@ -326,9 +326,10 @@ transition: color 1s;
     background-color: var(--cor-setupla);
     padding: 30px 10px 30px 10px;
     color: var(--cor-sextupla);
-    /* align-items: center; */
     border-radius: 10px;
     text-align: center;
+    height: 80%;
+    
 }
 
 /* Estilos para o card de depoimentos */
@@ -350,6 +351,33 @@ transition: color 1s;
 #prevBtn:hover,
 #nextBtn:hover {
     background-color: var(--cor-quaternaria);
+}
+
+.video-depoimento1,
+.video-depoimento2,
+.video-depoimento3,
+.video-depoimento4 {
+    display: block;
+    text-align: center;
+    width: 80%;
+    padding: 2%;
+    background-color: var(--cor-quinaria);
+    color: var(--cor-sextupla);
+    border-radius: 5px;
+    transition: 0.5s;
+    border: 3px solid var(--cor-primaria);
+}
+
+.video-depoimento1, .video-depoimento2 {
+    margin:20px 30px ;
+}
+
+.video-depoimento3 {
+    margin:25px 30px ;
+}
+
+.video-depoimento4 {
+    margin:15px 30px ;
 }
 
 /*Estilos da section equipe */
