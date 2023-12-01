@@ -80,7 +80,7 @@ main p {
 }
 .title-principal {
     font-size: 1.5em;
-    line-height: 1.3em;
+    line-height: 1em;
 }
 h1 {
     text-align: left;
@@ -140,9 +140,10 @@ h3 {
 .dark {
     background-color: var(--cor-quaternaria);
     background-image: url("/src/image/imagens_background/background_dark.jpg");
-
 }
-
+ .dark h1 {
+    color:var(--cor-setupla);
+ }
   
 .botao {
     border-radius: 50px;
@@ -221,15 +222,30 @@ transition: color 1s;
     display: none;
     flex: 0 0 30%;
     max-width: 30%;
+   text-align: center;
   }
 
-  /* tamanho e estilo imagem apresentação */
-  .apresentacao {
-    width: 300px; 
-    height: 300px;
-    border-radius: 50%;
-    border: 2.5px solid var(--cor-terciaria);
-  }
+    /* tamanho e estilo imagem apresentação */
+    .apresentacao {
+        width: 300px; 
+        height: 300px;
+        border-radius: 50%;
+        border: 2.5px solid var(--cor-terciaria);
+      }
+
+  /* carrossel responsivo */
+@media screen and (max-width: 768px) {
+    .slideshow-container {
+        flex-wrap: wrap;
+    }
+
+    .mySlides {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+
   .image-main1, .image-main2 {
     height: 300px;
     width: 289.5px;
@@ -524,7 +540,11 @@ legend {
     text-align: center;
     margin-bottom: 0;
     margin-top: 20px;
-    font-size: 12px;
+    font-size: 15px;
+}
+
+.dark h5 {
+    color: white;
 }
 
 .card-img {

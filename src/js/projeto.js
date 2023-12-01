@@ -36,14 +36,25 @@ function darkOrLight() {
 // Botão de slider de depoimentos 
 document.addEventListener('DOMContentLoaded', function () {
   const swiper = new Swiper('.swiper-container', {
-     slidesPerView: 4,
-     spaceBetween: 30,
-     navigation: {
-       nextEl: '.swiper-button-next',
-       prevEl: '.swiper-button-prev',
-     },
+    slidesPerView: 4,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    // breakpoints: {
+    //   600: {
+    //     slidesPerView: 1,
+    //   },
+    //   768: {
+    //     slidesPerView: 2,
+    //   },
+    // },
   });
- });
+});
+
+
+ 
 
 // aqui inicia teste apresentação
 let slideIndex = 0;
