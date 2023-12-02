@@ -1,4 +1,4 @@
-/* Esse é o reset geral para não refletir diferenças entre navegadores */
+
 
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,600;1,700&family=League+Spartan:wght@100&family=Noto+Sans:ital,wght@0,700;0,900;1,100&display=swap');
 
@@ -8,7 +8,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,600;1,700&family=Indie+Flower&family=Lato:ital@1&family=League+Spartan:wght@100&family=Noto+Sans:ital,wght@0,700;0,900;1,100&display=swap');
 
 
-
+/* Esse é o reset geral para não refletir diferenças entre navegadores */
 * { 
     margin: 0;
     padding: 0;
@@ -27,7 +27,6 @@
     --cor-dectupla: rgb(198, 201, 200);
     --fonte-primaria: 'League Spartan';
     --fonte-secundaria: 'Indie Flower', cursive;
-
 }
 
 body {
@@ -46,6 +45,10 @@ body {
     font-weight: bold;
 }
 
+header {
+    margin-bottom: 7%;
+}
+
 .logo-principal {
     width: 100px;
     height: 100px;
@@ -57,31 +60,77 @@ body {
     display: flex;
     justify-content: space-around;
     margin-right: 40%;
-    margin-top: 3%;
-    
+    margin-top: 3%;  
 }
+
 main {
     color: var(--cor-sextupla);
     line-height: 2em;
 }
 
 main p {
-    margin-top: 20px;
+    margin-top: 2%;
+}
+
+.texto-main1,
+.texto-main4 {
+    padding: 20px;
+}
+
+.texto-main2 {
+    width: 63.2%;
+    margin: 18px 14px 0px 20px;
+    padding: 20px;
+}
+
+.texto-main3 {
+    width: 63.3%;
+    margin: 20px 20px 0px 13px;
+    padding: 20px;
+}
+
+.image-main1, .image-main2 {
+    height: 300px;
+    width: 289.5px;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--cor-octupla);
+    border-radius: 8px;
+    border: solid 3.5px var(--cor-octupla);
+    padding: 4px;
+}
+
+.image-main1 {
+    float: left;
+    margin: 5px 10px 5px 20px;
+}
+
+.image-main2 {
+    float: right;
+    margin: 25px 20px 5px 10px;
+}
+
+.texto-explicativo {
+    font-family: var(--fonte-primaria);
+    color: var(--cor-sextupla);
+    text-align: justify;
 }
 
 .principal {
     background-color: var(--cor-octupla);
-    margin: 50px;
+    margin: 5%;
     padding: 50px;
     border-radius: 20px;
     line-height: 1.5em;
     display: flex;
     flex-wrap: wrap;
 }
+
 .title-principal {
     font-size: 1.5em;
     line-height: 1em;
 }
+
 h1 {
     text-align: left;
     padding: 30px 10px 20px 30px ;
@@ -90,7 +139,6 @@ h1 {
 
 h2 {
     font-weight: bold;
-
 }
 
 h3 {
@@ -100,36 +148,10 @@ h3 {
     line-height: 2em;
 }
 
-.texto-main1,
-.texto-main4 {
-    padding: 20px;
-
-}
-
-.texto-main2 {
-    width: 64%;
-    margin: 18px 14px 0px 20px;
-    padding: 10px;
-    
-}
-
-
-.texto-main3 {
-    width: 64%;
-    margin: 20px 20px 0px 13px;
-    padding: 10px;
-    
-}
-.texto-explicativo {
-    font-family: var(--fonte-primaria);
-    color: var(--cor-sextupla);
-    text-align: justify;
-}
-
   /* Detalhe para separar seções e destacar o nome */
 .divisor-secao {
     padding: 30px;
-    margin: 50px;
+    margin: 4%;
     background-color: var(--cor-octupla);
     border-radius: 0px 50px 0px 50px;
     text-align: center;
@@ -144,7 +166,11 @@ h3 {
  .dark h1 {
     color:var(--cor-setupla);
  }
-  
+
+.dark h5 {
+    color:var(--cor-setupla);
+ }
+
 .botao {
     border-radius: 50px;
     padding: 5px;
@@ -154,7 +180,6 @@ h3 {
     width: 100px;
     height: 40px;
     margin: -15px;
-    
 }
   
 #modoBotao {
@@ -185,6 +210,7 @@ nav ul li a {
     color: var(--cor-terciaria);
     position: relative;
     font-weight: bold;
+    font-size: 30px;
 }
 
 nav ul li a:after {
@@ -207,7 +233,6 @@ z-index: 1;
 transition: color 1s;
 }
 
-
   /*Estilos para a section galeria apresentação*/
 .slideshow-container {
     display: flex;
@@ -216,22 +241,22 @@ transition: color 1s;
     max-width: 62.5rem;
     margin: 0 auto;     
     text-align: center;   
-  }
+}
   
-  .mySlides  {
+.mySlides  {
     display: none;
     flex: 0 0 30%;
     max-width: 30%;
    text-align: center;
   }
 
-    /* tamanho e estilo imagem apresentação */
-    .apresentacao {
-        width: 300px; 
-        height: 300px;
-        border-radius: 50%;
-        border: 2.5px solid var(--cor-terciaria);
-      }
+/* tamanho e estilo imagem apresentação */
+.apresentacao {
+    width: 300px; 
+    height: 300px;
+    border-radius: 50%;
+    border: 2.5px solid var(--cor-terciaria);
+}
 
   /* carrossel responsivo */
 @media screen and (max-width: 768px) {
@@ -246,34 +271,19 @@ transition: color 1s;
 }
 
 
-  .image-main1, .image-main2 {
-    height: 300px;
-    width: 289.5px;
-    display: flex;
-    justify-content: space-around;
-    background-color: var(--cor-octupla);
-    border-radius: 8px;
-    border: solid 3.5px var(--cor-octupla);
-}
-
-.image-main1 {
-    float: left;
-    margin: 5px 10px 5px 20px;
-}
-
-.image-main2 {
-    float: right;
-    margin: 25px 20px 5px 10px;
-}
-
 /* Estilos para o modal */
 .modal {
     background-color: var(--cor-quinaria);
     padding: 50px;
     border-radius: 5px;
     text-align: center;
-    height: 100vh;
-    margin: 70px;
+    position: fixed;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    height: 75%;
+    width: 75%;
+    overflow:auto;
     display: none;
 }
   
@@ -283,7 +293,7 @@ transition: color 1s;
     text-align: center;
     width: 80%;
     padding: 2%;
-    margin: 50px 20px 0px 20px;
+    margin: 20px auto;
     background-color: var(--cor-quinaria);
     color: var(--cor-sextupla);
     border-radius: 5px;
@@ -311,7 +321,7 @@ transition: color 1s;
 .depoimentos-carousel {
     text-align: center;
     background-color: var(--cor-quinaria);
-    margin: 50px;
+    margin: 5%;
     padding: 20px;
     display: flex;
     border-radius: 0 20px 0 20px;
@@ -319,6 +329,7 @@ transition: color 1s;
   
 .carousel-container {
     width: 100%;
+    height: 100%;
     margin: 0; 
     position: relative;
     overflow: hidden;
@@ -326,19 +337,19 @@ transition: color 1s;
 }
   
 .swiper-container {
-    width: 91.6%;
-    height: 100%;
+    width: 89%;
+    height: 300px;
     display: flex;
 }
   
 .swiper-wrapper{
     display: flex;
-    justify-content: space-between;
     margin: auto;
 }
 
 /* Card de depoimentos */
 .swiper-slide {
+    margin-left: 10px;
     background-color: var(--cor-setupla);
     padding: 30px 10px 30px 10px;
     color: var(--cor-sextupla);
@@ -434,11 +445,11 @@ transition: color 1s;
     gap: 20px;
     padding: 20px;
     flex-wrap: wrap;
-    margin: 20px;
+    margin: 2%;
 }
   
 .logo-form {
-    flex-shrink: 0;
+    flex-shrink: 1;
     padding: 10px;
     text-align: center;
    
@@ -449,19 +460,18 @@ transition: color 1s;
     border: solid 3px var(--cor-octupla);
     width: 250px;
     height: 250px;
-    margin-bottom: 30px;
+    margin-bottom: 3%;
 }
   
 .formulario {
     flex: 1;
     max-width: 600px;
-    /* padding: 10px; */
     background-color: var(--cor-quinaria);
 }
   
 .formulario label {
     display:inline;
-    margin-left: 25px;
+    margin-left: 2.5%;
 }
   
 .formulario input[type="text"],
@@ -476,7 +486,7 @@ transition: color 1s;
 }
   
 .formulario textarea {
-    height: 250px;
+    height: 200px;
 }
   
 .formulario select {
@@ -490,7 +500,7 @@ transition: color 1s;
     border-radius: 5px;
     cursor: pointer;
     display: block;
-    margin: auto;
+    margin: 20px auto;
 
 }
   
@@ -519,7 +529,6 @@ legend {
 .contatar-usuario {
     font-weight: bold;
     text-decoration: underline;
-    width: 600px;
     margin-bottom: 5px;
     padding: 10px;
     border-radius: 20px;
@@ -541,17 +550,6 @@ legend {
     margin-bottom: 0;
     margin-top: 20px;
     font-size: 15px;
-}
-
-.dark h5 {
-    color: white;
-}
-
-.card-img {
-    display: inline-block;
-    width: 50%; 
-    text-align: center; 
-    margin: 10px; 
 }
 
 /* Estilos do footer */
