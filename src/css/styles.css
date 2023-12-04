@@ -301,7 +301,11 @@ transition: color 1s;
   
 /* botões dos modais */
 .open-modal,
-.close-modal {
+.close-modal,
+.video-depoimento1,
+.video-depoimento2,
+.video-depoimento3,
+.video-depoimento4 {
     display: block;
     text-align: center;
     font-weight: bold;
@@ -316,12 +320,21 @@ transition: color 1s;
 }
 
 .open-modal:hover,
-.close-modal:hover {
+.close-modal:hover,
+.video-depoimento1:hover,
+.video-depoimento2:hover,
+.video-depoimento3:hover,
+.video-depoimento4:hover {
     background-color: var(--cor-terciaria);
     color: var(--cor-dectupla);
     border: 3px solid var(--cor-octupla);
 }
 
+.play-depoimentos {
+    height: 20px;
+    width: 40px;
+   
+}
 
 /* Estilos para o slider depoimentos */
 .depoimentos-carousel {
@@ -399,18 +412,23 @@ transition: color 1s;
     border-radius: 5px;
     transition: 0.5s;
     border: 3px solid var(--cor-primaria);
+    
+}
+
+.link-depoimento {
+    text-decoration: none;
 }
 
 .video-depoimento1, .video-depoimento2 {
-    margin:20px 30px ;
+    margin:20px 30px;
 }
 
 .video-depoimento3 {
-    margin:25px 30px ;
+    margin:25px 30px;
 }
 
 .video-depoimento4 {
-    margin:15px 30px ;
+    margin:15px 30px;
 }
 
 /*Estilos da section equipe */
@@ -677,4 +695,6 @@ legend {
     bottom: 0;
     right: 0;
 }
+
+
 
