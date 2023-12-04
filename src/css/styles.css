@@ -274,9 +274,9 @@ transition: color 1s;
 /* Estilos para o modal */
 .modal {
     background-color: var(--cor-quinaria);
-    padding: 50px;
+    padding: 40px;
     border-radius: 5px;
-    text-align: center;
+    text-align:center;
     position: fixed;
     top: 50%; 
     left: 50%; 
@@ -286,36 +286,42 @@ transition: color 1s;
     overflow:auto;
     display: none;
 }
+
+.modal h4 {
+    font-size: 1.5em;
+    font-family: var(--fonte-secundaria);
+    margin: 15px;
+}
+
+.modal img {
+    margin: 10px;
+}
+
+
   
 /* botões dos modais */
-.open-modal {
+.open-modal,
+.close-modal {
     display: block;
     text-align: center;
+    font-weight: bold;
     width: 80%;
-    padding: 2%;
+    padding: 3%;
     margin: 20px auto;
-    background-color: var(--cor-quinaria);
+    background-color: var(--cor-octupla);
     color: var(--cor-sextupla);
     border-radius: 5px;
     transition: 0.5s;
     border: 3px solid var(--cor-primaria);
 }
 
-.open-modal:hover {
-    background-color: var(--cor-quaternaria);
+.open-modal:hover,
+.close-modal:hover {
+    background-color: var(--cor-terciaria);
     color: var(--cor-dectupla);
     border: 3px solid var(--cor-octupla);
 }
 
-/* Estilos para o botão de fechar modal */
-.modalConteudo button {
-    background-color: var(--cor-quinaria);
-    color: var(--cor-sextupla);
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-}
 
 /* Estilos para o slider depoimentos */
 .depoimentos-carousel {
@@ -557,11 +563,19 @@ legend {
     display: flex;
     justify-content:end;
     padding-top: 50px;
+    margin-top: 5%;
 }
 
 .alinhamento {
     width: 70%;
     height: auto; 
+}
+
+@media (max-width: 400px) {
+    .main_footer {
+        flex-direction: column;
+
+    }
 }
 
 /* estilos parceiros */
@@ -663,3 +677,4 @@ legend {
     bottom: 0;
     right: 0;
 }
+
