@@ -37,6 +37,7 @@ function darkOrLight() {
 document.addEventListener('DOMContentLoaded', function () {
   const swiper = new Swiper('.swiper-container', {
     slidesPerView: 4,
+    spaceBetween: 8.4,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
@@ -44,13 +45,12 @@ document.addEventListener('DOMContentLoaded', function () {
     breakpoints: {
       360: {
         slidesPerView: 1,
-        spaceBetween: 10.7,
       },
       480: {
         slidesPerView: 1,
       },
       768: {
-        slidesPerView: 3,
+        slidesPerView: 2,
       },
       1024: {
         slidesPerView: 4,
