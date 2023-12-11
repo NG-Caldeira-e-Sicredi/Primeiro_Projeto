@@ -15,16 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
           modals[index].style.display = 'none';
       });
   });
-
-  // // configuração para o modal de mensagem de sucesso forms
-  // document.querySelector('form').addEventListener('submit', function(event) {
-  //   event.preventDefault();
-
-  // // precisa atentar ao indice do modal, ele é o último!
-  // modals[9].style.display = 'block';
-  // });
   
-
   window.addEventListener('click', (event) => {
       modals.forEach((modal, index) => {
           if (event.target === modal) {
@@ -95,4 +86,20 @@ function showSlides() {
   }
 
   setTimeout(showSlides, 3000);
+}
+
+// validar entradas no formulário
+function validarFormulario() {
+  var nome = document.getElementById('name').value;
+  var email = document.getElementById('email').value;
+  var motivo = document.getElementById('select').value;
+  var mensagem = document.getElementById('message').value;
+  var termos = document.getElementById('termos-de-uso').checked;
+
+  if (nome === '' || email === '' || motivo === '' || mensagem === '' || !termos) {
+      alert('Por favor, preencha todos os campos e aceite os termos de uso.');
+      return false;
+  }
+
+  return true;
 }
