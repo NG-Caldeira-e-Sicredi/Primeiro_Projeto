@@ -631,6 +631,14 @@ legend {
     right: 0;
 }
 
+.mensagem-sucesso {
+    background-color: var(--cor-octupla);
+    margin: 0% 6% 6% 6%;
+    padding: 7%;
+    border-radius: 30px;
+    border: solid 3px var(--cor-noctupla);
+}
+
 
   /* query responsivo */
   @media screen and (max-width: 768px) {

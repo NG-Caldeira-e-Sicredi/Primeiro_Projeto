@@ -1,4 +1,4 @@
-// Função para abrir e fechar TODOS os modais (1 ao 14)
+// Função para abrir e fechar TODOS os modais (9)
 document.addEventListener('DOMContentLoaded', () => {
   const openModalButtons = document.querySelectorAll('.open-modal');
   const closeButtons = document.querySelectorAll('.close-modal');
@@ -15,6 +15,15 @@ document.addEventListener('DOMContentLoaded', () => {
           modals[index].style.display = 'none';
       });
   });
+
+  // configuração para o modal de mensagem de sucesso forms
+  document.querySelector('form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+  // precisa atentar ao indice do modal, ele é o último!
+  modals[9].style.display = 'block';
+  });
+  
 
   window.addEventListener('click', (event) => {
       modals.forEach((modal, index) => {
