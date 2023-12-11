@@ -639,6 +639,16 @@ legend {
     border: solid 3px var(--cor-noctupla);
 }
 
+.dark-sucesso-form {
+    align-self:center;
+    position: relative;
+    top: auto;
+    left: 300px;
+}
+.form-sucefull {
+    margin: 0% 5% 2% 5%;
+}
+
 
   /* query responsivo */
   @media screen and (max-width: 768px) {

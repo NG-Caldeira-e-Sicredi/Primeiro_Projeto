@@ -16,13 +16,13 @@ document.addEventListener('DOMContentLoaded', () => {
       });
   });
 
-  // configuração para o modal de mensagem de sucesso forms
-  document.querySelector('form').addEventListener('submit', function(event) {
-    event.preventDefault();
+  // // configuração para o modal de mensagem de sucesso forms
+  // document.querySelector('form').addEventListener('submit', function(event) {
+  //   event.preventDefault();
 
-  // precisa atentar ao indice do modal, ele é o último!
-  modals[9].style.display = 'block';
-  });
+  // // precisa atentar ao indice do modal, ele é o último!
+  // modals[9].style.display = 'block';
+  // });
   
 
   window.addEventListener('click', (event) => {
