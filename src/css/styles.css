@@ -420,8 +420,8 @@ transition: color 1s;
 }
 
 .text-card img {
-    width: 200px; 
-    height: 200px; 
+   /* width: 200px; 
+    height: 200px; */
     border-radius: 100px;
     border: solid 2px var(--cor-primaria);
 }
