@@ -851,3 +851,190 @@ legend {
     }
    }
   }
+
+  /* >>>>>>>>>>>>>>>>>>>>>>>> TAMANHO 1400PX <<<<<<<<<<<<<<<<<<<<<<<<<<*/   
+  /* query responsivo */
+  @media screen and (min-width: 1400px) {
+
+    /* ok */
+    .logo-texto {
+        width: 50%;
+    }
+
+      /* ok */
+      .logo-principal {
+        margin: auto;
+    }
+
+
+    /* ok */
+    .botao {
+        margin: auto;
+    }
+
+    /* ok */
+    .nav ul li {
+        margin-left: -1%;
+        padding: 2%;
+    }
+
+    /* ok */
+    .nav ul {
+        display: flex;
+    }
+    
+    h1 {
+        text-align: center;
+        font-size: 2em;
+        font-family: var(--fonte-secundaria);
+    }
+
+    /* ok */
+    .slideshow-container {
+        margin: 0% 23%;
+    }
+
+    /* ok */
+    .mySlides  {
+        display: none;
+        flex: 0 0 30%;
+        max-width: 50%;
+        text-align: center;
+      }
+
+      /* ok */
+    .apresentacao {
+        width: 300px;
+        height: 300px;
+        margin: 7px;
+    }
+
+  
+
+    /* ok */
+    .texto-main2,
+    .texto-main3{
+        width: 50%;
+        flex: none;
+        margin: 5%;
+    }
+
+
+
+/* ok */
+    
+    .image-main2 {
+        width: 30%;
+        height: 30%;
+        flex: none;
+        margin-left: 3.8%;
+        
+    }
+
+    .image-main1 {
+        width: 400px;
+        height: 400px;
+    }
+
+
+    /* ok */
+    .formulario {
+        width: 100%;
+        margin: auto;
+    }
+
+    .formulario-container {
+        margin-left: 10%;
+    }
+
+      /* ok */
+      .contatar,
+      .contatar-usuario {
+          margin:auto;
+      }
+
+    /* ok */
+    .depoimentos-carousel {
+        width: 90%;
+        height: 100%;
+        
+    }
+
+    /* ok */
+    .swiper-container {
+        width: 90%;
+        height: 80%;
+        
+    }
+
+    /* ok */
+    .image-jean,
+    .image-egalite {
+        padding: 9.5%;
+
+    }
+
+/* ok */
+    .imagem-container {
+        margin: 2%;
+        padding: 0.1%;
+
+    }
+
+/* ok */
+    .card-parceiros {
+        text-align: center;
+        padding: 11px;
+        margin: 3px;
+
+    }
+
+/* ok */
+    .card-parceiros {
+        margin:0 4%;
+    }
+
+
+/* ok */
+    .resumo-parceiros-scr,
+    .resumo-parceiros-cald,
+    .resumo-parceiros-alu,
+    .resumo-parceiros-arq,
+    .resumo-parceiros-ega {
+        margin: 2% 0%;
+        padding: 2%;
+        align-items: center;
+    }
+
+    .texto-parceiro {
+        width: 90%;
+        margin: auto;
+    
+    }
+
+    .caldeira-image,
+    .arquitetando-image {
+        margin: 12% 0% 12% -15%;
+        
+    }
+
+    .egalite-image,
+    .alura-image,
+    .sicredi-image {
+        margin: 15%;
+    }
+
+    /* ok */
+    .main_footer {
+        width: 70%;
+        margin-left: 30%;
+        display: flex;
+    }
+
+    /* ok */
+    .alinhamento {
+        width: 70%;
+        justify-content: space-around;
+    }
+
+}
